@@ -1,3 +1,89 @@
+
+# ============================================================
+# C2 INTEGRATION TODO — COMPLETE AFTER A7 AND C3 ARE FINISHED
+# ============================================================
+#
+# CONTEXT:
+# This file implements C2, the Project Helix decision-making
+# agent. The current implementation uses deterministic rules
+# as a temporary fallback, rather than an LLM.
+#
+# Once A7 (graph.py) and C3 (orchestrator.py) are completed,
+# integrate this module into the full agentic pipeline.
+#
+# REQUIRED INTEGRATION WORK:
+#
+# 1. CHECK THE INTERFACES
+#    Read the final versions of contracts.py, graph.py,
+#    tools.py and orchestrator.py.
+#    Ensure choose_expansion(), assess_route() and
+#    assess_transfer() use the correct input and output types.
+#    Do not modify the frozen contracts.py.
+#
+# 2. CONNECT GRAPH EXPANSION (A7)
+#    Make choose_expansion() operate on the actual evidence
+#    graph and its scored frontier.
+#    It must select the next useful node/tool to investigate,
+#    avoid repeated or invalid expansions, and allow the
+#    agent to stop when further investigation is unjustified.
+#
+# 3. CONNECT THE ORCHESTRATOR (C3)
+#    The orchestrator must call choose_expansion(), validate
+#    its decision, execute the selected tool, update the graph,
+#    and repeat as appropriate.
+#    The agent proposes actions; the orchestrator controls
+#    execution and enforces budgets.
+#
+# 4. ADD LLM-BASED REASONING
+#    Replace or supplement the deterministic heuristics with
+#    structured LLM decisions for:
+#      - choosing which evidence to investigate next;
+#      - interpreting clinically relevant metabolic routes;
+#      - judging whether an analogy is transferable.
+#
+#    Require structured outputs compatible with contracts.py.
+#    Keep the deterministic implementation as a fallback.
+#    Never invent citations, allele associations, shared
+#    mechanisms, or missing clinical facts.
+#
+# 5. ENFORCE SAFETY AND SCIENTIFIC BOUNDARIES
+#    The agent must not independently adjudicate hypotheses.
+#    Only the designated adjudicating checks may reject.
+#    Other checks annotate evidence and uncertainty.
+#    Do not calculate clinical quantities using the LLM.
+#    Respect historical evidence cutoffs and prevent
+#    present-day association data leaking into historical arms.
+#    Do not produce a confidence scalar.
+#
+# 6. HANDLE FAILURE AND STOPPING CONDITIONS
+#    Respect the orchestrator's expansion, time and depth
+#    budgets. Handle empty frontiers, unavailable evidence,
+#    invalid tool choices and failed tool calls.
+#    Preserve explicit abstention and unresolved outcomes.
+#
+# 7. TEST THE INTEGRATION
+#    Verify that:
+#      - C2 decisions match the final A7/C3 interfaces;
+#      - the orchestrator can execute proposed tool calls;
+#      - graph expansions do not repeat indefinitely;
+#      - citations and historical cutoffs are preserved;
+#      - unsupported analogies are not asserted as facts;
+#      - the pipeline handles missing evidence gracefully;
+#      - existing A1 tests still pass.
+#
+# DELIVERABLE:
+# A fully integrated agent.py that works with the final
+# graph.py and orchestrator.py, preserves the frozen data
+# contracts, and can support the complete Helix pipeline.
+#
+# IMPORTANT:
+# Do not assume that an LLM integration or final graph
+# interface already exists. Inspect the completed modules
+# before making changes. Do not silently edit files owned
+# by other programmers.
+# ============================================================
+
+
 """Project Helix — C2: conservative agent decisions.
 
 Drop-in replacement for the A1 agent.py stub. This implementation uses only
@@ -68,6 +154,19 @@ def choose_expansion(
     graph: EvidenceGraph, frontier: list[FrontierItem], *,
     budget: RunBudget, expansions_used: int, elapsed_seconds: float,
 ) -> ExpansionDecision:
+<<<<<<< HEAD
+    # Ask the AI what to investigate next, or whether to stop. Supply the current
+    # evidence, available search items, and remaining time/search limits. Still to
+    # build: the error below deliberately stops this unfinished function.
+    raise NotImplementedError("C2: choose a frontier node/tool or stop with a reason")
+
+
+def assess_route(articles: list[LiteratureRecord]) -> RouteJudgment:
+    # Ask the AI to read the supplied papers and explain which drug-processing route
+    # matters, with sources. Still to build: the error below deliberately stops this
+    # unfinished function.
+    raise NotImplementedError("C2: read which route matters and cite its evidence")
+=======
     """Choose an eligible frontier node and a safe typed tool call, or STOP.
 
     This is a deterministic fallback policy. C3 MUST separately enforce all
@@ -165,11 +264,18 @@ def assess_route(articles: list[LiteratureRecord]) -> RouteJudgment:
         "verify relevance to the input drug and clinical phenotype before use",
         sorted(matches[best]),
     )
+>>>>>>> b3ad50a4b235b0d5970af7054136a507dc3d8150
 
 
 def assess_transfer(
     drug: CompoundRecord, analog: CompoundRecord, articles: list[LiteratureRecord],
 ) -> TransferJudgment:
+<<<<<<< HEAD
+    # Ask whether a related drug's finding could apply to this drug. Require a shared
+    # biological reason and supporting sources. Still to build: the error below
+    # deliberately stops this unfinished function.
+    raise NotImplementedError("C2: assess transfer and name the shared mechanism")
+=======
     """Conservatively assess analogy; do not infer liability from similarity alone.
 
     A transferable finding needs cited text naming both compounds and a shared
@@ -219,3 +325,4 @@ def assess_transfer(
         "gene/allele/phenotype association still requires direct review",
         sorted(supporting[feature]),
     )
+>>>>>>> b3ad50a4b235b0d5970af7054136a507dc3d8150

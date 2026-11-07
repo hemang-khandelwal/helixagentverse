@@ -1,3 +1,5 @@
+# Generated Python files, local secrets, and downloaded caches stay out of Git.
+# Source code, schemas, and deliberately committed fixtures remain shareable.
 __pycache__/
 *.py[cod]
 .venv/

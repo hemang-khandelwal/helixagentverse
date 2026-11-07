@@ -1,5 +1,30 @@
 # Helix — pharmacogenomic evidence screen
 
+## New to the code? Start here
+
+Think of the programme as a team passing forms between desks:
+
+1. `contracts.py` defines the forms: what information everyone must supply.
+2. `tools.py` will collect information from saved files or outside sources.
+3. `graph.py` will connect that information into an evidence map.
+4. `agent.py` will ask the AI what to investigate next.
+5. `orchestrator.py` will run those steps and keep track of time.
+6. `verifier.py` will check the suggested findings against written rules.
+7. `app.py` will show the results on screen.
+8. `eval.py` will compare results with answers reviewed by the medics.
+
+A **placeholder** is a function whose job is agreed but whose code is still to
+be written. `NotImplementedError` means “this part has not been built yet.”
+An **interface** is the agreement about what one part receives and returns.
+A **contract** is that agreement written as shared record definitions.
+**Provenance** means “where this information came from.”
+A **fixture** is saved example data used while building and testing.
+An evaluation **arm** is one version of the programme used for comparison.
+To **abstain** means to say there is not enough evidence to make a claim.
+
+Read the comments above each class or function for its particular job.
+The programming instructions underneath those comments are unchanged.
+
 Agentverse 2026. Given a small-molecule drug, investigate evidence for candidate
 gene/allele/adverse-effect associations and display their provenance and checks.
 Outputs are hypotheses for clinical review, not patient exclusion decisions.
@@ -89,3 +114,15 @@ evaluation. Insufficient evidence is a valid outcome.
 
 A1 makes no external calls and collects no patient data. Later source integrations
 must preserve provenance and verify source usage/redistribution terms.
+
+## Reading the annotated code
+
+Start with contracts.py, then follow tools.py → graph.py → agent.py →
+orchestrator.py → verifier.py → app.py. eval.py measures results separately.
+Comments explain the handovers; they do not mean the placeholders are implemented.
+Python type hints document expectations, while explicit checks in constructors
+validate only the properties named in their error messages.
+
+The tests folder checks the agreed interfaces. When a test fails, read its
+assertion and determine whether the implementation or the contract changed.
+Do not change expected answers simply to make a failing test pass.
