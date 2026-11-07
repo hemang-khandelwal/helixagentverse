@@ -1,12 +1,5 @@
 """Project Helix — C2: conservative agent decisions.
 
-<<<<<<< HEAD
-# C connects the AI here. Its job is to choose the next investigation step and read
-# evidence. Ordinary Python code handles calculations.
-
-
-
-=======
 Drop-in replacement for the A1 agent.py stub. This implementation uses only
 standard-library, evidence-grounded rules; it does not pretend to be an LLM.
 C3 may later replace the decision policy with a model, while retaining the
@@ -15,7 +8,6 @@ frozen contracts and validating all decisions before tool execution.
 from __future__ import annotations
 
 import re
->>>>>>> b3ad50a4b235b0d5970af7054136a507dc3d8150
 from contracts import (
     CompoundRecord, EvidenceGraph, ExpansionDecision, FrontierItem,
     LiteratureRecord, RouteJudgment, RunBudget, TransferJudgment,
