@@ -1,5 +1,20 @@
 # Data handover: A writes loaders, B supplies records
 
+## Plain-language guide
+
+A **record** is one entry, such as information about one drug.
+A **field** is one named piece of that entry, such as `drug_name`.
+A **schema** is the agreed list of fields and what belongs in them.
+A **loader** reads a saved file and turns its entries into Python records.
+
+JSON stores named values: for example, `{"drug_name": "example"}`.
+An array is a list written in square brackets: `["first", "second"]`.
+CSV is a table saved as text, with commas between columns. Its first row names
+the columns. JSON `null` and Python `None` mean a value is unknown.
+
+Use these formats so B can prepare files that A's code can read. The examples
+explain file formatting; they are not medical evidence.
+
 `contracts.py` is the source of truth for field names and Python types.
 `data/schemas.json` lists the exact fields for each file. Do not rename fields
 locally: agree on a contract change with A, B, and C first.
@@ -71,3 +86,13 @@ variant,gene,ancestry,frequency_kind,frequency_low,frequency_point,frequency_hig
 ```csv
 drug_name,gene,phenotype,source_id,source_url,first_available
 ```
+
+## Reading the machine-readable manifest
+
+In schemas.json, schema_version identifies the current handover agreement.
+files maps a destination filename to its format, record class, and ordered field
+names. record names a dataclass in contracts.py. fields lists its names, not
+their types or allowed values: consult the dataclass and this guide for those.
+This manifest is not a complete JSON Schema validator. JSON does not support
+comments, so explanations live here instead of being inserted into the manifest.
+The contract tests compare the manifest against the dataclasses to catch drift.
