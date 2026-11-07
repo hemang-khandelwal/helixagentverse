@@ -1,4 +1,14 @@
+#Complete the C2 integration for Project Helix.
 
+#I have attached the current `agent.py`, the completed A7 `graph.py`, C3 `orchestrator.py`, `tools.py`, and frozen `contracts.py`.
+
+#Read all files and the C2 integration TODO at the top of `agent.py`.
+
+#Update only `agent.py` so its three decision functions work with the completed graph and orchestrator. Integrate structured LLM reasoning where appropriate, retain a deterministic fallback, and preserve the project's scientific, temporal and adjudication constraints.
+
+#Do not modify `contracts.py` or other programmers' files. If an interface is missing or incompatible, identify the problem rather than inventing one.
+
+#Run the available tests, add targeted C2 integration tests where appropriate, and return a complete replacement `agent.py`. Explain any remaining limitations.
 # ============================================================
 # C2 INTEGRATION TODO — COMPLETE AFTER A7 AND C3 ARE FINISHED
 # ============================================================
