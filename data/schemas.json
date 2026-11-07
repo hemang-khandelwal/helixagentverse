@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "files": {
+    "compounds.json": {
+      "format": "json",
+      "record": "CompoundRecord",
+      "fields": [
+        "compound_id",
+        "name",
+        "smiles",
+        "target_genes",
+        "source_id",
+        "source_url",
+        "first_available"
+      ]
+    },
+    "pgx.json": {
+      "format": "json",
+      "record": "PgxAssociationRecord",
+      "fields": [
+        "record_id",
+        "drug_name",
+        "gene",
+        "allele",
+        "phenotype",
+        "evidence_level",
+        "guideline",
+        "assay_available",
+        "source_id",
+        "source_url",
+        "first_available",
+        "supporting_text"
+      ]
+    },
+    "frequencies.csv": {
+      "format": "csv",
+      "record": "FrequencyRecord",
+      "fields": [
+        "variant",
+        "gene",
+        "ancestry",
+        "frequency_kind",
+        "frequency_low",
+        "frequency_point",
+        "frequency_high",
+        "source_id",
+        "source_url",
+        "source_version",
+        "first_available"
+      ]
+    },
+    "biomarkers.csv": {
+      "format": "csv",
+      "record": "BiomarkerRecord",
+      "fields": [
+        "drug_name",
+        "gene",
+        "phenotype",
+        "source_id",
+        "source_url",
+        "first_available"
+      ]
+    },
+    "evaluation_cases.json": {
+      "format": "json",
+      "record": "EvaluationCase",
+      "fields": [
+        "case_id",
+        "drug_name",
+        "kind",
+        "max_date",
+        "cutoff_source_id",
+        "cutoff_source_url",
+        "cutoff_rationale"
+      ]
+    },
+    "ground_truth.json": {
+      "format": "json",
+      "record": "GroundTruthRecord",
+      "fields": [
+        "case_id",
+        "gene",
+        "phenotype",
+        "allele",
+        "source_ids"
+      ]
+    },
+    "severity_table.json": {
+      "format": "json",
+      "record": "SeverityRecord",
+      "fields": [
+        "phenotype",
+        "severity_class",
+        "rationale",
+        "source_id",
+        "source_url",
+        "first_available"
+      ]
+    }
+  }
+}

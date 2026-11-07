@@ -1,229 +1,218 @@
-"""Project Helix — frozen data contracts.
+"""A1: shared contracts for the prospective Helix screen.
 
-FROZEN once T0 lands this file. Import from it; never edit it locally.
-If a field you need is missing, say so in the group chat and stop — a silent
-edit here is the most expensive mistake available today.
-
-Design rules this file encodes:
-
-1.  The LLM may EXTRACT a number from prose but never COMPUTE with one.
-    Extracted values carry their source so the UI can show them next to the
-    sentence they came from.
-2.  Only G1, G2 and G9 adjudicate. Every other check annotates: it says which
-    claim it weakens and by how much, and cannot reject on its own.
-3.  There is no confidence scalar. "4 of 4 applicable checks" is not a
-    calibrated probability. Report named passed / warned / failed / unresolved
-    lists instead.
-4.  Temporal filtering is on FIRST PUBLIC AVAILABILITY, not journal issue
-    year. Advance-online publication routinely predates the issue by a year.
-5.  In the historical arms the pharmacogenomic tool may return population
-    FREQUENCY ONLY. Association records carry today's knowledge and are the
-    answer. The type system enforces this: those arms receive FrequencyRecord,
-    which has no association fields to leak.
+Import these types instead of inventing module-specific dictionaries. Coordinate
+changes with the whole team. Dates are datetime.date in Python and ISO YYYY-MM-DD
+in files. Candidate objects are proposals: the verifier, not their constructor,
+decides whether their evidence is sufficient.
 """
 
 from __future__ import annotations
 
-import datetime as _dt
-from dataclasses import dataclass, field
-from typing import Literal
+from dataclasses import dataclass, field, fields, is_dataclass
+from datetime import date
+from math import isfinite
+from typing import Any, Literal
 
-# --------------------------------------------------------------------------
-# Vocabularies. Closed sets, so scoring is unambiguous.
-# --------------------------------------------------------------------------
+SCHEMA_VERSION = "1.0"
 
-MechanismClass = Literal[
-    "immune_hla",
-    "immune_non_hla",
-    "metabolic_pk",
-    "on_target_mechanism",
-    "off_target_pharmacology",
-    "idiosyncratic_unknown",
-]
-
+CheckId = Literal["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8"]
 CheckStatus = Literal["PASS", "WARN", "FAIL", "UNRESOLVED"]
-
-Outcome = Literal[
-    "SURVIVES",                   # carries its WARN and UNRESOLVED list
-    "REJECTED",
-    "REQUIRES_HUMAN_RESOLUTION",
-    "ABSTAINED",                  # a correct answer for some cases
+Tier = Literal["A", "B", "C"]
+Arm = Literal["A_baseline", "A_plus", "B_full", "C_live"]
+NodeKind = Literal["Drug", "Route", "Gene", "Variant", "Phenotype", "Analog", "Population"]
+ToolName = Literal[
+    "fetch_compound", "similar_compounds", "fetch_pgx",
+    "fetch_frequency", "fetch_literature",
 ]
 
-JudgeCall = Literal["CONSISTENT", "INCONSISTENT", "INSUFFICIENT_EVIDENCE"]
+# The latest task-split PDF specifies four adjudicating checks (B1/B2).
+# C4 is topicality. C9/GTEx is outside this task split.
+ADJUDICATING_CHECKS = frozenset({"C1", "C2", "C3", "C4"})
+ANNOTATING_CHECKS = frozenset({"C5", "C6", "C7", "C8"})
+ALL_CHECKS = ADJUDICATING_CHECKS | ANNOTATING_CHECKS
 
-Arm = Literal[
-    "A_baseline",   # model alone: no tools, no retrieval, no date filter
-    "A_plus",       # model + the same date-filtered evidence, no checks, no loop
-    "B_full",       # full pipeline
-    "C_live",       # judge free-text input, no ground truth claimed
-]
-
-Blinding = Literal["light", "heavy"]
-
-CaseKind = Literal[
-    "positive_association",   # a variant-level association was later established
-    "alternative_mechanism",  # a real mechanism, but not the one under test
-    "insufficient_evidence",  # correct answer is to decline to name a variant
-    "evidence_against",       # correct answer is to reject a proposed mechanism
-]
-
-EvidenceSource = Literal["cache_replay", "live"]
-
-# Which checks may reject. Everything else annotates only.
-ADJUDICATING_CHECKS: frozenset[str] = frozenset({"G1", "G2", "G9"})
-ANNOTATING_CHECKS: frozenset[str] = frozenset({"G3", "G4", "G5", "G6", "G7", "G8"})
-ALL_CHECKS: frozenset[str] = ADJUDICATING_CHECKS | ANNOTATING_CHECKS
-
-
-# --------------------------------------------------------------------------
-# Evidence
-# --------------------------------------------------------------------------
 
 @dataclass(frozen=True)
 class Citation:
-    """A retrieved paper.
-
-    `first_available` is the date the work first became publicly readable —
-    advance-online, preprint, or issue date, whichever is earliest. G1 filters
-    on this, NOT on `issue_year`. A 2008-issue paper posted online in May 2007
-    is inside an inclusive 2007 window and voids the case it leaks into.
-    """
-    pmid: str
+    source_id: str
     title: str
-    first_available: _dt.date
-    issue_year: int | None = None
-    source: str = "europepmc"
+    url: str
+    first_available: date
+    supporting_text: str
 
-    def within(self, max_year: int) -> bool:
-        return self.first_available <= _dt.date(max_year, 12, 31)
+    def within(self, max_date: date) -> bool:
+        """Inclusive cutoff, using first public availability, not issue year."""
+        return self.first_available <= max_date
+
+
+# DATA FILE RECORDS: B supplies the files; A implements their loaders.
+@dataclass(frozen=True)
+class CompoundRecord:
+    compound_id: str
+    name: str
+    smiles: str
+    target_genes: list[str]
+    source_id: str
+    source_url: str
+    first_available: date
+
+
+@dataclass(frozen=True)
+class PgxAssociationRecord:
+    record_id: str
+    drug_name: str
+    gene: str
+    allele: str | None
+    phenotype: str
+    evidence_level: str
+    guideline: str | None
+    assay_available: bool | None
+    source_id: str
+    source_url: str
+    first_available: date
+    supporting_text: str
 
 
 @dataclass(frozen=True)
 class FrequencyRecord:
-    """Population frequency only. Safe in every arm.
-
-    Deliberately has no association, evidence-level or clinical-annotation
-    field: allele frequencies are stable facts, association records are the
-    answer we are hiding. If you find yourself wanting to add one, you want
-    AssociationRecord, which the historical arms must never receive.
-    """
     variant: str
     gene: str
-    # ancestry -> (low, point, high) carrier frequency estimates
-    carrier_frequency: dict[str, tuple[float, float, float]]
-    source: str
+    ancestry: str
+    frequency_kind: Literal["allele", "carrier"]
+    frequency_low: float
+    frequency_point: float
+    frequency_high: float
+    source_id: str
+    source_url: str
     source_version: str
+    first_available: date
 
-    def carrier_point(self, ancestry: str) -> float | None:
-        v = self.carrier_frequency.get(ancestry)
-        return None if v is None else v[1]
-
-    def carrier_high(self, ancestry: str) -> float | None:
-        """Upper plausible bound. G3 uses this, to be generous to the hypothesis."""
-        v = self.carrier_frequency.get(ancestry)
-        return None if v is None else v[2]
+    def __post_init__(self) -> None:
+        values = (self.frequency_low, self.frequency_point, self.frequency_high)
+        if self.frequency_kind not in {"allele", "carrier"}:
+            raise ValueError("frequency_kind must be allele or carrier")
+        if not all(isfinite(value) for value in values):
+            raise ValueError("Frequency values must be finite")
+        if not 0 <= values[0] <= values[1] <= values[2] <= 1:
+            raise ValueError("Frequencies must satisfy 0 <= low <= point <= high <= 1")
 
 
 @dataclass(frozen=True)
-class AssociationRecord:
-    """Variant-phenotype association as a database asserts it TODAY.
-
-    MODE C ONLY. Passing one of these into A_plus or B_full is a leak, not a
-    feature: tools.py must refuse it and tests must assert the refusal.
-    """
-    variant: str
+class BiomarkerRecord:
+    drug_name: str
+    gene: str
     phenotype: str
-    evidence_level: str
-    source: str
-    annotation_date: _dt.date | None
-
-
-# --------------------------------------------------------------------------
-# Inputs
-# --------------------------------------------------------------------------
-
-@dataclass(frozen=True)
-class Phenotype:
-    """A blinded clinical toxicity description.
-
-    Structured fields are EXTRACTED from the narrative, never computed. None
-    means the narrative does not state it — leave it None rather than guessing,
-    because an UNRESOLVED check is honest and a guessed value is not.
-
-    Note what is absent: there is no `multi_ancestry_data_available` flag.
-    Whether multi-ancestry incidence data exists is derived at check time from
-    the in-window citation set. A hand-filled flag would smuggle in today's
-    knowledge and quietly contaminate G6.
-    """
-    case_id: str                                   # "P1", "N3"
-    blinding: Blinding
-    narrative: str
-    max_year: int                                  # inclusive cutoff
-
-    ae_rate: float | None = None                   # fraction, e.g. 0.065
-    ae_rate_range: tuple[float, float] | None = None   # (low, high); often wide
-    dose_dependent: bool | None = None
-    dose_gradient_population_wide: bool | None = None  # smooth across everyone
-    onset_days_median: float | None = None
-    onset_days_range: tuple[float, float] | None = None
-    rechallenge_accelerated: bool | None = None
-    # ancestry -> (relative incidence, number of events observed in that group)
-    ancestry_incidence: dict[str, tuple[float, int]] | None = None
-    affected_tissue: str | None = None
-
-    # Provenance of each extracted field, for the UI and for the audit.
-    extraction_sources: dict[str, str] = field(default_factory=dict)
-
-    def ae_rate_low(self) -> float | None:
-        """Lower plausible bound. G3 uses this, to be generous to the hypothesis."""
-        if self.ae_rate_range is not None:
-            return self.ae_rate_range[0]
-        return self.ae_rate
+    source_id: str
+    source_url: str
+    first_available: date
 
 
 @dataclass(frozen=True)
-class Hypothesis:
-    mechanism_class: MechanismClass
-    gene_family: str | None                # "HLA class II", "UGT"
-    specific_candidate: str | None         # "HLA-B*57:01"; None is legitimate
-    justification: str
-    supporting_pmids: list[str]
-    falsifying_evidence_sought: str
-
-    # Does the proposed mechanism act through parent-drug or metabolite
-    # EXPOSURE LEVEL? Declared by the generator, compared by G4 against
-    # observed dose-dependency. A reactive-metabolite hypothesis is
-    # metabolic_pk with exposure_mediated=False, and G4 then returns
-    # UNRESOLVED instead of penalising a valid idea.
-    exposure_mediated: bool | None = None
-
-    # Declining is a first-class correct answer, not a failure.
-    abstains: bool = False
+class EvaluationCase:
+    case_id: str
+    drug_name: str
+    kind: Literal["known_association", "no_known_association"]
+    max_date: date
+    cutoff_source_id: str
+    cutoff_source_url: str
+    cutoff_rationale: str
 
 
-# --------------------------------------------------------------------------
-# Checks
-# --------------------------------------------------------------------------
+@dataclass(frozen=True)
+class GroundTruthRecord:
+    """Evaluation-only answer. Never pass this object to the agent or tools."""
+
+    case_id: str
+    gene: str
+    phenotype: str
+    allele: str | None
+    source_ids: list[str]
+
+
+@dataclass(frozen=True)
+class SeverityRecord:
+    phenotype: str
+    severity_class: Literal["programme_limiting", "tolerability", "uncertain"]
+    rationale: str
+    source_id: str
+    source_url: str
+    first_available: date
+
+
+@dataclass(frozen=True)
+class LiteratureRecord:
+    citation: Citation
+    abstract: str
+
+
+@dataclass(frozen=True)
+class AnalogRecord:
+    compound: CompoundRecord
+    tanimoto: float
+    shared_targets: list[str] = field(default_factory=list)
+
+
+# GRAPH: edges refer to nodes and citations by their IDs.
+@dataclass(frozen=True)
+class GraphNode:
+    node_id: str
+    kind: NodeKind
+    label: str
+    analog_depth: int = 0
+
+
+@dataclass(frozen=True)
+class EvidenceEdge:
+    edge_id: str
+    from_node_id: str
+    to_node_id: str
+    relation: str
+    citation_ids: list[str]
+
+
+@dataclass
+class EvidenceGraph:
+    drug_node_id: str
+    nodes: dict[str, GraphNode] = field(default_factory=dict)
+    edges: dict[str, EvidenceEdge] = field(default_factory=dict)
+    citations: dict[str, Citation] = field(default_factory=dict)
+
+
+@dataclass(frozen=True)
+class FrontierItem:
+    node_id: str
+    heuristic_score: float
+    reason: str
+
+
+# CANDIDATES AND CHECKS: no confidence scalar or implied probability of harm.
+@dataclass(frozen=True)
+class Candidate:
+    candidate_id: str
+    gene: str
+    allele: str | None
+    phenotype: str
+    tier: Tier
+    provenance_edge_ids: list[str]
+    route: str | None = None
+    analog_drug: str | None = None
+    shared_feature: str | None = None
+    tanimoto: float | None = None
+    shared_target: bool | None = None
+    shared_route: bool | None = None
+
 
 @dataclass(frozen=True)
 class CheckResult:
-    """One check's finding.
-
-    `observed` is rendered verbatim in the UI, so write it for a reader:
-        "carrier freq 0.062 (hi), AE rate 0.065 (lo) -> explains at most 95%"
-        "2 ancestry groups, 4 and 7 events: too few to detect a gradient"
-    `weakens` says which claim this bears on, for the annotating checks. An
-    annotating check must never be read as a rejection.
-    """
-    check_id: str                          # "G1" ... "G9"
+    check_id: CheckId
     status: CheckStatus
-    observed: str
-    detail: str
-    weakens: str | None = None
-    # Set when UNRESOLVED: names the fact that would settle it. This is what
-    # drives tool selection in the orchestrator.
-    missing_field: str | None = None
+    reason: str
+
+    def __post_init__(self) -> None:
+        if self.check_id not in ALL_CHECKS:
+            raise ValueError("Unknown check_id: " + self.check_id)
+        if self.status not in {"PASS", "WARN", "FAIL", "UNRESOLVED"}:
+            raise ValueError("Unknown check status: " + self.status)
 
     @property
     def adjudicating(self) -> bool:
@@ -232,150 +221,162 @@ class CheckResult:
 
 @dataclass(frozen=True)
 class CheckReport:
-    results: list[CheckResult]
+    results: list[CheckResult] = field(default_factory=list)
 
-    def _by(self, status: CheckStatus) -> list[str]:
-        return [r.check_id for r in self.results if r.status == status]
+    def __post_init__(self) -> None:
+        ids = [result.check_id for result in self.results]
+        if len(ids) != len(set(ids)):
+            raise ValueError("A report must contain at most one result per check")
 
-    @property
-    def passed(self) -> list[str]:
-        return self._by("PASS")
-
-    @property
-    def warned(self) -> list[str]:
-        return self._by("WARN")
-
-    @property
-    def failed(self) -> list[str]:
-        return self._by("FAIL")
-
-    @property
-    def unresolved(self) -> list[str]:
-        return self._by("UNRESOLVED")
-
-    @property
-    def adjudicating_failures(self) -> list[str]:
-        """The only failures that may reject a hypothesis."""
-        return [r.check_id for r in self.results
-                if r.status == "FAIL" and r.adjudicating]
-
-    def gaps(self) -> list[tuple[str, str]]:
-        """(check_id, missing_field) for the orchestrator's tool selection."""
-        return [(r.check_id, r.missing_field) for r in self.results
-                if r.status == "UNRESOLVED" and r.missing_field]
-
-    # Deliberately absent: a confidence scalar. Do not add one.
+    def ids_with_status(self, status: CheckStatus) -> list[str]:
+        return [result.check_id for result in self.results if result.status == status]
 
 
 @dataclass(frozen=True)
 class Verdict:
-    outcome: Outcome
-    reason: str                            # names the deciding check or judge call
-    warned: list[str] = field(default_factory=list)
-    unresolved: list[str] = field(default_factory=list)
+    outcome: Literal["EMITTED", "REJECTED", "ABSTAINED"]
+    reason: str
 
 
-# --------------------------------------------------------------------------
-# The agentic loop, recorded so it can be audited
-# --------------------------------------------------------------------------
+@dataclass
+class CandidateResult:
+    candidate: Candidate
+    checks: CheckReport
+    verdict: Verdict
+    expected_carriers_per_1000: dict[str, float] = field(default_factory=dict)
+    severity_class: str | None = None
+    actionable: bool | None = None
+    human_decision: Literal["ACCEPT", "REJECT"] | None = None
+    human_reason: str | None = None
+
+
+# LOOP: Python enforces these budgets, not the model's prompt.
+@dataclass(frozen=True)
+class RunBudget:
+    max_expansions: int = 12
+    max_analog_hops: int = 2
+    max_seconds: float = 120.0
+
+    def __post_init__(self) -> None:
+        if self.max_expansions < 1 or self.max_analog_hops < 0:
+            raise ValueError("Expansion budget must be positive; analog hops nonnegative")
+        if not isfinite(self.max_seconds) or self.max_seconds <= 0:
+            raise ValueError("Time budget must be finite and positive")
+
+
+@dataclass(frozen=True)
+class RunRequest:
+    drug_name: str
+    max_date: date | None
+    arm: Arm = "C_live"
+    smiles: str | None = None
+    budget: RunBudget = field(default_factory=RunBudget)
+
+    def __post_init__(self) -> None:
+        if not self.drug_name.strip():
+            raise ValueError("A drug name is required")
+        if self.arm not in {"A_baseline", "A_plus", "B_full", "C_live"}:
+            raise ValueError("Unknown evaluation arm")
+        if self.arm in {"A_plus", "B_full"} and self.max_date is None:
+            raise ValueError("Historical retrieval arms require an explicit max_date")
+
+
+@dataclass(frozen=True)
+class ExpansionDecision:
+    action: Literal["EXPAND", "STOP"]
+    reason: str
+    node_id: str | None = None
+    tool: ToolName | None = None
+    arguments: dict[str, Any] = field(default_factory=dict)
+
+
+@dataclass(frozen=True)
+class RouteJudgment:
+    route: str | None
+    reason: str
+    source_ids: list[str]
+
+
+@dataclass(frozen=True)
+class TransferJudgment:
+    transferable: bool | None
+    shared_feature: str | None
+    reason: str
+    source_ids: list[str]
+
 
 @dataclass(frozen=True)
 class ToolCall:
-    round_index: int
-    triggered_by_check: str | None         # the UNRESOLVED check that prompted it
-    missing_field: str | None
-    tool: str                              # "fetch_literature", "fetch_frequency", ...
-    arguments: dict[str, str | int]
+    node_id: str | None
+    tool: str
+    arguments: dict[str, Any]
+    reason: str
     n_results: int
-    n_excluded_by_date: int
-    skipped_reason: str | None = None      # set when the model chose not to spend
+    n_excluded_by_date: int = 0
 
-
-# --------------------------------------------------------------------------
-# Output — the one object the UI and the evaluation harness both read
-# --------------------------------------------------------------------------
 
 @dataclass
 class RunResult:
-    case_id: str
-    arm: Arm
-    blinding: Blinding | None
-    max_year: int
-    evidence_source: EvidenceSource        # the UI must label replay vs live
-
-    hypotheses: list[Hypothesis] = field(default_factory=list)
-    check_reports: list[CheckReport] = field(default_factory=list)   # parallel
-    verdicts: list[Verdict] = field(default_factory=list)            # parallel
-    judge_calls: list[JudgeCall] = field(default_factory=list)       # parallel
-
-    citations: list[Citation] = field(default_factory=list)
-    n_papers_excluded: int = 0
+    request: RunRequest
+    graph: EvidenceGraph
+    status: Literal["COMPLETE", "BUDGET_EXHAUSTED", "ABSTAINED", "ERROR"]
+    evidence_mode: Literal["cache_replay", "live", "mixed"]
+    candidates: list[CandidateResult] = field(default_factory=list)
     tool_calls: list[ToolCall] = field(default_factory=list)
-    retrieval_rounds: int = 0
     elapsed_seconds: float = 0.0
-    timed_out: bool = False
-
-    human_decision: Literal["APPROVE", "REJECT"] | None = None
-    human_reason: str | None = None
-
-    def surviving(self) -> list[Hypothesis]:
-        return [h for h, v in zip(self.hypotheses, self.verdicts)
-                if v.outcome == "SURVIVES"]
-
-    def abstained(self) -> bool:
-        return any(v.outcome == "ABSTAINED" for v in self.verdicts)
-
-    def temporal_violations(self) -> list[Citation]:
-        """Must always be empty in a historical arm. tests/test_temporal.py."""
-        if self.arm == "C_live":
-            return []
-        return [c for c in self.citations if not c.within(self.max_year)]
-
-
-# --------------------------------------------------------------------------
-# Ground truth and scoring. Only eval.py may import these.
-# --------------------------------------------------------------------------
-
-@dataclass(frozen=True)
-class AcceptableAnswer:
-    """One admissible answer. Cases have SETS of these, not single answers.
-
-    N2's description is compatible with more than one genuine pharmacogenetic
-    association, so a single "correct" allele would mark right answers wrong.
-    Written by a pharmacology reviewer BEFORE any model output is seen.
-    """
-    mechanism_class: MechanismClass
-    gene_family: str | None
-    specific_candidate: str | None         # None = naming no allele is correct
-    rationale: str
-
-
-@dataclass(frozen=True)
-class GroundTruth:
-    case_id: str
-    kind: CaseKind
-    acceptable: list[AcceptableAnswer]
-    abstention_is_correct: bool
-    # Audit trail for the cutoff, so a judge can check it.
-    discovery_pmid: str | None
-    discovery_first_available: _dt.date | None
-    cutoff_rationale: str
+    error: str | None = None
 
 
 @dataclass(frozen=True)
 class Score:
-    """Three separate numbers. Never combine them into one.
-
-    `unjustified_allele_naming` is a HARM metric, not an error metric: it
-    counts allele names asserted without in-window variant-level evidence.
-    Reducing it at equal mechanism accuracy is the project's primary claim.
-    """
     case_id: str
     arm: Arm
-    blinding: Blinding | None
-    mechanism_class_correct: bool
-    gene_family_correct: bool
+    recall_at_5: float | None
+    recall_at_10: float | None
+    allele_candidates_reviewed: int
+    supported_allele_candidates: int
     unjustified_allele_naming: int
+    emitted_candidates: int
     abstained: bool
-    abstention_was_correct: bool | None
     notes: str = ""
+
+
+# Machine-readable file schemas are generated from these exact dataclasses.
+# No patient-level records or ground-truth answers belong in agent inputs.
+DATA_FILE_RECORDS = {
+    "compounds.json": ("json", CompoundRecord),
+    "pgx.json": ("json", PgxAssociationRecord),
+    "frequencies.csv": ("csv", FrequencyRecord),
+    "biomarkers.csv": ("csv", BiomarkerRecord),
+    "evaluation_cases.json": ("json", EvaluationCase),
+    "ground_truth.json": ("json", GroundTruthRecord),
+    "severity_table.json": ("json", SeverityRecord),
+}
+
+
+def data_file_schemas() -> dict[str, Any]:
+    """Describe file fields without implementing A5's data loaders."""
+    return {
+        "schema_version": SCHEMA_VERSION,
+        "files": {
+            name: {
+                "format": file_format,
+                "record": record_type.__name__,
+                "fields": [item.name for item in fields(record_type)],
+            }
+            for name, (file_format, record_type) in DATA_FILE_RECORDS.items()
+        },
+    }
+
+
+def to_jsonable(value: Any) -> Any:
+    """Encode shared records for fixtures/UI; loaders parse dates explicitly."""
+    if is_dataclass(value) and not isinstance(value, type):
+        return {item.name: to_jsonable(getattr(value, item.name)) for item in fields(value)}
+    if isinstance(value, date):
+        return value.isoformat()
+    if isinstance(value, dict):
+        return {key: to_jsonable(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [to_jsonable(item) for item in value]
+    return value
