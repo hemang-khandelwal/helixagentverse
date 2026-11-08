@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/genegap/.venv/bin/python",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/genegap/src"
+  ],
+  "python.terminal.useEnvFile": true
+}

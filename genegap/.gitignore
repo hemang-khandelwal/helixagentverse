@@ -1,6 +1,6 @@
 .env
-__pycache__/
-.pytest_cache/
-*.sqlite
-data/smoke/
 .venv/
+__pycache__/
+*.pyc
+data/*.sqlite
+.DS_Store

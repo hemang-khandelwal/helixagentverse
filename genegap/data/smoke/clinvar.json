@@ -1,0 +1,27 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "37",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "1703261",
+      "638797",
+      "634407"
+    ],
+    "translationset": [],
+    "translationstack": [
+      {
+        "term": "rs4244285[All Fields]",
+        "field": "All Fields",
+        "count": "37",
+        "explode": "N"
+      },
+      "GROUP"
+    ],
+    "querytranslation": "rs4244285[All Fields]"
+  }
+}

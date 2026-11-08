@@ -1,0 +1,7 @@
+gene,assessable,reason_if_not,inheritance,rsids,min_af,min_an,function_note,source,verified_by
+CYP2C19,yes,,dominant,,0.005,5000,"Variant list comes from config/variant_details_CYP2C19.csv (medical student)",https://www.ncbi.nlm.nih.gov/books/NBK84114/table/clopidogrel.Te/,medical student (variant_details_CYP2C19.csv)
+VKORC1,yes,,dominant,rs9923231,0.005,5000,"-1639G>A: warfarin sensitivity (rsID taken from the ground-truth sheet)",https://pmc.ncbi.nlm.nih.gov/articles/PMC5546947/,
+CYP4F2,yes,,dominant,rs2108622,0.005,5000,"V433M: warfarin dose requirement (rsID taken from the ground-truth sheet)",https://pmc.ncbi.nlm.nih.gov/articles/PMC5546947/,
+G6PD,no,"X-linked gene with many variants. Needs a sex-specific formula and a curated variant list first.",x_linked,,,,G6PD deficiency,https://files.cpicpgx.org/data/guideline/publication/G6PD/2022/36049896.pdf,
+HLA-B,no,"HLA alleles such as HLA-B*15:02 are not reliably covered by gnomAD. Needs a dedicated HLA frequency source.",dominant,,,,HLA-B*15:02 / *57:01 / *58:01,https://pmc.ncbi.nlm.nih.gov/articles/PMC5847474/,
+HLA-A,no,"HLA alleles such as HLA-A*31:01 are not reliably covered by gnomAD. Needs a dedicated HLA frequency source.",dominant,,,,HLA-A*31:01,https://pmc.ncbi.nlm.nih.gov/articles/PMC5847474/,

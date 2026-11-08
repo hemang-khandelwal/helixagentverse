@@ -1,0 +1,4089 @@
+{
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01609842",
+          "orgStudyIdInfo": {
+            "id": "SDP 12-179"
+          },
+          "organization": {
+            "fullName": "VA Office of Research and Development",
+            "class": "FED"
+          },
+          "briefTitle": "Hybrid Effectiveness-Implementation Study to Improve Clopidogrel Adherence",
+          "officialTitle": "Hybrid Effectiveness-Implementation Study to Improve Clopidogrel Adherence"
+        },
+        "statusModule": {
+          "statusVerifiedDate": "2023-07",
+          "overallStatus": "COMPLETED",
+          "expandedAccessInfo": {
+            "hasExpandedAccess": false
+          },
+          "startDateStruct": {
+            "date": "2014-01-20",
+            "type": "ACTUAL"
+          },
+          "primaryCompletionDateStruct": {
+            "date": "2018-03-01",
+            "type": "ACTUAL"
+          },
+          "completionDateStruct": {
+            "date": "2022-02-07",
+            "type": "ACTUAL"
+          },
+          "studyFirstSubmitDate": "2012-03-09",
+          "studyFirstSubmitQcDate": "2012-05-29",
+          "studyFirstPostDateStruct": {
+            "date": "2012-06-01",
+            "type": "ESTIMATED"
+          },
+          "resultsFirstSubmitDate": "2019-05-09",
+          "resultsFirstSubmitQcDate": "2020-01-15",
+          "resultsFirstPostDateStruct": {
+            "date": "2020-01-27",
+            "type": "ACTUAL"
+          },
+          "lastUpdateSubmitDate": "2023-07-19",
+          "lastUpdatePostDateStruct": {
+            "date": "2023-07-21",
+            "type": "ACTUAL"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "responsibleParty": {
+            "type": "SPONSOR"
+          },
+          "leadSponsor": {
+            "name": "VA Office of Research and Development",
+            "class": "FED"
+          }
+        },
+        "oversightModule": {
+          "oversightHasDmc": false,
+          "isFdaRegulatedDrug": false,
+          "isFdaRegulatedDevice": false,
+          "isUsExport": false
+        },
+        "descriptionModule": {
+          "briefSummary": "Percutaneous coronary intervention (PCI) is a common invasive cardiovascular procedure performed in the VA with over 13,000 procedures in FY10. Clopidogrel is a critical adjuvant therapy following PCI with stent placement and is generally recommended for up to 1 year following the procedure. Despite the evidence supporting clopidogrel use, studies both outside and within the VA suggest that poor adherence to clopidogrel is common. However, prior interventions targeting non-adherence have not specifically focused on clopidogrel adherence among PCI patients.\n\nThere are many potential reasons for early clopidogrel discontinuation that involve patient and healthcare system factors. Patients reported the following reasons for discontinuing clopidogrel within 1 month after drug-eluting stent (DES) implantation: 1) misunderstanding the intended treatment duration; 2) conflicting recommendations about intended duration; 3) cost of the medication; and 4) patients' own decision to stop. In contrast, patients who continued to take clopidogrel reported the following as helpful: 1) communication such as letters from their physician; and 2) receiving specific instructions on clopidogrel use. These findings suggest that there are specific interventions that can be implemented to improve clopidogrel adherence.\n\nMulti-modal interventions that incorporate frequent follow-up, especially with pharmacists and use interactive voice response (IVR) technology have improved medication adherence. IVR technology is a computer-based telephone system which initiates calls, receives calls, provides information, and collects data from users. IVR is currently a mainstay in the VA where patients frequently interact with these automated systems to get clinic appointments and/or refill prescriptions. IVR as part of multi-modal interventions have been well received by patients, increased adherence to medications (e.g., statins), and improved clinical outcomes (e.g., blood pressure, diabetes symptoms, health status). In addition, the investigators have successfully used IVR as part of a multi-modal, multi-site intervention including pharmacists to improve blood pressure levels among hypertensive patients. Accordingly, the investigators have designed the intervention to improve clopidogrel adherence that builds on the investigators' prior work and other successful adherence interventions from the literature.\n\nThe investigators propose a hybrid effectiveness-implementation study of a multi-faceted intervention to improve clopidogrel adherence at VA PCI centers. The investigators will use the VA's Cardiovascular Assessment Reporting and Tracking (CART-CL), a uniform cath lab procedure reporting tool at all VA cath labs. The intervention consists of 4 components: a) an alert from CART-CL will be sent to an inpatient pharmacist prior to discharge that a patient has received a stent; b) a pharmacist will bring clopidogrel to the patient's bedside prior to hospital discharge as well as educate the patient on the importance of and adherence to clopidogrel following PCI; c) interactive voice response (IVR) calls will be made to patients prior to the time of clopidogrel refill to remind patients and to facilitate refills during follow-up; and d) a Patient Aligned Care Team (PACT) member will contact patients who delay filling clopidogrel.",
+          "detailedDescription": "I. Hypotheses and Specific Aims\n\nThe main objective is to conduct a type 1 hybrid effectiveness/implementation study to test the effectiveness of a successfully-piloted, evidence-based, multi-faceted intervention to improve patient adherence to clopidogrel following PCI. The proposed study will test the hypothesis that a successfully-piloted, evidence-based, multi-faceted intervention targeting Veterans following PCI procedure improves adherence to clopidogrel, reduces bleeding, myocardial infarction, stroke, and mortality among these patients, and is cost-effective. The proposed intervention will be based on the Chronic Care Model and will build on the investigators' pilot work as well as will leverage the VA's CART-CL, a uniform cath lab procedure reporting tool at all VA cath labs. The study will be evaluated using the REAIM framework consisting of the following components, reach, effectiveness, adoption, implementation and maintenance. The intervention will adapt elements of prior successful intervention, including patient education, collaboration between cath lab clinicians and impatient/outpatient pharmacy teams, and telemonitoring via interactive voice response (IVR) technology. This type I hybrid effectiveness/implementation study will be tested at 16 sites randomized to intervention with an average of 90 patients per site per 6 month period versus usual care.\n\nSpecific Aims:\n\n1. To evaluate current practices at VA PCI facilities (n=20) to enhance adherence to clopidogrel, both at hospital discharge and during longitudinal follow-up.\n2. To implement the multi-faceted intervention at 16 total sites through 4 roll-out phases (4 sites during each roll-out) in a randomized stepped wedge trial design.\n3. To assess barriers and facilitators to intervention implementation during each roll-out phase through semi-structured interviews and incorporate lessons learned from each roll-out phase into subsequent roll-out phases.\n4. To determine the effectiveness of a successfully-piloted, evidence-based, multi-faceted intervention versus usual care for improving clopidogrel filling at hospital discharge and adherence to clopidogrel (primary outcomes).\n5. To determine the effectiveness of a successfully-piloted, evidence-based, multi-faceted intervention versus usual care for reducing the combined cardiovascular endpoints of bleeding, myocardial infarction, stroke, and mortality (secondary outcomes).\n6. To assess the incremental cost-effectiveness of the successfully-piloted, evidence-based, multi-faceted intervention compared with usual care.\n\nII. Background and Significance:\n\nThe investigators have successfully piloted the intervention to improve clopidogrel adherence following PCI. The investigators developed a software application integrated within CART-CL that assessed whether patients fill their clopidogrel prescription at hospital discharge. If clopidogrel was not filled, patients were contacted to identify barriers to medication filling. During follow-up, automated telephone calls were sent to patients to educate them about the importance of medication adherence and to remind them to refill clopidogrel prior to the refill due date. The software application successfully identified all 15 patients enrolled in the pilot who underwent PCI and whether they filled clopidogrel at hospital discharge at 2 VAMCs. In qualitative interviews about the automated calls, all patients indicated that the refill reminder messages were helpful. A majority of participants indicated that they felt the education/support from the messages or participation in the study was helpful or would be helpful to others. A few patients shared that the messages also supported refilling other medications and reminding them to ask clarifying questions about other medications. Following the successful pilot, the investigators' next step is to test the effectiveness of the intervention and study the implementation process across a range of VA facilities.\n\nBuilding on the prior work and evidence from the literature, the investigators have developed the intervention informed by the Chronic Care Model (CCM) which is a framework that uses clinical information systems to facilitate evidence-based quality improvement. The investigators will leverage CART-CL, IVR technology, patient self-management, and team-based care to foster efficient, productive interactions between activated patients and proactive clinical teams to improve clopidogrel adherence. Further the components of the intervention directly address many of the reasons that patients have highlighted as leading to early clopidogrel discontinuation.\n\nThis study will refine the current state of knowledge on improving medication adherence in multiple ways. First, it combines multiple interventions that have been separately shown to be effective in improving medication adherence and addresses causes of clopidogrel non-adherence identified by patients. Second, the intervention focuses on a novel setting (i.e., patients discharged following PCI and transitioning to outpatient care) in contrast to prior adherence interventions that have focused only on patients with stable chronic diseases (e.g., hypertension). Prior work by the investigators' group and others suggest that the immediate post-ACS period, and more generally transitions from the inpatient to the outpatient setting, are particularly 'vulnerable periods' for medication adherence. Yet prior interventions have not specifically targeted this setting. Third, the targeted medication in this study has demonstrated short-term benefits and where non-adherence can have immediate adverse outcomes (e.g., stent thrombosis). Prior studies have focused on medications (e.g., hypertension medications) where non-adherence leads to problems longer term rather than the short term. Fourth, the study utilizes existing resources (i.e., cardiac data systems integrated with the VA electronic health record, VA pharmacists and patient-aligned care teams) to implement the intervention, improving the feasibility of broader implementation. Prior adherence interventions have generally required significant additional resources and the majority of quality improvement interventions are not continued following the end of the research project. This proposal will extend the current state of knowledge on medication adherence by demonstrating that a successful intervention will need multiple evidence-based components, and designed with plans for implementation in mind. Finally, this study is being conducted as a type I hybrid implementation study and therefore includes extensive study of the implementation process, which will yield both contributions to implementation science and facilitate wider dissemination if the intervention is found to be effective.\n\nFurthermore, the study will make two important contributions to implementation science. First, the investigators will integrate a structured survey, the organizational readiness to change assessment (ORCA), for use in the formative and summative evaluations (described further in the evaluation plan). The ORCA has previously been psychometrically validated and found to predict implementation effectiveness. However, it has not been previously tested as a tool to support implementation. Findings from this study will help us understand if and how the ORCA can be used to support other implementation projects, and will contribute to users' materials for the survey. Second, the investigators are using an innovative study design, a randomized stepped wedge design, and building-in iterative formative evaluation to guide implementation of the intervention at sites in subsequent cohorts. As far as the investigators know, this kind of iterative rollout design with planned formative evaluation has not been used in an effectiveness/implementation hybrid study. If it works as planned, and provides useful formative evaluation findings from early cohorts, it may represent an important adaptation of the hybrid design.\n\nIn terms of VA patient care, if the intervention is successful, it will increase adherence to clopidogrel by helping patients take their anti-platelet medication routinely as prescribed, the quality of cardiovascular care for Veterans since adherence to clopidogrel has been associated with reductions in cardiovascular morbidity and mortality following PCI, and the efficiency of care by using telephone calls and telemonitoring for communication with patients rather than clinic visits. This study will leverage the automated pharmacy system and tele-monitoring technology for which the VA is a nationally recognized leader. Further, the study will address an important gap in knowledge (i.e., how to improve adherence to clopidogrel medications following PCI) and the findings can inform future interventions to improve adherence to other chronic cardiovascular medications. Finally, since the study is designed to be implemented using existing personnel/staff and current national platforms (i.e., CART-CL and PACT teamlets), it will be generalizable to other VA Medical Centers and Veterans."
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Cardiovascular Disease",
+            "Acute Coronary Syndrome"
+          ],
+          "keywords": [
+            "Acute Coronary Syndrome",
+            "adherence"
+          ]
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "NA"
+          ],
+          "designInfo": {
+            "allocation": "RANDOMIZED",
+            "interventionModel": "PARALLEL",
+            "primaryPurpose": "HEALTH_SERVICES_RESEARCH",
+            "maskingInfo": {
+              "masking": "NONE"
+            }
+          },
+          "enrollmentInfo": {
+            "count": 14573,
+            "type": "ACTUAL"
+          }
+        },
+        "armsInterventionsModule": {
+          "armGroups": [
+            {
+              "label": "Phone reminders and pharmacist",
+              "type": "EXPERIMENTAL",
+              "description": "An alerted inpatient pharmacist or a designated study team member will bring the clopidogrel medication to the patient who has received a coronary stent. The patient will return home and receive IVR refill reminder calls.",
+              "interventionNames": [
+                "Other: Multifaceted Intervention with pharmacist and IVR"
+              ]
+            },
+            {
+              "label": "Usual Care",
+              "type": "OTHER",
+              "description": "The sites will have no interaction with the study personnel. The investigators will use database information to compare with the intervention sites",
+              "interventionNames": [
+                "Other: Multifaceted Intervention with pharmacist and IVR"
+              ]
+            }
+          ],
+          "interventions": [
+            {
+              "type": "OTHER",
+              "name": "Multifaceted Intervention with pharmacist and IVR",
+              "description": "An alerted inpatient pharmacists will bring the clopidogrel medication to the patient who has received a stent. The patient will return home and receive IVR messages about the importance of their medication as well as a refill reminder call.",
+              "armGroupLabels": [
+                "Phone reminders and pharmacist",
+                "Usual Care"
+              ]
+            }
+          ]
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "Percentage of Adherent Patients",
+              "description": "Percentage of patients whose clopidogrel prescription is filled at hospital discharge following the PCI stent placement as well as the percentage of patients who are adherent based on the pharmacy refill data in the year after hospital discharge. We used mixed logistic regression models for clopidogrel adherence (y/n PDC \\> 80%) as planned.",
+              "timeFrame": "12 months post PCI discharge"
+            },
+            {
+              "measure": "Percentage of Participants With Anti-Platelet Medication Delay",
+              "description": "Percentage of Participants with Anti-Platelet Medication Delay. Delay is defined as filling anti-platelet medication \\>1 day after PCI discharge and not filling the anti-platelet medication prescription by the refill date",
+              "timeFrame": "12 months post PCI discharge"
+            },
+            {
+              "measure": "Mean PDC",
+              "description": "Proportion of days covered. The number of days that the patient had a pill to take divided by the number of days of follow-up (follow-up terminated at death or at 365 days).",
+              "timeFrame": "12 months post PCI discharge"
+            }
+          ],
+          "secondaryOutcomes": [
+            {
+              "measure": "Hospitalizations",
+              "description": "Number of participants with hospitalizations",
+              "timeFrame": "12 months post PCI discharge"
+            },
+            {
+              "measure": "Mortality",
+              "description": "Mortality",
+              "timeFrame": "12 months post PCI discharge"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "Inclusion Criteria:\n\nAt the PCI sites, the investigators will include\n\n* all patients undergoing PCI with either a bare-metal (BMS) or drug-eluting stent (DES) and are prescribed clopidogrel regardless of the intended treatment duration\n* other potential anti-platelet medications (thienopyridines) used following PCI to accommodate changes in practice (e.g., prasugrel or ticagrelor or ticlopidine).\n* all patients undergoing PCI and receiving clopidogrel at the randomized sites, regardless of gender, ethnicity or race. Based on data from the national CART Program, the investigators anticipate \\~23% minorities (African American 16.8%, Hispanic 4.4%, Asian/American Indian 1.4%) and 3.1 women will be included in the study.\n\nExclusion Criteria:\n\nThe investigators will exclude\n\n* sites with low PCI volume,\n* less than 20 PCI procedures performed during the last fiscal year (n=3),",
+          "healthyVolunteers": true,
+          "sex": "ALL",
+          "minimumAge": "18 Years",
+          "maximumAge": "91 Years",
+          "stdAges": [
+            "ADULT",
+            "OLDER_ADULT"
+          ]
+        },
+        "contactsLocationsModule": {
+          "overallOfficials": [
+            {
+              "name": "P. Michael Ho, MD PhD",
+              "affiliation": "Rocky Mountain Regional VA Medical Center, Aurora, CO",
+              "role": "PRINCIPAL_INVESTIGATOR"
+            }
+          ],
+          "locations": [
+            {
+              "facility": "Rocky Mountain Regional VA Medical Center, Aurora, CO",
+              "city": "Aurora",
+              "state": "Colorado",
+              "zip": "80045",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 39.72943,
+                "lon": -104.83192
+              }
+            },
+            {
+              "facility": "Washington DC VA Medical Center, Washington, DC",
+              "city": "Washington D.C.",
+              "state": "District of Columbia",
+              "zip": "20422",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 38.89511,
+                "lon": -77.03637
+              }
+            },
+            {
+              "facility": "North Florida/South Georgia Veterans Health System, Gainesville, FL",
+              "city": "Gainesville",
+              "state": "Florida",
+              "zip": "32608",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 29.65163,
+                "lon": -82.32483
+              }
+            },
+            {
+              "facility": "Atlanta VA Medical and Rehab Center, Decatur, GA",
+              "city": "Decatur",
+              "state": "Georgia",
+              "zip": "30033",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 33.77483,
+                "lon": -84.29631
+              }
+            },
+            {
+              "facility": "Iowa City VA Health Care System, Iowa City, IA",
+              "city": "Iowa City",
+              "state": "Iowa",
+              "zip": "52246-2208",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.66113,
+                "lon": -91.53017
+              }
+            },
+            {
+              "facility": "VA Ann Arbor Healthcare System, Ann Arbor, MI",
+              "city": "Ann Arbor",
+              "state": "Michigan",
+              "zip": "48105",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 42.27756,
+                "lon": -83.74088
+              }
+            },
+            {
+              "facility": "G.V. (Sonny) Montgomery VA Medical Center, Jackson, MS",
+              "city": "Jackson",
+              "state": "Mississippi",
+              "zip": "39216",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 32.29876,
+                "lon": -90.18481
+              }
+            },
+            {
+              "facility": "New Mexico VA Health Care System, Albuquerque, NM",
+              "city": "Albuquerque",
+              "state": "New Mexico",
+              "zip": "87108-5153",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 35.08449,
+                "lon": -106.65114
+              }
+            },
+            {
+              "facility": "Manhattan Campus of the VA NY Harbor Healthcare System, New York, NY",
+              "city": "New York",
+              "state": "New York",
+              "zip": "10010",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.71427,
+                "lon": -74.00597
+              }
+            },
+            {
+              "facility": "Durham VA Medical Center, Durham, NC",
+              "city": "Durham",
+              "state": "North Carolina",
+              "zip": "27705",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 35.99403,
+                "lon": -78.89862
+              }
+            },
+            {
+              "facility": "Cincinnati VA Medical Center, Cincinnati, OH",
+              "city": "Cincinnati",
+              "state": "Ohio",
+              "zip": "45220",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 39.12711,
+                "lon": -84.51439
+              }
+            },
+            {
+              "facility": "Louis Stokes VA Medical Center, Cleveland, OH",
+              "city": "Cleveland",
+              "state": "Ohio",
+              "zip": "44106",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.4995,
+                "lon": -81.69541
+              }
+            },
+            {
+              "facility": "Oklahoma City VA Medical Center, Oklahoma City, OK",
+              "city": "Oklahoma City",
+              "state": "Oklahoma",
+              "zip": "73104",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 35.46756,
+                "lon": -97.51643
+              }
+            },
+            {
+              "facility": "Michael E. DeBakey VA Medical Center, Houston, TX",
+              "city": "Houston",
+              "state": "Texas",
+              "zip": "77030",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 29.76328,
+                "lon": -95.36327
+              }
+            },
+            {
+              "facility": "Salem VA Medical Center, Salem, VA",
+              "city": "Salem",
+              "state": "Virginia",
+              "zip": "24153",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 37.29347,
+                "lon": -80.05476
+              }
+            }
+          ]
+        },
+        "referencesModule": {
+          "references": [
+            {
+              "pmid": "27998682",
+              "type": "BACKGROUND",
+              "citation": "Beste LA, Glorioso TJ, Ho PM, Au DH, Kirsh SR, Todd-Stenberg J, Chang MF, Dominitz JA, Baron AE, Ross D. Telemedicine Specialty Support Promotes Hepatitis C Treatment by Primary Care Providers in the Department of Veterans Affairs. Am J Med. 2017 Apr;130(4):432-438.e3. doi: 10.1016/j.amjmed.2016.11.019. Epub 2016 Dec 18."
+            },
+            {
+              "pmid": "30576842",
+              "type": "BACKGROUND",
+              "citation": "McCreight MS, Lambert-Kerzner A, O'Donnell CI, Grunwald GK, Hebert P, Gillette M, Jneid H, Parashar A, Grossman PM, Helfrich C, Mavromatis K, Saket G, Ho PM. Improving anti-platelet therapy adherence in the Veterans Health Administration: A randomized multi-site hybrid effectiveness-implementation study protocol. Contemp Clin Trials. 2019 Feb;77:104-110. doi: 10.1016/j.cct.2018.12.005. Epub 2018 Dec 19."
+            },
+            {
+              "pmid": "27412898",
+              "type": "BACKGROUND",
+              "citation": "Doll JA, Tang F, Cresci S, Ho PM, Maddox TM, Spertus JA, Wang TY. Change in Angina Symptom Status After Acute Myocardial Infarction and Its Association With Readmission Risk: An Analysis of the Translational Research Investigating Underlying Disparities in Acute Myocardial Infarction Patients' Health Status (TRIUMPH) Registry. J Am Heart Assoc. 2016 Jun 13;5(6):e003205. doi: 10.1161/JAHA.116.003205."
+            },
+            {
+              "pmid": "35766258",
+              "type": "DERIVED",
+              "citation": "Ho PM, O'Donnell CI, McCreight M, Bavry AA, Bosworth HB, Girotra S, Grossman PM, Helfrich C, Latif F, Lu D, Matheny M, Mavromatis K, Ortiz J, Parashar A, Ratliff DM, Grunwald GK, Gillette M, Jneid H. Multifaceted Intervention to Improve P2Y12 Inhibitor Adherence After Percutaneous Coronary Intervention: A Stepped Wedge Trial. J Am Heart Assoc. 2022 Jul 5;11(13):e024342. doi: 10.1161/JAHA.121.024342. Epub 2022 Jun 29."
+            }
+          ]
+        },
+        "ipdSharingStatementModule": {
+          "ipdSharing": "NO"
+        }
+      },
+      "resultsSection": {
+        "participantFlowModule": {
+          "preAssignmentDetails": "The participants reported in the Control Arm/Group were all unique patients; they were assigned as follows: pre-intervention control (n=6,081), post-intervention control (n=2,917), and concurrent intervention controls (n=4,869); there was no overlap between the control groups.",
+          "recruitmentDetails": "Participants were enrolled January 2014-March 2017 at 15 VA cardiac catheterization laboratory sites in 4 waves according to the study design protocol",
+          "groups": [
+            {
+              "id": "FG000",
+              "title": "Intervention",
+              "description": "Patients at intervention sites who received the intervention during the period of enrollment"
+            },
+            {
+              "id": "FG001",
+              "title": "Control",
+              "description": "Patients who did not received the intervention"
+            }
+          ],
+          "periods": [
+            {
+              "title": "Pre-Intervention Control",
+              "milestones": [
+                {
+                  "type": "STARTED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "0"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "comment": "Intervention sites patients prior to enrollment period who did not receive the intervention",
+                      "numSubjects": "6081"
+                    }
+                  ]
+                },
+                {
+                  "type": "COMPLETED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "0"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "6081"
+                    }
+                  ]
+                },
+                {
+                  "type": "NOT COMPLETED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "0"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Post-Intervention Control",
+              "milestones": [
+                {
+                  "type": "STARTED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "0"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "comment": "Intervention sites patients after enrollment period ended who did not receive the intervention.",
+                      "numSubjects": "2917"
+                    }
+                  ]
+                },
+                {
+                  "type": "COMPLETED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "0"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "2917"
+                    }
+                  ]
+                },
+                {
+                  "type": "NOT COMPLETED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "0"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Concurrent Intervention Control",
+              "milestones": [
+                {
+                  "type": "STARTED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "708"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "comment": "Nonintervention sites patients during the period prior and post enrollment at the intervention sites",
+                      "numSubjects": "4869"
+                    }
+                  ]
+                },
+                {
+                  "type": "COMPLETED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "706"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "4869"
+                    }
+                  ]
+                },
+                {
+                  "type": "NOT COMPLETED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "2"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "0"
+                    }
+                  ]
+                }
+              ],
+              "dropWithdraws": [
+                {
+                  "type": "pharmacy data not available",
+                  "reasons": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "2"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "baselineCharacteristicsModule": {
+          "groups": [
+            {
+              "id": "BG000",
+              "title": "Intervention",
+              "description": "Patients at intervention sites who received the intervention during the period of enrollment"
+            },
+            {
+              "id": "BG001",
+              "title": "Pre-Intervention Control",
+              "description": "Patients at intervention sites prior to the period of enrollment who did not received the intervention"
+            },
+            {
+              "id": "BG002",
+              "title": "Post-Intervention Control",
+              "description": "Patients from intervention sites after the period of enrollment ended and who did not receive the intervention"
+            },
+            {
+              "id": "BG003",
+              "title": "Concurrent Intervention Control",
+              "description": "Patients at nonintervention sites during the period of enrollment at the intervention sites"
+            },
+            {
+              "id": "BG004",
+              "title": "Total",
+              "description": "Total of all reporting groups"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "BG000",
+                  "value": "706"
+                },
+                {
+                  "groupId": "BG001",
+                  "value": "6081"
+                },
+                {
+                  "groupId": "BG002",
+                  "value": "2917"
+                },
+                {
+                  "groupId": "BG003",
+                  "value": "4869"
+                },
+                {
+                  "groupId": "BG004",
+                  "value": "14573"
+                }
+              ]
+            }
+          ],
+          "measures": [
+            {
+              "title": "Age, Continuous",
+              "paramType": "MEAN",
+              "dispersionType": "STANDARD_DEVIATION",
+              "unitOfMeasure": "years",
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "66.1",
+                          "spread": "9.1"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "66.4",
+                          "spread": "8.8"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "67.4",
+                          "spread": "8.9"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "66.4",
+                          "spread": "8.7"
+                        },
+                        {
+                          "groupId": "BG004",
+                          "value": "66.63",
+                          "spread": "8.83"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Sex: Female, Male",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "title": "Female",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "19"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "111"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "62"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "95"
+                        },
+                        {
+                          "groupId": "BG004",
+                          "value": "287"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Male",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "687"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "5970"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "2855"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "4774"
+                        },
+                        {
+                          "groupId": "BG004",
+                          "value": "14286"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Race (NIH/OMB)",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "title": "American Indian or Alaska Native",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "4"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "82"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "28"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "32"
+                        },
+                        {
+                          "groupId": "BG004",
+                          "value": "146"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Asian",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "2"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "21"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "4"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "13"
+                        },
+                        {
+                          "groupId": "BG004",
+                          "value": "40"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Native Hawaiian or Other Pacific Islander",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "3"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "44"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "19"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "57"
+                        },
+                        {
+                          "groupId": "BG004",
+                          "value": "123"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Black or African American",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "120"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "1028"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "597"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "584"
+                        },
+                        {
+                          "groupId": "BG004",
+                          "value": "2329"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "White",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "577"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "4906"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "2269"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "4183"
+                        },
+                        {
+                          "groupId": "BG004",
+                          "value": "11935"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "More than one race",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG004",
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Unknown or Not Reported",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG004",
+                          "value": "0"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "outcomeMeasuresModule": {
+          "outcomeMeasures": [
+            {
+              "type": "PRIMARY",
+              "title": "Percentage of Adherent Patients",
+              "description": "Percentage of patients whose clopidogrel prescription is filled at hospital discharge following the PCI stent placement as well as the percentage of patients who are adherent based on the pharmacy refill data in the year after hospital discharge. We used mixed logistic regression models for clopidogrel adherence (y/n PDC \\> 80%) as planned.",
+              "reportingStatus": "POSTED",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "timeFrame": "12 months post PCI discharge",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Intervention",
+                  "description": "Patients at intervention sites who received the intervention during the period of enrollment"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Pre-intervention Control",
+                  "description": "Patients at intervention sites prior to the period of enrollment who did not received the intervention"
+                },
+                {
+                  "id": "OG002",
+                  "title": "Post-intervention Control",
+                  "description": "Patients from intervention sites after the period of enrollment ended and who did not receive the intervention"
+                },
+                {
+                  "id": "OG003",
+                  "title": "Concurrent Intervention Control",
+                  "description": "Patients at nonintervention sites during the period for patients prior to enrollment and post enrollment at the intervention sites"
+                }
+              ],
+              "denoms": [
+                {
+                  "units": "Participants",
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "706"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "6081"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "2917"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "4869"
+                    }
+                  ]
+                }
+              ],
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "OG000",
+                          "value": "590"
+                        },
+                        {
+                          "groupId": "OG001",
+                          "value": "4484"
+                        },
+                        {
+                          "groupId": "OG002",
+                          "value": "2209"
+                        },
+                        {
+                          "groupId": "OG003",
+                          "value": "3633"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "PRIMARY",
+              "title": "Percentage of Participants With Anti-Platelet Medication Delay",
+              "description": "Percentage of Participants with Anti-Platelet Medication Delay. Delay is defined as filling anti-platelet medication \\>1 day after PCI discharge and not filling the anti-platelet medication prescription by the refill date",
+              "reportingStatus": "POSTED",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "timeFrame": "12 months post PCI discharge",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Intervention",
+                  "description": "Patients at intervention sites who received the intervention during the period of enrollment"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Pre-Intervention Control",
+                  "description": "Patients at intervention sites prior to the period of enrollment who did not received the intervention"
+                },
+                {
+                  "id": "OG002",
+                  "title": "Post-Intervention Control",
+                  "description": "Patients from intervention sites after the period of enrollment ended and who did not receive the intervention"
+                },
+                {
+                  "id": "OG003",
+                  "title": "Concurrent Intervention Control",
+                  "description": "Patients at nonintervention sites during the period for patients prior to enrollment and post enrollment at the intervention sites"
+                }
+              ],
+              "denoms": [
+                {
+                  "units": "Participants",
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "706"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "6081"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "2917"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "4869"
+                    }
+                  ]
+                }
+              ],
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "OG000",
+                          "value": "35"
+                        },
+                        {
+                          "groupId": "OG001",
+                          "value": "459"
+                        },
+                        {
+                          "groupId": "OG002",
+                          "value": "210"
+                        },
+                        {
+                          "groupId": "OG003",
+                          "value": "578"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "PRIMARY",
+              "title": "Mean PDC",
+              "description": "Proportion of days covered. The number of days that the patient had a pill to take divided by the number of days of follow-up (follow-up terminated at death or at 365 days).",
+              "reportingStatus": "POSTED",
+              "paramType": "MEAN",
+              "dispersionType": "Standard Deviation",
+              "unitOfMeasure": "proportion of days covered",
+              "timeFrame": "12 months post PCI discharge",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Intervention",
+                  "description": "Patients at intervention sites who received the intervention during the period of enrollment"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Pre-intervention Control",
+                  "description": "Patients at intervention sites prior to the period of enrollment who did not received the intervention"
+                },
+                {
+                  "id": "OG002",
+                  "title": "Post-intervention Control",
+                  "description": "Patients from intervention sites after the period of enrollment ended and who did not receive the intervention"
+                },
+                {
+                  "id": "OG003",
+                  "title": "Concurrent Intervention Control",
+                  "description": "Patients at nonintervention sites during the period for patients prior to enrollment and post enrollment at the intervention sites"
+                }
+              ],
+              "denoms": [
+                {
+                  "units": "Participants",
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "706"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "6081"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "2917"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "4869"
+                    }
+                  ]
+                }
+              ],
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "OG000",
+                          "value": "0.912",
+                          "spread": "0.172"
+                        },
+                        {
+                          "groupId": "OG001",
+                          "value": "0.851",
+                          "spread": "0.231"
+                        },
+                        {
+                          "groupId": "OG002",
+                          "value": "0.867",
+                          "spread": "0.217"
+                        },
+                        {
+                          "groupId": "OG003",
+                          "value": "0.858",
+                          "spread": "0.232"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "SECONDARY",
+              "title": "Hospitalizations",
+              "description": "Number of participants with hospitalizations",
+              "reportingStatus": "POSTED",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "timeFrame": "12 months post PCI discharge",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Intervention",
+                  "description": "Patients at intervention sites who received the intervention during the period of enrollment"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Pre-intervention Control",
+                  "description": "Patients at intervention sites prior to the period of enrollment who did not received the intervention"
+                },
+                {
+                  "id": "OG002",
+                  "title": "Post-intervention Control",
+                  "description": "Patients from intervention sites after the period of enrollment ended and who did not receive the intervention"
+                },
+                {
+                  "id": "OG003",
+                  "title": "Concurrent Intervention Control",
+                  "description": "Patients at nonintervention sites during the period for patients prior to enrollment and post enrollment at the intervention sites"
+                }
+              ],
+              "denoms": [
+                {
+                  "units": "Participants",
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "706"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "6081"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "2917"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "4869"
+                    }
+                  ]
+                }
+              ],
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "OG000",
+                          "value": "99"
+                        },
+                        {
+                          "groupId": "OG001",
+                          "value": "792"
+                        },
+                        {
+                          "groupId": "OG002",
+                          "value": "387"
+                        },
+                        {
+                          "groupId": "OG003",
+                          "value": "603"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "SECONDARY",
+              "title": "Mortality",
+              "description": "Mortality",
+              "reportingStatus": "POSTED",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "timeFrame": "12 months post PCI discharge",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Intervention",
+                  "description": "Patients at intervention sites who received the intervention during the period of enrollment"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Pre-intervention Control",
+                  "description": "Patients at intervention sites prior to the period of enrollment who did not received the intervention"
+                },
+                {
+                  "id": "OG002",
+                  "title": "Post-intervention Control",
+                  "description": "Patients from intervention sites after the period of enrollment ended and who did not receive the intervention"
+                },
+                {
+                  "id": "OG003",
+                  "title": "Concurrent Intervention Control",
+                  "description": "Patients at nonintervention sites during the period for patients prior to enrollment and post enrollment at the intervention sites"
+                }
+              ],
+              "denoms": [
+                {
+                  "units": "Participants",
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "706"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "6081"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "2917"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "4869"
+                    }
+                  ]
+                }
+              ],
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "OG000",
+                          "value": "34"
+                        },
+                        {
+                          "groupId": "OG001",
+                          "value": "399"
+                        },
+                        {
+                          "groupId": "OG002",
+                          "value": "193"
+                        },
+                        {
+                          "groupId": "OG003",
+                          "value": "266"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "adverseEventsModule": {
+          "frequencyThreshold": "0",
+          "timeFrame": "12 months post PCI discharge",
+          "description": "Only mortality data and serious adverse events collected; Other/Not Serious Adverse Events were not monitored/collected for the Intervention Arm/Group or Usual Care Arm/Group.",
+          "eventGroups": [
+            {
+              "id": "EG000",
+              "title": "Intervention Arm",
+              "description": "An alerted inpatient pharmacist or a designated study team member will bring the clopidogrel medication to the patient who has received a coronary stent. The patient will return home and receive IVR refill reminder calls.\n\nMultifaceted Intervention with pharmacist and IVR: An alerted inpatient pharmacists will bring the clopidogrel medication to the patient who has received a stent. The patient will return home and receive IVR messages about the importance of their medication as well as a refill reminder call.",
+              "deathsNumAffected": 34,
+              "deathsNumAtRisk": 706,
+              "seriousNumAffected": 99,
+              "seriousNumAtRisk": 706,
+              "otherNumAffected": 0,
+              "otherNumAtRisk": 0
+            },
+            {
+              "id": "EG001",
+              "title": "Usual Care",
+              "description": "The sites will have no interaction with the study personnel. The investigators will use database information to compare with the intervention sites\n\nMultifaceted Intervention with pharmacist and IVR: An alerted inpatient pharmacists will bring the clopidogrel medication to the patient who has received a stent. The patient will return home and receive IVR messages about the importance of their medication as well as a refill reminder call.",
+              "deathsNumAffected": 858,
+              "deathsNumAtRisk": 13867,
+              "seriousNumAffected": 1782,
+              "seriousNumAtRisk": 13867,
+              "otherNumAffected": 0,
+              "otherNumAtRisk": 0
+            }
+          ],
+          "seriousEvents": [
+            {
+              "term": "Reported hospitalizations of the participants",
+              "organSystem": "Cardiac disorders",
+              "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 3,
+                  "numAffected": 3,
+                  "numAtRisk": 706
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 13867
+                }
+              ]
+            },
+            {
+              "term": "Reported hospitalizations of the participants",
+              "organSystem": "Gastrointestinal disorders",
+              "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 2,
+                  "numAffected": 2,
+                  "numAtRisk": 706
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 13867
+                }
+              ]
+            },
+            {
+              "term": "Reported hospitalizations of the participants",
+              "organSystem": "Respiratory, thoracic and mediastinal disorders",
+              "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 5,
+                  "numAffected": 5,
+                  "numAtRisk": 706
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 13867
+                }
+              ]
+            },
+            {
+              "term": "Reported hospitalizations of the participants",
+              "organSystem": "Renal and urinary disorders",
+              "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 6,
+                  "numAffected": 6,
+                  "numAtRisk": 706
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 13867
+                }
+              ]
+            },
+            {
+              "term": "Reported hospitalizations of the participants",
+              "organSystem": "Infections and infestations",
+              "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 3,
+                  "numAffected": 3,
+                  "numAtRisk": 706
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 13867
+                }
+              ]
+            },
+            {
+              "term": "Reported hospitalizations of the participants",
+              "organSystem": "General disorders",
+              "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 4,
+                  "numAffected": 4,
+                  "numAtRisk": 706
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 13867
+                }
+              ]
+            },
+            {
+              "term": "Reported hospitalizations of the participants",
+              "organSystem": "Blood and lymphatic system disorders",
+              "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 706
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 13867
+                }
+              ]
+            },
+            {
+              "term": "Other hospitalizations",
+              "organSystem": "General disorders",
+              "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numAffected": 75,
+                  "numAtRisk": 706
+                },
+                {
+                  "groupId": "EG001",
+                  "numAffected": 1782,
+                  "numAtRisk": 13867
+                }
+              ]
+            }
+          ]
+        },
+        "moreInfoModule": {
+          "certainAgreement": {
+            "piSponsorEmployee": true
+          },
+          "pointOfContact": {
+            "title": "Marina McCreight",
+            "organization": "VHA Eastern Colorado Health Care System",
+            "email": "marina.mccreight@va.gov",
+            "phone": "720-857-2785"
+          }
+        }
+      },
+      "documentSection": {
+        "largeDocumentModule": {
+          "largeDocs": [
+            {
+              "typeAbbrev": "Prot",
+              "hasProtocol": true,
+              "hasSap": false,
+              "hasIcf": false,
+              "label": "Study Protocol",
+              "date": "2019-02-26",
+              "uploadDate": "2019-05-06T18:11",
+              "filename": "Prot_001.pdf",
+              "size": 661760
+            },
+            {
+              "typeAbbrev": "SAP",
+              "hasProtocol": false,
+              "hasSap": true,
+              "hasIcf": false,
+              "label": "Statistical Analysis Plan",
+              "date": "2019-05-01",
+              "uploadDate": "2019-05-06T17:55",
+              "filename": "SAP_000.pdf",
+              "size": 96431
+            }
+          ]
+        }
+      },
+      "derivedSection": {
+        "miscInfoModule": {
+          "versionHolder": "2026-11-06"
+        },
+        "conditionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D002318",
+              "term": "Cardiovascular Diseases"
+            },
+            {
+              "id": "D054058",
+              "term": "Acute Coronary Syndrome"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D017202",
+              "term": "Myocardial Ischemia"
+            },
+            {
+              "id": "D006331",
+              "term": "Heart Diseases"
+            },
+            {
+              "id": "D014652",
+              "term": "Vascular Diseases"
+            }
+          ]
+        },
+        "interventionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D010595",
+              "term": "Pharmacists"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D006282",
+              "term": "Health Personnel"
+            },
+            {
+              "id": "D005159",
+              "term": "Health Care Facilities Workforce and Services"
+            }
+          ]
+        }
+      },
+      "hasResults": true
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01511939",
+          "orgStudyIdInfo": {
+            "id": "ATCCTCP-1"
+          },
+          "organization": {
+            "fullName": "Arthritis Treatment Center, Maryland",
+            "class": "OTHER"
+          },
+          "briefTitle": "Trial to See if Topical Pennsaid for Knee Pain Affects Coagulation Values in Patients Who Are Also Taking Anticoagulants",
+          "officialTitle": "Single Center, Open-label Study of Effect of PENNSAID (Diclofenac Sodium Solution Topical) on Coagulation Parameters (PT, PTT, INR and Platelet Function) in Patients With Moderate to Severe Osteoarthritis Pain of the Knee Taking Anticoagulant Medication",
+          "acronym": "ATCCTCP-1"
+        },
+        "statusModule": {
+          "statusVerifiedDate": "2014-06",
+          "overallStatus": "COMPLETED",
+          "expandedAccessInfo": {
+            "hasExpandedAccess": false
+          },
+          "startDateStruct": {
+            "date": "2012-02"
+          },
+          "primaryCompletionDateStruct": {
+            "date": "2013-05",
+            "type": "ACTUAL"
+          },
+          "completionDateStruct": {
+            "date": "2013-05",
+            "type": "ACTUAL"
+          },
+          "studyFirstSubmitDate": "2012-01-09",
+          "studyFirstSubmitQcDate": "2012-01-18",
+          "studyFirstPostDateStruct": {
+            "date": "2012-01-19",
+            "type": "ESTIMATED"
+          },
+          "resultsFirstSubmitDate": "2014-03-26",
+          "resultsFirstSubmitQcDate": "2014-06-24",
+          "resultsFirstPostDateStruct": {
+            "date": "2014-06-26",
+            "type": "ESTIMATED"
+          },
+          "lastUpdateSubmitDate": "2014-06-24",
+          "lastUpdatePostDateStruct": {
+            "date": "2014-06-26",
+            "type": "ESTIMATED"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "responsibleParty": {
+            "type": "SPONSOR_INVESTIGATOR",
+            "investigatorFullName": "Nathan Wei, MD, FACP, FACR:",
+            "investigatorTitle": "Nathan Wei, MD, FACP, FACR",
+            "investigatorAffiliation": "Arthritis Treatment Center, Maryland"
+          },
+          "leadSponsor": {
+            "name": "Nathan Wei, MD, FACP, FACR:",
+            "class": "OTHER"
+          },
+          "collaborators": [
+            {
+              "name": "Medtronic - MITG",
+              "class": "INDUSTRY"
+            },
+            {
+              "name": "Arthritis Treatment Center, Maryland",
+              "class": "OTHER"
+            }
+          ]
+        },
+        "oversightModule": {
+          "oversightHasDmc": false
+        },
+        "descriptionModule": {
+          "briefSummary": "The purpose of this study is to see if using a topical nonsteroidal antiinflammatory drug (Pennsaid) to treat osteoarthritis knee pain will affect coagulation values in patients who are also taking anticoagulant or antithrombotic medications.",
+          "detailedDescription": "Open-label active treatment Phase III study of Pennsaid (diclofenac sodium 1.5% topical solution) to determine the effects on coagulation parameters in patients who are equal to or greater than 55 years of age with moderate to severe osteoarthritis knee pain and who are also taking warfarin, dabigatran, or aspirin and/or clopidogrel."
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Osteoarthritis of the Knee",
+            "Coagulopathy"
+          ],
+          "keywords": [
+            "Knee pain",
+            "Anticoagulant",
+            "Warfarin",
+            "Dabigatran",
+            "Clopidogrel",
+            "Aspirin",
+            "Topical NSAID",
+            "Osteoarthritis"
+          ]
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE3"
+          ],
+          "designInfo": {
+            "allocation": "NON_RANDOMIZED",
+            "interventionModel": "SINGLE_GROUP",
+            "primaryPurpose": "SUPPORTIVE_CARE",
+            "maskingInfo": {
+              "masking": "NONE"
+            }
+          },
+          "enrollmentInfo": {
+            "count": 22,
+            "type": "ACTUAL"
+          }
+        },
+        "armsInterventionsModule": {
+          "armGroups": [
+            {
+              "label": "Pennsaid, warfarin",
+              "type": "OTHER",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if osteoarthritis pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of warfarin for at least 2 months",
+              "interventionNames": [
+                "Drug: Pennsaid"
+              ]
+            },
+            {
+              "label": "Pennsaid, dabigatran",
+              "type": "OTHER",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if osteoarthritis pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of dabigatran for at least 2 months",
+              "interventionNames": [
+                "Drug: Pennsaid"
+              ]
+            },
+            {
+              "label": "Pennsaid, aspirin and/or clopidogrel",
+              "type": "OTHER",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if osteoarthritis pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of aspirin and/or clopidogrel for at least 2 months",
+              "interventionNames": [
+                "Drug: Pennsaid"
+              ]
+            }
+          ],
+          "interventions": [
+            {
+              "type": "DRUG",
+              "name": "Pennsaid",
+              "description": "Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if osteoarthritis pain is present bilaterally) 4 times a day for a 4 week active treatment period.",
+              "armGroupLabels": [
+                "Pennsaid, aspirin and/or clopidogrel",
+                "Pennsaid, dabigatran",
+                "Pennsaid, warfarin"
+              ],
+              "otherNames": [
+                "Pennsaid 1.5%",
+                "Diclofenac sodium 1.5% topical solution",
+                "Topical nonsteroidal antiinflammatory drug",
+                "Topical NSAID"
+              ]
+            }
+          ]
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "Change From Baseline to Week 4 in Laboratory Results of Prothrombin Time (PT)",
+              "description": "PT will be evaluated to determine if there is any significant effect of Pennsaid on coagulation parameters.",
+              "timeFrame": "Baseline to week 4"
+            },
+            {
+              "measure": "Change From Baseline to Week 4 in Laboratory Results of International Normalized Ratio (INR)",
+              "description": "INR will be evaluated to determine if there is any significant effect of Pennsaid on coagulation parameters.",
+              "timeFrame": "Baseline to Week 4"
+            },
+            {
+              "measure": "Change From Baseline to Week 4 in Laboratory Results of Partial Thromboplastin Time (PTT)",
+              "description": "PTT will be evaluated to determine if there is any significant effect of Pennsaid on coagulation parameters.",
+              "timeFrame": "Baseline to Week 4"
+            },
+            {
+              "measure": "Change From Baseline to Week 4 in Laboratory Results of Platelet Aggregation",
+              "description": "Platelet Aggregation will be evaluated to determine if there is any significant effect of Pennsaid on coagulation parameters.",
+              "timeFrame": "Baseline to Week 4"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "Inclusion Criteria:\n\n* Male or female adults \\> than or equal to 55\n* Ambulatory subjects with moderate to severe osteoarthritis (OA) of the knee with symptoms and knee pain for at least 3 months and pain on the majority of days in the last 30 days.\n* Subjects with bilateral knee OA, the more symptomatic knee is the index knee and PENNSAID can be applied on both knees if both are affected.\n* Radiographic evidence of Kellgren-Lawrence Grade 2-4 within the past 2 years.\n* Currently on a stable dose of anticoagulant therapy (warfarin, dabigatran, aspirin or clopidogrel) for the past 2 months and expected to remain on current dose for the six week duration of the study.\n* If currently taking oral nonsteroidal antiinflammatory drug (NSAID) and/or acetaminophen for OA knee pain, must be taking it for at least an average of 25 days per month.\n* Those currently taking oral NSAID must be willing to perform a 7 day washout to be eligible to be enrolled into the study.\n* A pain score of \\> than 40mm on the Patient Pain Visual Analog Scale (VAS) (100 mm scale) at screening and baseline visit.\n* Able to comply with the study and give informed consent prior to performance of any study procedures.\n* Able to read, write and understand English.\n\nExclusion Criteria:\n\n* Unwilling to abstain from oral NSAIDs and/or other analgesic medication except for acetaminophen as rescue medication. Subjects taking low dose aspirin for cardiovascular health may remain on their stable dose throughout the study.\n* Unwilling to abstain from taking \\< than or equal to 1500mg of acetaminophen a day for rescue medication purposes during the 6 week course of the trial.\n* Using a handicap assistance device i.e. cane, walker \\> than or equal to 50% of the time.\n* Undergoing new physical therapy or participating in a weight loss or exercise program that has not been stable for at least 3 months prior to screening and won't remain stable during participation in study.\n* History or diagnosis of an inflammatory arthritis i.e. rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, arthritis associated with inflammatory bowel disease, sarcoidosis, or amyloidosis.\n* Known or clinically suspected infection and human immunodeficiency virus (HIV), or hepatitis C or B viruses.\n* History of abnormal laboratory results \\> that or equal to 2.5 x upper limit of normal (ULN) indicative of any significant medical disease which in the opinion of the investigator, would preclude the subjects participation in the study.\n* Any of the following abnormal laboratory results during screening:\n* Alanine aminotransferase (ALT) and aspartate aminotransferase (AST) \\> than or equal to 2.5 x ULN\n* Hemoglobin \\< than 11.5 g/dL (female) or \\< 13.2 g/dL (male)\n* White blood cell count (WBC) \\< than 3500 cells/mm3\n* Lymphocyte count \\< than or equal to 1000 cels/mm3\n* Serum creatinine \\> than or equal 1.5 x ULN\n* Platelet count below the central laboratory lower limit of normal (LLN)\n* Coagulation tests (Prothrombin Time (PT), Partial Thromboplastin Time (PTT), International Normalized Ratio (INR), Platelet Aggregation) requiring an alteration in anticoagulant dosage.\n* Skin breakdown or rash at knee where topical PENNSAID is to be applied.\n* Other serious uncontrolled non-malignant, significant, acute or chronic medical or psychiatric illness that, in judgment of investigator, could compromise subject safety, limit subject's ability to complete study and/or compromise the objectives of study.\n* History of malignancy in the past 5 years with exception of resected basal cell carcinoma, squamous cell carcinoma of the skin, or resected cervical atypia or carcinoma in situ.\n* History of drug or alcohol dependence or abuse in the past 3 years.",
+          "healthyVolunteers": false,
+          "sex": "ALL",
+          "minimumAge": "55 Years",
+          "stdAges": [
+            "ADULT",
+            "OLDER_ADULT"
+          ]
+        },
+        "contactsLocationsModule": {
+          "overallOfficials": [
+            {
+              "name": "Nathan Wei, MD,FACP,FACR",
+              "affiliation": "Arthritis Treatment Center, Frederick, Maryland, United States, 21702",
+              "role": "PRINCIPAL_INVESTIGATOR"
+            }
+          ],
+          "locations": [
+            {
+              "facility": "Arthritis Treatment Center",
+              "city": "Frederick",
+              "state": "Maryland",
+              "zip": "21702",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 39.41427,
+                "lon": -77.41054
+              }
+            }
+          ]
+        }
+      },
+      "resultsSection": {
+        "participantFlowModule": {
+          "groups": [
+            {
+              "id": "FG000",
+              "title": "Pennsaid, Warfarin",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if osteoarthritis (OA) pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of warfarin for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+            },
+            {
+              "id": "FG001",
+              "title": "Pennsaid, Dabigatran",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of dabigatran for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+            },
+            {
+              "id": "FG002",
+              "title": "Pennsaid, Aspirin and/or Clopidogrel",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of aspirin and/or clopidogrel for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+            }
+          ],
+          "periods": [
+            {
+              "title": "Overall Study",
+              "milestones": [
+                {
+                  "type": "STARTED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "comment": "Includes 1 subject who was also taking aspirin.",
+                      "numSubjects": "9"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "comment": "Includes one patient who was also taking aspirin.",
+                      "numSubjects": "5"
+                    },
+                    {
+                      "groupId": "FG002",
+                      "numSubjects": "8"
+                    }
+                  ]
+                },
+                {
+                  "type": "COMPLETED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "7"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "4"
+                    },
+                    {
+                      "groupId": "FG002",
+                      "numSubjects": "8"
+                    }
+                  ]
+                },
+                {
+                  "type": "NOT COMPLETED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "2"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "1"
+                    },
+                    {
+                      "groupId": "FG002",
+                      "numSubjects": "0"
+                    }
+                  ]
+                }
+              ],
+              "dropWithdraws": [
+                {
+                  "type": "Withdrawal by Subject",
+                  "reasons": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "2"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "1"
+                    },
+                    {
+                      "groupId": "FG002",
+                      "numSubjects": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "baselineCharacteristicsModule": {
+          "populationDescription": "One subject in the warfarin group and one subject in the dabigatran group were also taking aspirin. For the Outcome measures, these two subjects were also included in the aspirin and/or clopidogrel group.",
+          "groups": [
+            {
+              "id": "BG000",
+              "title": "Pennsaid, Warfarin",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of warfarin for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+            },
+            {
+              "id": "BG001",
+              "title": "Pennsaid, Dabigatran",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of dabigatran for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+            },
+            {
+              "id": "BG002",
+              "title": "Pennsaid, Aspirin and/or Clopidogrel",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of aspirin and/or clopidogrel for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+            },
+            {
+              "id": "BG003",
+              "title": "Total",
+              "description": "Total of all reporting groups"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "BG000",
+                  "value": "9"
+                },
+                {
+                  "groupId": "BG001",
+                  "value": "5"
+                },
+                {
+                  "groupId": "BG002",
+                  "value": "8"
+                },
+                {
+                  "groupId": "BG003",
+                  "value": "22"
+                }
+              ]
+            }
+          ],
+          "measures": [
+            {
+              "title": "Age, Customized",
+              "paramType": "NUMBER",
+              "unitOfMeasure": "participants",
+              "classes": [
+                {
+                  "title": "> / = 55 years",
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "9"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "5"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "8"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "22"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Sex: Female, Male",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "title": "Female",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "8"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "2"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "5"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "15"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Male",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "1"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "3"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "3"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "7"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Region of Enrollment",
+              "paramType": "NUMBER",
+              "unitOfMeasure": "participants",
+              "classes": [
+                {
+                  "title": "United States",
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "9"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "5"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "8"
+                        },
+                        {
+                          "groupId": "BG003",
+                          "value": "22"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "outcomeMeasuresModule": {
+          "outcomeMeasures": [
+            {
+              "type": "PRIMARY",
+              "title": "Change From Baseline to Week 4 in Laboratory Results of Prothrombin Time (PT)",
+              "description": "PT will be evaluated to determine if there is any significant effect of Pennsaid on coagulation parameters.",
+              "populationDescription": "Two subjects who completed the study were taking both an anticoagulant medication and aspirin. For this analysis, the subject who was taking warfarin and aspirin was included only in the \"Pennsaid, warfarin\" group, and the subject who was taking dabigatran and aspirin was included only in the \"Pennsaid, dabigatran\" group.",
+              "reportingStatus": "POSTED",
+              "paramType": "MEAN",
+              "dispersionType": "Full Range",
+              "unitOfMeasure": "seconds",
+              "timeFrame": "Baseline to week 4",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Pennsaid, Warfarin",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of warfarin for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                },
+                {
+                  "id": "OG001",
+                  "title": "Pennsaid, Dabigatran",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of dabigatran for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                },
+                {
+                  "id": "OG002",
+                  "title": "Pennsaid, Aspirin and/or Clopidogrel",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of aspirin and/or clopidogrel for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                }
+              ],
+              "denoms": [
+                {
+                  "units": "Participants",
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "7"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "4"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "8"
+                    }
+                  ]
+                }
+              ],
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "OG000",
+                          "value": "6.97",
+                          "lowerLimit": "0.20",
+                          "upperLimit": "10.80"
+                        },
+                        {
+                          "groupId": "OG001",
+                          "value": "0.96",
+                          "lowerLimit": "-2.40",
+                          "upperLimit": "2.30"
+                        },
+                        {
+                          "groupId": "OG002",
+                          "value": "-0.04",
+                          "lowerLimit": "-0.80",
+                          "upperLimit": "0.70"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "PRIMARY",
+              "title": "Change From Baseline to Week 4 in Laboratory Results of International Normalized Ratio (INR)",
+              "description": "INR will be evaluated to determine if there is any significant effect of Pennsaid on coagulation parameters.",
+              "populationDescription": "Two subjects who completed the study were taking both an anticoagulant medication and aspirin. For this analysis, the subject who was taking warfarin and aspirin was included only in the \"Pennsaid, warfarin\" group, and the subject who was taking dabigatran and aspirin was included only in the \"Pennsaid, dabigatran\" group.",
+              "reportingStatus": "POSTED",
+              "paramType": "MEAN",
+              "dispersionType": "Full Range",
+              "unitOfMeasure": "ratio",
+              "timeFrame": "Baseline to Week 4",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Pennsaid, Warfarin",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of warfarin for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                },
+                {
+                  "id": "OG001",
+                  "title": "Pennsaid, Dabigatran",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of dabigatran for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                },
+                {
+                  "id": "OG002",
+                  "title": "Pennsaid, Aspirin and/or Clopidogrel",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of aspirin and/or clopidogrel for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                }
+              ],
+              "denoms": [
+                {
+                  "units": "Participants",
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "7"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "4"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "8"
+                    }
+                  ]
+                }
+              ],
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "OG000",
+                          "value": "0.63",
+                          "lowerLimit": "0.01",
+                          "upperLimit": "1.00"
+                        },
+                        {
+                          "groupId": "OG001",
+                          "value": "0.09",
+                          "lowerLimit": "-0.21",
+                          "upperLimit": "0.20"
+                        },
+                        {
+                          "groupId": "OG002",
+                          "value": "0.00",
+                          "lowerLimit": "-0.07",
+                          "upperLimit": "0.07"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "PRIMARY",
+              "title": "Change From Baseline to Week 4 in Laboratory Results of Partial Thromboplastin Time (PTT)",
+              "description": "PTT will be evaluated to determine if there is any significant effect of Pennsaid on coagulation parameters.",
+              "populationDescription": "Two subjects who completed the study were taking both an anticoagulant medication and aspirin. For this analysis, the subject who was taking warfarin and aspirin was included only in the \"Pennsaid, warfarin\" group, and the subject who was taking dabigatran and aspirin was included only in the \"Pennsaid, dabigatran\" group.",
+              "reportingStatus": "POSTED",
+              "paramType": "MEAN",
+              "dispersionType": "Full Range",
+              "unitOfMeasure": "Seconds",
+              "timeFrame": "Baseline to Week 4",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Pennsaid, Warfarin",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of warfarin for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                },
+                {
+                  "id": "OG001",
+                  "title": "Pennsaid, Dabigatran",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of dabigatran for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                },
+                {
+                  "id": "OG002",
+                  "title": "Pennsaid, Aspirin and/or Clopidogrel",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of aspirin and/or clopidogrel for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                }
+              ],
+              "denoms": [
+                {
+                  "units": "Participants",
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "7"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "4"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "8"
+                    }
+                  ]
+                }
+              ],
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "OG000",
+                          "value": "2.68",
+                          "lowerLimit": "-1.20",
+                          "upperLimit": "6.30"
+                        },
+                        {
+                          "groupId": "OG001",
+                          "value": "1.50",
+                          "lowerLimit": "-5.80",
+                          "upperLimit": "7.20"
+                        },
+                        {
+                          "groupId": "OG002",
+                          "value": "-0.29",
+                          "lowerLimit": "-2.90",
+                          "upperLimit": "2.30"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "PRIMARY",
+              "title": "Change From Baseline to Week 4 in Laboratory Results of Platelet Aggregation",
+              "description": "Platelet Aggregation will be evaluated to determine if there is any significant effect of Pennsaid on coagulation parameters.",
+              "populationDescription": "For this analysis, the subject who was taking warfarin and aspirin was included in both the \"Pennsaid, warfarin\" group and the \"Pennsaid, aspirin and/or clopidogrel\" group, and the subject who was taking dabigatran and aspirin was included in both the \"Pennsaid, dabigatran\" group and the \"Pennsaid, aspirin and/or clopidogrel\" group.",
+              "reportingStatus": "POSTED",
+              "paramType": "MEAN",
+              "dispersionType": "Full Range",
+              "unitOfMeasure": "Seconds",
+              "timeFrame": "Baseline to Week 4",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Pennsaid, Warfarin",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of warfarin for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                },
+                {
+                  "id": "OG001",
+                  "title": "Pennsaid, Dabigatran",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of dabigatran for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                },
+                {
+                  "id": "OG002",
+                  "title": "Pennsaid, Aspirin and/or Clopidogrel",
+                  "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of aspirin and/or clopidogrel for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period."
+                }
+              ],
+              "denoms": [
+                {
+                  "units": "Participants",
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "7"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "4"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "10"
+                    }
+                  ]
+                }
+              ],
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "OG000",
+                          "value": "8.14",
+                          "lowerLimit": "-16.00",
+                          "upperLimit": "43.00"
+                        },
+                        {
+                          "groupId": "OG001",
+                          "value": "-39.25",
+                          "lowerLimit": "-110.00",
+                          "upperLimit": "-4.00"
+                        },
+                        {
+                          "groupId": "OG002",
+                          "value": "-13.30",
+                          "lowerLimit": "-155.00",
+                          "upperLimit": "117.00"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "adverseEventsModule": {
+          "frequencyThreshold": "0",
+          "eventGroups": [
+            {
+              "id": "EG000",
+              "title": "Pennsaid, Warfarin",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of warfarin for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period.",
+              "seriousNumAffected": 1,
+              "seriousNumAtRisk": 9,
+              "otherNumAffected": 6,
+              "otherNumAtRisk": 9
+            },
+            {
+              "id": "EG001",
+              "title": "Pennsaid, Dabigatran",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of dabigatran for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period.",
+              "seriousNumAffected": 0,
+              "seriousNumAtRisk": 5,
+              "otherNumAffected": 0,
+              "otherNumAtRisk": 5
+            },
+            {
+              "id": "EG002",
+              "title": "Pennsaid, Aspirin and/or Clopidogrel",
+              "description": "Pennsaid 1.5%, 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period in a subject who has been taking a stable dose of aspirin and/or clopidogrel for at least 2 months\n\nPennsaid: Administered 10 drops x 4 until 40 drops applied topically to index knee (and also non-index knee if OA pain is present bilaterally) 4 times a day for a 4 week active treatment period.",
+              "seriousNumAffected": 0,
+              "seriousNumAtRisk": 10,
+              "otherNumAffected": 4,
+              "otherNumAtRisk": 10
+            }
+          ],
+          "seriousEvents": [
+            {
+              "term": "Epistaxis",
+              "organSystem": "General disorders",
+              "notes": "Epistaxis resulting in hospitalization and blood transfusion; assessed by Principal Investigator as not related to Pennsaid because patient had a history of sinus surgery which has resulted in a history of occasional severe epistaxis.",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 10
+                }
+              ]
+            }
+          ],
+          "otherEvents": [
+            {
+              "term": "Bowel Impaction",
+              "organSystem": "Gastrointestinal disorders",
+              "notes": "Assessed by Principal Investigator as not related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Swelling of lower extremities",
+              "organSystem": "Vascular disorders",
+              "notes": "Assessed by Principal Investigator as possibly related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Epistaxis",
+              "organSystem": "General disorders",
+              "notes": "Assessed by Principal Investigator as not related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Broken Tooth",
+              "organSystem": "General disorders",
+              "notes": "Assessed by Principal Investigator as not related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Nausea",
+              "organSystem": "Gastrointestinal disorders",
+              "notes": "Assessed by Principal Investigator as possibly related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Shortness of breath",
+              "organSystem": "Respiratory, thoracic and mediastinal disorders",
+              "notes": "Assessed by Principal Investigator as not likely related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Rash on lower extremities",
+              "organSystem": "Skin and subcutaneous tissue disorders",
+              "notes": "Assessed by Principal Investigator as possibly related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Influenza",
+              "organSystem": "Infections and infestations",
+              "notes": "Assessed by Principal Investigator as not related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 2,
+                  "numAffected": 2,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Gastroenteritis",
+              "organSystem": "Gastrointestinal disorders",
+              "notes": "Assessed by Principal Investigator as not related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Constipation",
+              "organSystem": "Gastrointestinal disorders",
+              "notes": "Assessed by Principal Investigator as not related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Metallic taste in mouth",
+              "organSystem": "General disorders",
+              "notes": "Assessed by Principal Investigator as possibly related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Headache",
+              "organSystem": "General disorders",
+              "notes": "Assessed by Principal Investigator as possibly related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Hyperglycemia",
+              "organSystem": "Endocrine disorders",
+              "notes": "Assessed by Principal Investigator as not likely related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 10
+                }
+              ]
+            },
+            {
+              "term": "Pneumonia",
+              "organSystem": "Respiratory, thoracic and mediastinal disorders",
+              "notes": "Assessed by Principal Investigator as not related to Pennsaid",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 9
+                },
+                {
+                  "groupId": "EG001",
+                  "numEvents": 0,
+                  "numAffected": 0,
+                  "numAtRisk": 5
+                },
+                {
+                  "groupId": "EG002",
+                  "numEvents": 1,
+                  "numAffected": 1,
+                  "numAtRisk": 10
+                }
+              ]
+            }
+          ]
+        },
+        "moreInfoModule": {
+          "certainAgreement": {
+            "piSponsorEmployee": true
+          },
+          "pointOfContact": {
+            "title": "Manager, Clinical Research Department",
+            "organization": "Arthritis Treatment Center",
+            "email": "tgillis@arthritistreatmentcenter.com",
+            "phone": "301-624-1168"
+          }
+        }
+      },
+      "derivedSection": {
+        "miscInfoModule": {
+          "versionHolder": "2026-11-06"
+        },
+        "conditionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D020370",
+              "term": "Osteoarthritis, Knee"
+            },
+            {
+              "id": "D020141",
+              "term": "Hemostatic Disorders"
+            },
+            {
+              "id": "D010003",
+              "term": "Osteoarthritis"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D001168",
+              "term": "Arthritis"
+            },
+            {
+              "id": "D007592",
+              "term": "Joint Diseases"
+            },
+            {
+              "id": "D009140",
+              "term": "Musculoskeletal Diseases"
+            },
+            {
+              "id": "D012216",
+              "term": "Rheumatic Diseases"
+            },
+            {
+              "id": "D014652",
+              "term": "Vascular Diseases"
+            },
+            {
+              "id": "D002318",
+              "term": "Cardiovascular Diseases"
+            },
+            {
+              "id": "D006474",
+              "term": "Hemorrhagic Disorders"
+            },
+            {
+              "id": "D006402",
+              "term": "Hematologic Diseases"
+            },
+            {
+              "id": "D006425",
+              "term": "Hemic and Lymphatic Diseases"
+            }
+          ]
+        },
+        "interventionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D004008",
+              "term": "Diclofenac"
+            },
+            {
+              "id": "D012996",
+              "term": "Solutions"
+            },
+            {
+              "id": "D000894",
+              "term": "Anti-Inflammatory Agents, Non-Steroidal"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D010648",
+              "term": "Phenylacetates"
+            },
+            {
+              "id": "D000146",
+              "term": "Acids, Carbocyclic"
+            },
+            {
+              "id": "D002264",
+              "term": "Carboxylic Acids"
+            },
+            {
+              "id": "D009930",
+              "term": "Organic Chemicals"
+            },
+            {
+              "id": "D004364",
+              "term": "Pharmaceutical Preparations"
+            },
+            {
+              "id": "D018712",
+              "term": "Analgesics, Non-Narcotic"
+            },
+            {
+              "id": "D000700",
+              "term": "Analgesics"
+            },
+            {
+              "id": "D018689",
+              "term": "Sensory System Agents"
+            },
+            {
+              "id": "D018373",
+              "term": "Peripheral Nervous System Agents"
+            },
+            {
+              "id": "D045505",
+              "term": "Physiological Effects of Drugs"
+            },
+            {
+              "id": "D020228",
+              "term": "Pharmacologic Actions"
+            },
+            {
+              "id": "D020164",
+              "term": "Chemical Actions and Uses"
+            },
+            {
+              "id": "D000893",
+              "term": "Anti-Inflammatory Agents"
+            },
+            {
+              "id": "D045506",
+              "term": "Therapeutic Uses"
+            },
+            {
+              "id": "D018501",
+              "term": "Antirheumatic Agents"
+            }
+          ]
+        }
+      },
+      "hasResults": true
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00687076",
+          "orgStudyIdInfo": {
+            "id": "1400"
+          },
+          "secondaryIdInfos": [
+            {
+              "id": "R01HL075824",
+              "type": "NIH",
+              "link": "https://reporter.nih.gov/quickSearch/R01HL075824"
+            }
+          ],
+          "organization": {
+            "fullName": "Baylor College of Medicine",
+            "class": "OTHER"
+          },
+          "briefTitle": "Effectiveness of Intensive Lipid Modification Medication in Preventing the Progression of Peripheral Arterial Disease (The ELIMIT Study)",
+          "officialTitle": "Effect of Lipid Modification on Peripheral Arterial Disease After Endovascular Intervention (\"The ELIMIT Trial\")"
+        },
+        "statusModule": {
+          "statusVerifiedDate": "2020-01",
+          "overallStatus": "COMPLETED",
+          "expandedAccessInfo": {
+            "hasExpandedAccess": false
+          },
+          "startDateStruct": {
+            "date": "2004-04"
+          },
+          "primaryCompletionDateStruct": {
+            "date": "2010-12",
+            "type": "ACTUAL"
+          },
+          "completionDateStruct": {
+            "date": "2010-12",
+            "type": "ACTUAL"
+          },
+          "studyFirstSubmitDate": "2008-05-28",
+          "studyFirstSubmitQcDate": "2008-05-28",
+          "studyFirstPostDateStruct": {
+            "date": "2008-05-30",
+            "type": "ESTIMATED"
+          },
+          "resultsFirstSubmitDate": "2014-07-16",
+          "resultsFirstSubmitQcDate": "2014-08-07",
+          "resultsFirstPostDateStruct": {
+            "date": "2014-08-25",
+            "type": "ESTIMATED"
+          },
+          "lastUpdateSubmitDate": "2020-01-22",
+          "lastUpdatePostDateStruct": {
+            "date": "2020-02-06",
+            "type": "ACTUAL"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "responsibleParty": {
+            "type": "PRINCIPAL_INVESTIGATOR",
+            "investigatorFullName": "Christie Ballantyne",
+            "investigatorTitle": "Professor",
+            "investigatorAffiliation": "Baylor College of Medicine"
+          },
+          "leadSponsor": {
+            "name": "Baylor College of Medicine",
+            "class": "OTHER"
+          },
+          "collaborators": [
+            {
+              "name": "National Heart, Lung, and Blood Institute (NHLBI)",
+              "class": "NIH"
+            }
+          ]
+        },
+        "oversightModule": {
+          "oversightHasDmc": true
+        },
+        "descriptionModule": {
+          "briefSummary": "Peripheral arterial disease (PAD) occurs when arteries become narrowed or hardened because of a build-up of plaque or fat deposits. PAD develops most often in arteries in the legs, which can result in reduced blood flow to the legs and feet, occasionally causing leg pain and fatigue. Early identification of PAD and treatment with lifestyle changes or medications can help to keep legs healthy and lower risk for heart attack and stroke, but endovascular or surgical procedures may be necessary for people with severe PAD. Even after endovascular intervention, PAD symptoms must be continually monitored to prevent the development and progression of blockages in the arteries. The best approach for monitoring symptoms is still undetermined. This study will compare the effectiveness of an intensive combination of lipid modifying medications versus standard lipid modifying medications in treating people with significant PAD who have had an endovascular intervention.",
+          "detailedDescription": "PAD occurring in the legs is a serious disease that affects about 8 million people in the United States. A person's risk for PAD increases with age but can also be raised by smoking or having diabetes, high blood pressure, high cholesterol, or heart disease. Symptoms of PAD may include leg cramps or pain while walking, foot pain while resting, and skin wounds or ulcers on feet and toes. However, because only about one in three people with PAD knows to seek treatment for these symptoms, many end up with advanced disease that requires significant medical intervention, such as an endovascular or other surgical procedure to open the blocked arteries. While these procedures are helpful in treating people with severe PAD, lifestyle modifications and certain medications are also needed for long-term management of PAD and improved quality of life. An intensive combination of lipid modifying medications may be superior to standard lipid modifying medications in reducing PAD-associated risk factors and improving overall health in people with PAD. This study will compare the effectiveness of an intensive combination of lipid modifying medications versus standard lipid modifying medications in preventing blockages and re-narrowing of arteries in people with significant PAD who have had an endovascular intervention.\n\nParticipation in this study will last a minimum of 2 years and a maximum of 5 years. All participants will first undergo baseline assessments that will include a medical history, vascular and physical exam, electrocardiograph (EKG), magnetic resonance imaging (MRI) scan, 3D ultrasound, blood pressure measurement test in the legs, treadmill walking distance test, urine test, blood draw, and questionnaires. A portion of the blood draw will be used for DNA analysis and genetic testing.\n\nParticipants who have not had an endovascular intervention in the 3 months before study entry will undergo a standard of care percutaneous transluminal angioplasty (PTA) procedure. First these, participants will complete a series of clinical review assessments that will include a review of social, vascular, and clinical history. Next, they will undergo the PTA procedure, which will involve the inflation and deflation of a small balloon in the area of the blocked artery. Additionally, participants may have a metal mesh tube called a stent placed in the blocked area, if deemed necessary by their physicians.\n\nAll participants will then be assigned randomly to receive standard care plus an intensive combination of lipid modifying medications (Simvastatin, Plavix, aspirin, Ezetimibe, and Niaspan) or standard lipid modifying medications with placebo (Simvastatin, Plavix, aspirin, placebo Ezetimibe, and placebo Niaspan). Participants will take their assigned medications daily for 24 months. Follow-up visits will occur at Day 10; Week 6; and Months, 6, 12, and 24 after beginning the study medications. During follow-up visits, participants will repeat the baseline assessments and the clinical review assessments from the pre-PTA visit. The Week 6 follow-up visit will include only a blood draw, questionnaires, and the clinical review assessments. Participants will also be contacted by phone to check their status every 2 to 3 months during treatment and every 6 months after treatment for up to 3 years."
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Peripheral Arterial Disease"
+          ],
+          "keywords": [
+            "Endovascular Intervention",
+            "MRI",
+            "Ultrasound",
+            "Cholesterol Medications",
+            "High Cholesterol",
+            "Peripheral Arterial disease",
+            "Claudication",
+            "Leg Pain",
+            "Niaspan",
+            "Extended Release Niacin",
+            "Zetia",
+            "Ezetimibe",
+            "Simvastatin",
+            "Zocor",
+            "Atorvastatin",
+            "Lipitor"
+          ]
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE4"
+          ],
+          "designInfo": {
+            "allocation": "RANDOMIZED",
+            "interventionModel": "PARALLEL",
+            "primaryPurpose": "HEALTH_SERVICES_RESEARCH",
+            "maskingInfo": {
+              "masking": "TRIPLE",
+              "whoMasked": [
+                "PARTICIPANT",
+                "CARE_PROVIDER",
+                "INVESTIGATOR"
+              ]
+            }
+          },
+          "enrollmentInfo": {
+            "count": 102,
+            "type": "ACTUAL"
+          }
+        },
+        "armsInterventionsModule": {
+          "armGroups": [
+            {
+              "label": "1",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive standard of medical care and treatment with intensive lipid modification using a statin plus Ezetimibe and Niaspan.",
+              "interventionNames": [
+                "Drug: Ezetimibe",
+                "Drug: Niaspan",
+                "Drug: Statin therapy",
+                "Behavioral: Standard care",
+                "Drug: Aspirin",
+                "Drug: Clopidogrel",
+                "Procedure: Percutaneous transluminal angioplasty (PTA)"
+              ]
+            },
+            {
+              "label": "2",
+              "type": "ACTIVE_COMPARATOR",
+              "description": "Participants will receive standard of medical care and treatment with standard lipid modifying medications plus placebo Ezetimibe and placebo Niaspan.",
+              "interventionNames": [
+                "Drug: Statin therapy",
+                "Behavioral: Standard care",
+                "Drug: Aspirin",
+                "Drug: Clopidogrel",
+                "Drug: Placebo Niaspan",
+                "Drug: Placebo Ezetimibe",
+                "Procedure: Percutaneous transluminal angioplasty (PTA)"
+              ]
+            }
+          ],
+          "interventions": [
+            {
+              "type": "DRUG",
+              "name": "Ezetimibe",
+              "description": "Daily dose of 10 mg of Ezetimibe",
+              "armGroupLabels": [
+                "1"
+              ],
+              "otherNames": [
+                "Zetia"
+              ]
+            },
+            {
+              "type": "DRUG",
+              "name": "Niaspan",
+              "description": "Daily dose of 1500 mg of Niaspan",
+              "armGroupLabels": [
+                "1"
+              ],
+              "otherNames": [
+                "Extended release niacin"
+              ]
+            },
+            {
+              "type": "DRUG",
+              "name": "Statin therapy",
+              "description": "Daily dose of 40 mg of Simvastatin (If unable to tolerate Simvastatin, participants will take a daily dose of Atorvastatin.)",
+              "armGroupLabels": [
+                "1",
+                "2"
+              ],
+              "otherNames": [
+                "Zocor",
+                "Liptior"
+              ]
+            },
+            {
+              "type": "BEHAVIORAL",
+              "name": "Standard care",
+              "description": "Standard of medical care for PAD",
+              "armGroupLabels": [
+                "1",
+                "2"
+              ]
+            },
+            {
+              "type": "DRUG",
+              "name": "Aspirin",
+              "description": "Daily dose of 325 mg of aspirin",
+              "armGroupLabels": [
+                "1",
+                "2"
+              ]
+            },
+            {
+              "type": "DRUG",
+              "name": "Clopidogrel",
+              "description": "Daily dose of 75 mg of clopidogrel for 3 months or as recommended by the primary care physician",
+              "armGroupLabels": [
+                "1",
+                "2"
+              ],
+              "otherNames": [
+                "Plavix"
+              ]
+            },
+            {
+              "type": "DRUG",
+              "name": "Placebo Niaspan",
+              "description": "Daily dose of 1500 mg of placebo Niaspan",
+              "armGroupLabels": [
+                "2"
+              ]
+            },
+            {
+              "type": "DRUG",
+              "name": "Placebo Ezetimibe",
+              "description": "Daily dose of 10 mg of placebo Ezetimibe",
+              "armGroupLabels": [
+                "2"
+              ]
+            },
+            {
+              "type": "PROCEDURE",
+              "name": "Percutaneous transluminal angioplasty (PTA)",
+              "description": "Participants who have not had an endovascular intervention in the 3 months before study entry will undergo PTA to mechanically open the artery blockages. This procedure will involve the inflation and deflation of a small balloon to open the blocked artery. Additionally, participants may have a metal mesh tube called a stent placed in the blocked area if deemed necessary by their physicians.",
+              "armGroupLabels": [
+                "1",
+                "2"
+              ],
+              "otherNames": [
+                "Endovascular intervention"
+              ]
+            }
+          ]
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "Effect of Intensive Lipid Modification Medication Therapy on Progression of Atherosclerosis and Restenosis of Femoral Arteries Measured Using High Resolution Magnetic Resonance Imaging (MRI) to Examine the Femoral Artery for Progression of Atherosclerosis",
+              "description": "The primary outcome variable was the change in superficial femoral artery (SFA) wall volume over 24-months, as determined by MRI. The 24-month changes in SFA lumen and SFA total vessel volumes were also analyzed.\n\nAnalysis details: A total of 102 patients were randomized. 87 patients completed baseline MRI. Between randomization and the baseline visit, 1 patient withdrew from the study, 8 patients opted out from baseline imaging, and 6 additional patients declined blood collection at baseline. The multilevel models (primary endpoint) used all available imaging data (n=91), including patients who only completed baseline imaging (n=20) or completed at least 2 imaging visits other than baseline (n=4).",
+              "timeFrame": "Measured at baseline and 24 Months"
+            }
+          ],
+          "secondaryOutcomes": [
+            {
+              "measure": "Change in Total Cholesterol (mg/dl) From Baseline to Month 12",
+              "description": "Lipids: Total cholesterol (mg/dl); Lipid Data at 12-Months (change from baseline) \\[mg/dl\\].",
+              "timeFrame": "Measured at baseline and 12 months"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "Inclusion Criteria:\n\n* Symptoms consistent with calf claudication and described as life style limiting\n* Objective evidence of peripheral artery disease (PAD): Ankle brachial index less than 0.9 OR other hemodynamic or imaging modalities confirming significant PAD\n* Baseline imaging reveals superficial femoral artery (SFA) disease starting at least 5 cm from the origin of the SFA\n* Agrees to be available for follow-up and is able to participate in all study testing procedures\n* Weight and/or body characteristics that will allow testing with MRI\n* No known contraindication to lipid lowering agents\n* Serum creatinine level less than 2.5 mg/dL\n* Scheduled to undergo or has already undergone an endovascular intervention of a de novo lesion in the SFA with an anticipated result that would satisfy hemodynamic stability OR is medically managed and does not require an intervention at this time\n* Compressible arteries (if not, has toe brachial index \\[TBI\\] less than 0.7)\n* Has/had an A, B, C lesion amendable to a catheter based therapy (prior bypass is acceptable)\n\nExclusion Criteria:\n\n* Non-atherosclerotic disease that is responsible for claudication\n* Unstable cardiac disease (e.g., unstable angina, heart attack within the 30 days before study entry, uncontrolled coronary heart failure, poorly controlled hypertension \\[systolic blood pressure greater than 180 mmHg and/or diastolic blood pressure greater than 100 mmHg\\], ventricular arrhythmias)\n* Pancreatitis\n* Documented hypercoagulable state\n* Clinically severe diabetic neuropathy\n* Rest pain, gangrene, or tissue loss\n* Active peptic ulcer disease or a recent gastrointestinal bleed that would prohibit the use of an anti-platelet (aspirin/Plavix)\n* Untreated or unsuccessfully controlled psychiatric disease\n* Chronic hepatic disease determined by aspartate transaminase (AST) and/or alanine transaminase (ALT) more than 3 times upper limit of normal (ULN) and/or total bilirubin more than 2 times ULN\n* Creatine phosphokinase (CPK) more than 3 times ULN (may be repeated once before patient is excluded)\n* Active gout symptoms or a uric acid level greater than 1.3 times ULN\n* Untreated hypothyroidism\n* Allergy to Plavix, nickel, titanium, niacin, Ezetimibe, statins, or their derivatives\n* Participated in another interventional study within the 30 days before study entry\n* Scheduled to undergo planned synchronous bilateral percutaneous transluminal angioplasty (PTA) procedures\n* Requires an above the ankle amputation\n* Scheduled to undergo elective surgery within 30 days after the PTA procedure\n* Has an implanted pacemaker, defibrillator, neural stimulator, brain clip, insulin pump, cochlear implant, or any other predetermined radiographic finding that would exclude MRI testing\n* Has claustrophobia that would prevent MRI testing\n* Recent drug or alcohol abuse history (less than 6 months before study entry) or is currently using or abusing excessive alcohol or drugs (excessive alcohol will be defined as greater than 14 drinks per week)\n* Past recipient of a cardiac, kidney, liver, lung, or other organ transplant (skin grafts are acceptable)",
+          "healthyVolunteers": false,
+          "sex": "ALL",
+          "minimumAge": "40 Years",
+          "maximumAge": "80 Years",
+          "stdAges": [
+            "ADULT",
+            "OLDER_ADULT"
+          ]
+        },
+        "contactsLocationsModule": {
+          "overallOfficials": [
+            {
+              "name": "Christie M. Ballantyne, MD",
+              "affiliation": "Baylor College of Medicine",
+              "role": "PRINCIPAL_INVESTIGATOR"
+            }
+          ],
+          "locations": [
+            {
+              "facility": "Baylor College of Medicine",
+              "city": "Houston",
+              "state": "Texas",
+              "zip": "77030",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 29.76328,
+                "lon": -95.36327
+              }
+            }
+          ]
+        },
+        "referencesModule": {
+          "references": [
+            {
+              "pmid": "17345122",
+              "type": "BACKGROUND",
+              "citation": "Lumsden AB, Rice TW, Chen C, Zhou W, Lin PH, Bray P, Morrisett J, Nambi V, Ballantyne C. Peripheral arterial occlusive disease: magnetic resonance imaging and the role of aggressive medical management. World J Surg. 2007 Apr;31(4):695-704. doi: 10.1007/s00268-006-0732-y."
+            },
+            {
+              "pmid": "24267254",
+              "type": "RESULT",
+              "citation": "Brunner G, Yang EY, Kumar A, Sun W, Virani SS, Negi SI, Murray T, Lin PH, Hoogeveen RC, Chen C, Dong JF, Kougias P, Taylor A, Lumsden AB, Nambi V, Ballantyne CM, Morrisett JD. The Effect of Lipid Modification on Peripheral Artery Disease after Endovascular Intervention Trial (ELIMIT). Atherosclerosis. 2013 Dec;231(2):371-7. doi: 10.1016/j.atherosclerosis.2013.09.034. Epub 2013 Oct 16."
+            },
+            {
+              "pmid": "21227624",
+              "type": "RESULT",
+              "citation": "Saunders J, Nambi V, Kimball KT, Virani SS, Morrisett JD, Lumsden AB, Ballantyne CM, Dong JF; ELIMIT Investigators. Variability and persistence of aspirin response in lower extremity peripheral arterial disease patients. J Vasc Surg. 2011 Mar;53(3):668-75. doi: 10.1016/j.jvs.2010.08.029. Epub 2011 Jan 12."
+            }
+          ],
+          "seeAlsoLinks": [
+            {
+              "label": "Click here for more information on peripheral arterial disease",
+              "url": "http://www.padcoalition.org/"
+            },
+            {
+              "label": "Click here for more information on peripheral arterial disease",
+              "url": "http://www.nhlbi.nih.gov/health/dci/Diseases/pad/pad_what.html"
+            }
+          ]
+        }
+      },
+      "resultsSection": {
+        "participantFlowModule": {
+          "groups": [
+            {
+              "id": "FG000",
+              "title": "Triple Therapy",
+              "description": "Participants will receive standard of medical care and treatment with intensive lipid modification using a statin plus Ezetimibe and Niaspan.\n\nEzetimibe: Daily dose of 10 mg of Ezetimibe\n\nNiaspan: Daily dose of 1500 mg of Niaspan\n\nStatin therapy: Daily dose of 40 mg of Simvastatin (If unable to tolerate Simvastatin, participants will take a daily dose of Atorvastatin.)\n\nStandard care: Standard of medical care for PAD\n\nAspirin: Daily dose of 325 mg of aspirin\n\nClopidogrel: Daily dose of 75 mg of clopidogrel for 3 months or as recommended by the primary care physician\n\nInclusion criteria were life-style-limiting claudication consistent with Fontaine Stage IIa/IIb or angiographically confirmed Trans-Atlantic Inter-Society Consensus A-C lesions in the SFA."
+            },
+            {
+              "id": "FG001",
+              "title": "Mono Therapy",
+              "description": "Participants will receive standard of medical care and treatment with standard lipid modifying medications plus placebo Ezetimibe and placebo Niaspan.\n\nStatin therapy: Daily dose of 40 mg of Simvastatin (If unable to tolerate Simvastatin, participants will take a daily dose of Atorvastatin.)\n\nStandard care: Standard of medical care for PAD\n\nAspirin: Daily dose of 325 mg of aspirin\n\nClopidogrel: Daily dose of 75 mg of clopidogrel for 3 months or as recommended by the primary care physician\n\nPlacebo Niaspan: Daily dose of 1500 mg of placebo Niaspan\n\nPlacebo Ezetimibe: Daily dose of 10 mg of placebo Ezetimibe\n\nInclusion criteria were life-style-limiting claudication consistent with Fontaine Stage IIa/IIb or angiographically confirmed Trans-Atlantic Inter-Society Consensus A-C lesions in the SFA."
+            }
+          ],
+          "periods": [
+            {
+              "title": "Overall Study",
+              "milestones": [
+                {
+                  "type": "STARTED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "51"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "51"
+                    }
+                  ]
+                },
+                {
+                  "type": "COMPLETED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "19"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "21"
+                    }
+                  ]
+                },
+                {
+                  "type": "NOT COMPLETED",
+                  "achievements": [
+                    {
+                      "groupId": "FG000",
+                      "numSubjects": "32"
+                    },
+                    {
+                      "groupId": "FG001",
+                      "numSubjects": "30"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "baselineCharacteristicsModule": {
+          "populationDescription": "Baseline characteristics were compared using analysis of variance, chi-square tests. Multilevel statistical models were used to analyze the primary outcome. Complete baseline characteristics were availabe for 95 patients. Between randomization and baseline visit, 1 patient withdrew from study, and 6 patients declined blood collection.",
+          "groups": [
+            {
+              "id": "BG000",
+              "title": "Triple Therapy",
+              "description": "Participants will receive standard of medical care and treatment with intensive lipid modification using a statin plus Ezetimibe and Niaspan.\n\nEzetimibe: Daily dose of 10 mg of Ezetimibe\n\nNiaspan: Daily dose of 1500 mg of Niaspan\n\nStatin therapy: Daily dose of 40 mg of Simvastatin (If unable to tolerate Simvastatin, participants will take a daily dose of Atorvastatin.)\n\nStandard care: Standard of medical care for PAD\n\nAspirin: Daily dose of 325 mg of aspirin\n\nClopidogrel: Daily dose of 75 mg of clopidogrel for 3 months or as recommended by the primary care physician\n\nInclusion criteria were life-style-limiting claudication consistent with Fontaine Stage IIa/IIb or angiographically confirmed Trans-Atlantic Inter-Society Consensus A-C lesions in the SFA."
+            },
+            {
+              "id": "BG001",
+              "title": "Mono Therapy",
+              "description": "Participants will receive standard of medical care and treatment with standard lipid modifying medications plus placebo Ezetimibe and placebo Niaspan.\n\nStatin therapy: Daily dose of 40 mg of Simvastatin (If unable to tolerate Simvastatin, participants will take a daily dose of Atorvastatin.)\n\nStandard care: Standard of medical care for PAD\n\nAspirin: Daily dose of 325 mg of aspirin\n\nClopidogrel: Daily dose of 75 mg of clopidogrel for 3 months or as recommended by the primary care physician\n\nPlacebo Niaspan: Daily dose of 1500 mg of placebo Niaspan\n\nPlacebo Ezetimibe: Daily dose of 10 mg of placebo Ezetimibe\n\nInclusion criteria were life-style-limiting claudication consistent with Fontaine Stage IIa/IIb or angiographically confirmed Trans-Atlantic Inter-Society Consensus A-C lesions in the SFA."
+            },
+            {
+              "id": "BG002",
+              "title": "Total",
+              "description": "Total of all reporting groups"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "BG000",
+                  "value": "47"
+                },
+                {
+                  "groupId": "BG001",
+                  "value": "48"
+                },
+                {
+                  "groupId": "BG002",
+                  "value": "95"
+                }
+              ]
+            }
+          ],
+          "measures": [
+            {
+              "title": "Age, Continuous",
+              "paramType": "MEAN",
+              "dispersionType": "STANDARD_DEVIATION",
+              "unitOfMeasure": "years",
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "62.1",
+                          "spread": "7.8"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "63.9",
+                          "spread": "7.1"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "63.0",
+                          "spread": "7.5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Sex: Female, Male",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "title": "Female",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "4"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "2"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "6"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Male",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "43"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "46"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "89"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Race (NIH/OMB)",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "title": "American Indian or Alaska Native",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "2"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "2"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Asian",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Native Hawaiian or Other Pacific Islander",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Black or African American",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "13"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "4"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "17"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "White",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "32"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "44"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "76"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "More than one race",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Unknown or Not Reported",
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "0"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "0"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Region of Enrollment",
+              "paramType": "NUMBER",
+              "unitOfMeasure": "participants",
+              "classes": [
+                {
+                  "title": "United States",
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "BG000",
+                          "value": "47"
+                        },
+                        {
+                          "groupId": "BG001",
+                          "value": "48"
+                        },
+                        {
+                          "groupId": "BG002",
+                          "value": "95"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "outcomeMeasuresModule": {
+          "outcomeMeasures": [
+            {
+              "type": "PRIMARY",
+              "title": "Effect of Intensive Lipid Modification Medication Therapy on Progression of Atherosclerosis and Restenosis of Femoral Arteries Measured Using High Resolution Magnetic Resonance Imaging (MRI) to Examine the Femoral Artery for Progression of Atherosclerosis",
+              "description": "The primary outcome variable was the change in superficial femoral artery (SFA) wall volume over 24-months, as determined by MRI. The 24-month changes in SFA lumen and SFA total vessel volumes were also analyzed.\n\nAnalysis details: A total of 102 patients were randomized. 87 patients completed baseline MRI. Between randomization and the baseline visit, 1 patient withdrew from the study, 8 patients opted out from baseline imaging, and 6 additional patients declined blood collection at baseline. The multilevel models (primary endpoint) used all available imaging data (n=91), including patients who only completed baseline imaging (n=20) or completed at least 2 imaging visits other than baseline (n=4).",
+              "populationDescription": "Multilevel models were used to describe changes over time in the MRI outcome variables and to compare the drug therapy groups. The advantage of multilevel models is the capability to use data with missing or irregularly timed observations, due to death or loss to follow-up, on the outcome variable.",
+              "reportingStatus": "POSTED",
+              "paramType": "MEAN",
+              "dispersionType": "Standard Error",
+              "unitOfMeasure": "mm^3, at 24-months",
+              "timeFrame": "Measured at baseline and 24 Months",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Triple Therapy",
+                  "description": "Participants will receive standard of medical care and treatment with intensive lipid modification using a statin plus Ezetimibe and Niaspan.\n\nEzetimibe: Daily dose of 10 mg of Ezetimibe\n\nNiaspan: Daily dose of 1500 mg of Niaspan\n\nStatin therapy: Daily dose of 40 mg of Simvastatin (If unable to tolerate Simvastatin, participants will take a daily dose of Atorvastatin.)\n\nStandard care: Standard of medical care for PAD\n\nAspirin: Daily dose of 325 mg of aspirin\n\nClopidogrel: Daily dose of 75 mg of clopidogrel for 3 months or as recommended by the primary care physician\n\nInclusion criteria were life-style-limiting claudication consistent with Fontaine Stage IIa/IIb or angiographically confirmed Trans-Atlantic Inter-Society Consensus A-C lesions in the SFA."
+                },
+                {
+                  "id": "OG001",
+                  "title": "Mono Therapy",
+                  "description": "Participants will receive standard of medical care and treatment with standard lipid modifying medications plus placebo Ezetimibe and placebo Niaspan.\n\nStatin therapy: Daily dose of 40 mg of Simvastatin (If unable to tolerate Simvastatin, participants will take a daily dose of Atorvastatin.)\n\nStandard care: Standard of medical care for PAD\n\nAspirin: Daily dose of 325 mg of aspirin\n\nClopidogrel: Daily dose of 75 mg of clopidogrel for 3 months or as recommended by the primary care physician\n\nPlacebo Niaspan: Daily dose of 1500 mg of placebo Niaspan\n\nPlacebo Ezetimibe: Daily dose of 10 mg of placebo Ezetimibe\n\nInclusion criteria were life-style-limiting claudication consistent with Fontaine Stage IIa/IIb or angiographically confirmed Trans-Atlantic Inter-Society Consensus A-C lesions in the SFA."
+                }
+              ],
+              "denoms": [
+                {
+                  "units": "Participants",
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "45"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "46"
+                    }
+                  ]
+                }
+              ],
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "OG000",
+                          "value": "58.1",
+                          "spread": "5.5"
+                        },
+                        {
+                          "groupId": "OG001",
+                          "value": "60.5",
+                          "spread": "5.1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "SECONDARY",
+              "title": "Change in Total Cholesterol (mg/dl) From Baseline to Month 12",
+              "description": "Lipids: Total cholesterol (mg/dl); Lipid Data at 12-Months (change from baseline) \\[mg/dl\\].",
+              "populationDescription": "All values are medians and interquartile range (IQR). P-values were calculated with the KruskaleWallis rank test.",
+              "reportingStatus": "POSTED",
+              "paramType": "MEDIAN",
+              "dispersionType": "Inter-Quartile Range",
+              "unitOfMeasure": "mg/dl",
+              "timeFrame": "Measured at baseline and 12 months",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Triple Therapy",
+                  "description": "Participants will receive standard of medical care and treatment with intensive lipid modification using a statin plus Ezetimibe and Niaspan.\n\nEzetimibe: Daily dose of 10 mg of Ezetimibe\n\nNiaspan: Daily dose of 1500 mg of Niaspan\n\nStatin therapy: Daily dose of 40 mg of Simvastatin (If unable to tolerate Simvastatin, participants will take a daily dose of Atorvastatin.)\n\nStandard care: Standard of medical care for PAD\n\nAspirin: Daily dose of 325 mg of aspirin\n\nClopidogrel: Daily dose of 75 mg of clopidogrel for 3 months or as recommended by the primary care physician\n\nInclusion criteria were life-style-limiting claudication consistent with Fontaine Stage IIa/IIb or angiographically confirmed Trans-Atlantic Inter-Society Consensus A-C lesions in the SFA."
+                },
+                {
+                  "id": "OG001",
+                  "title": "Mono Therapy",
+                  "description": "Participants will receive standard of medical care and treatment with standard lipid modifying medications plus placebo Ezetimibe and placebo Niaspan.\n\nStatin therapy: Daily dose of 40 mg of Simvastatin (If unable to tolerate Simvastatin, participants will take a daily dose of Atorvastatin.)\n\nStandard care: Standard of medical care for PAD\n\nAspirin: Daily dose of 325 mg of aspirin\n\nClopidogrel: Daily dose of 75 mg of clopidogrel for 3 months or as recommended by the primary care physician\n\nPlacebo Niaspan: Daily dose of 1500 mg of placebo Niaspan\n\nPlacebo Ezetimibe: Daily dose of 10 mg of placebo Ezetimibe\n\nInclusion criteria were life-style-limiting claudication consistent with Fontaine Stage IIa/IIb or angiographically confirmed Trans-Atlantic Inter-Society Consensus A-C lesions in the SFA."
+                }
+              ],
+              "denoms": [
+                {
+                  "units": "Participants",
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "47"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "48"
+                    }
+                  ]
+                }
+              ],
+              "classes": [
+                {
+                  "categories": [
+                    {
+                      "measurements": [
+                        {
+                          "groupId": "OG000",
+                          "value": "-30.0",
+                          "lowerLimit": "-63",
+                          "upperLimit": "-1"
+                        },
+                        {
+                          "groupId": "OG001",
+                          "value": "-7.5",
+                          "lowerLimit": "-30.5",
+                          "upperLimit": "8.0"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "adverseEventsModule": {
+          "frequencyThreshold": "5",
+          "timeFrame": "Major adverse events were reported to and assessed by the Data and Safety Monitoring Board (DSMB).",
+          "eventGroups": [
+            {
+              "id": "EG000",
+              "title": "Triple Therapy",
+              "description": "Participants will receive standard of medical care and treatment with intensive lipid modification using a statin plus Ezetimibe and Niaspan.\n\nEzetimibe: Daily dose of 10 mg of Ezetimibe\n\nNiaspan: Daily dose of 1500 mg of Niaspan\n\nStatin therapy: Daily dose of 40 mg of Simvastatin (If unable to tolerate Simvastatin, participants will take a daily dose of Atorvastatin.)\n\nStandard care: Standard of medical care for PAD\n\nAspirin: Daily dose of 325 mg of aspirin\n\nClopidogrel: Daily dose of 75 mg of clopidogrel for 3 months or as recommended by the primary care physician\n\nInclusion criteria were life-style-limiting claudication consistent with Fontaine Stage IIa/IIb or angiographically confirmed Trans-Atlantic Inter-Society Consensus A-C lesions in the SFA.",
+              "deathsNumAffected": 4,
+              "deathsNumAtRisk": 47,
+              "seriousNumAffected": 7,
+              "seriousNumAtRisk": 47,
+              "otherNumAffected": 10,
+              "otherNumAtRisk": 47
+            },
+            {
+              "id": "EG001",
+              "title": "Mono Therapy",
+              "description": "Participants will receive standard of medical care and treatment with standard lipid modifying medications plus placebo Ezetimibe and placebo Niaspan.\n\nStatin therapy: Daily dose of 40 mg of Simvastatin (If unable to tolerate Simvastatin, participants will take a daily dose of Atorvastatin.)\n\nStandard care: Standard of medical care for PAD\n\nAspirin: Daily dose of 325 mg of aspirin\n\nClopidogrel: Daily dose of 75 mg of clopidogrel for 3 months or as recommended by the primary care physician\n\nPlacebo Niaspan: Daily dose of 1500 mg of placebo Niaspan\n\nPlacebo Ezetimibe: Daily dose of 10 mg of placebo Ezetimibe\n\nInclusion criteria were life-style-limiting claudication consistent with Fontaine Stage IIa/IIb or angiographically confirmed Trans-Atlantic Inter-Society Consensus A-C lesions in the SFA.",
+              "deathsNumAffected": 4,
+              "deathsNumAtRisk": 48,
+              "seriousNumAffected": 4,
+              "seriousNumAtRisk": 48,
+              "otherNumAffected": 8,
+              "otherNumAtRisk": 48
+            }
+          ],
+          "seriousEvents": [
+            {
+              "term": "Myocardial infarction",
+              "organSystem": "Cardiac disorders",
+              "assessmentType": "SYSTEMATIC_ASSESSMENT",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numAffected": 3,
+                  "numAtRisk": 47
+                },
+                {
+                  "groupId": "EG001",
+                  "numAffected": 1,
+                  "numAtRisk": 48
+                }
+              ]
+            },
+            {
+              "term": "Major stroke",
+              "organSystem": "Cardiac disorders",
+              "assessmentType": "SYSTEMATIC_ASSESSMENT",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numAffected": 2,
+                  "numAtRisk": 47
+                },
+                {
+                  "groupId": "EG001",
+                  "numAffected": 2,
+                  "numAtRisk": 48
+                }
+              ]
+            },
+            {
+              "term": "Coronary revascularization",
+              "organSystem": "Cardiac disorders",
+              "assessmentType": "SYSTEMATIC_ASSESSMENT",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numAffected": 2,
+                  "numAtRisk": 47
+                },
+                {
+                  "groupId": "EG001",
+                  "numAffected": 1,
+                  "numAtRisk": 48
+                }
+              ]
+            }
+          ],
+          "otherEvents": [
+            {
+              "term": "Blood Glucose Adverse Events",
+              "organSystem": "Endocrine disorders",
+              "notes": "Patients with Blood Glucose Adverse Events (excluding Baseline; hyperglycemic adverse events: Blood Glucose \\> 180 mg/dl ) or Adverse Events of HbA1c \\> 10%.",
+              "stats": [
+                {
+                  "groupId": "EG000",
+                  "numAffected": 10,
+                  "numAtRisk": 47
+                },
+                {
+                  "groupId": "EG001",
+                  "numAffected": 8,
+                  "numAtRisk": 48
+                }
+              ]
+            }
+          ]
+        },
+        "moreInfoModule": {
+          "limitationsAndCaveats": {
+            "description": "MRI was performed in the distal SFA. Ethnicity which was not part of the randomization protocol differed significantly between mono- and triple-therapy groups. The attrition rate was high in ELIMIT. ELIMIT was not powered to assess clinical outcomes."
+          },
+          "certainAgreement": {
+            "piSponsorEmployee": false,
+            "restrictiveAgreement": false
+          },
+          "pointOfContact": {
+            "title": "Gerd Brunner, PhD",
+            "organization": "Baylor College of Medicine",
+            "email": "gbrunner@bcm.edu",
+            "phone": "713-790-5800"
+          }
+        }
+      },
+      "derivedSection": {
+        "miscInfoModule": {
+          "versionHolder": "2026-11-06"
+        },
+        "conditionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D058729",
+              "term": "Peripheral Arterial Disease"
+            },
+            {
+              "id": "D006937",
+              "term": "Hypercholesterolemia"
+            },
+            {
+              "id": "D007383",
+              "term": "Intermittent Claudication"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D050197",
+              "term": "Atherosclerosis"
+            },
+            {
+              "id": "D001161",
+              "term": "Arteriosclerosis"
+            },
+            {
+              "id": "D001157",
+              "term": "Arterial Occlusive Diseases"
+            },
+            {
+              "id": "D014652",
+              "term": "Vascular Diseases"
+            },
+            {
+              "id": "D002318",
+              "term": "Cardiovascular Diseases"
+            },
+            {
+              "id": "D016491",
+              "term": "Peripheral Vascular Diseases"
+            },
+            {
+              "id": "D006949",
+              "term": "Hyperlipidemias"
+            },
+            {
+              "id": "D050171",
+              "term": "Dyslipidemias"
+            },
+            {
+              "id": "D052439",
+              "term": "Lipid Metabolism Disorders"
+            },
+            {
+              "id": "D008659",
+              "term": "Metabolic Diseases"
+            },
+            {
+              "id": "D009750",
+              "term": "Nutritional and Metabolic Diseases"
+            },
+            {
+              "id": "D012816",
+              "term": "Signs and Symptoms"
+            },
+            {
+              "id": "D013568",
+              "term": "Pathological Conditions, Signs and Symptoms"
+            }
+          ]
+        },
+        "interventionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D000069438",
+              "term": "Ezetimibe"
+            },
+            {
+              "id": "D009525",
+              "term": "Niacin"
+            },
+            {
+              "id": "D019821",
+              "term": "Simvastatin"
+            },
+            {
+              "id": "D059039",
+              "term": "Standard of Care"
+            },
+            {
+              "id": "D001241",
+              "term": "Aspirin"
+            },
+            {
+              "id": "D000077144",
+              "term": "Clopidogrel"
+            },
+            {
+              "id": "D017130",
+              "term": "Angioplasty"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D001384",
+              "term": "Azetidines"
+            },
+            {
+              "id": "D001385",
+              "term": "Azetines"
+            },
+            {
+              "id": "D006573",
+              "term": "Heterocyclic Compounds, 1-Ring"
+            },
+            {
+              "id": "D006571",
+              "term": "Heterocyclic Compounds"
+            },
+            {
+              "id": "D009539",
+              "term": "Nicotinic Acids"
+            },
+            {
+              "id": "D000147",
+              "term": "Acids, Heterocyclic"
+            },
+            {
+              "id": "D011725",
+              "term": "Pyridines"
+            },
+            {
+              "id": "D008148",
+              "term": "Lovastatin"
+            },
+            {
+              "id": "D009281",
+              "term": "Naphthalenes"
+            },
+            {
+              "id": "D011084",
+              "term": "Polycyclic Aromatic Hydrocarbons"
+            },
+            {
+              "id": "D006841",
+              "term": "Hydrocarbons, Aromatic"
+            },
+            {
+              "id": "D006844",
+              "term": "Hydrocarbons, Cyclic"
+            },
+            {
+              "id": "D006838",
+              "term": "Hydrocarbons"
+            },
+            {
+              "id": "D009930",
+              "term": "Organic Chemicals"
+            },
+            {
+              "id": "D011083",
+              "term": "Polycyclic Compounds"
+            },
+            {
+              "id": "D019984",
+              "term": "Quality Indicators, Health Care"
+            },
+            {
+              "id": "D011787",
+              "term": "Quality of Health Care"
+            },
+            {
+              "id": "D006298",
+              "term": "Health Services Administration"
+            },
+            {
+              "id": "D017530",
+              "term": "Health Care Quality, Access, and Evaluation"
+            },
+            {
+              "id": "D012459",
+              "term": "Salicylates"
+            },
+            {
+              "id": "D062385",
+              "term": "Hydroxybenzoates"
+            },
+            {
+              "id": "D010636",
+              "term": "Phenols"
+            },
+            {
+              "id": "D001555",
+              "term": "Benzene Derivatives"
+            },
+            {
+              "id": "D013988",
+              "term": "Ticlopidine"
+            },
+            {
+              "id": "D058924",
+              "term": "Thienopyridines"
+            },
+            {
+              "id": "D013876",
+              "term": "Thiophenes"
+            },
+            {
+              "id": "D013457",
+              "term": "Sulfur Compounds"
+            },
+            {
+              "id": "D006574",
+              "term": "Heterocyclic Compounds, 2-Ring"
+            },
+            {
+              "id": "D000072471",
+              "term": "Heterocyclic Compounds, Fused-Ring"
+            },
+            {
+              "id": "D002404",
+              "term": "Catheterization"
+            },
+            {
+              "id": "D013812",
+              "term": "Therapeutics"
+            },
+            {
+              "id": "D057510",
+              "term": "Endovascular Procedures"
+            },
+            {
+              "id": "D014656",
+              "term": "Vascular Surgical Procedures"
+            },
+            {
+              "id": "D013504",
+              "term": "Cardiovascular Surgical Procedures"
+            },
+            {
+              "id": "D013514",
+              "term": "Surgical Procedures, Operative"
+            },
+            {
+              "id": "D019060",
+              "term": "Minimally Invasive Surgical Procedures"
+            },
+            {
+              "id": "D008919",
+              "term": "Investigative Techniques"
+            }
+          ]
+        }
+      },
+      "hasResults": true
+    }
+  ],
+  "nextPageToken": "ZVNj7o2Elu8o3lpyCMqxo7LumpOQJJxuY_Om2_IW"
+}

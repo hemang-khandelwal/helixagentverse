@@ -1,1 +1,21 @@
 pair_id,type,drug,gene,variant_rsid,effect_direction,groups_where_frequency_differs,evidence_source,cpic_level
+GT-01,positive,Clopidogrel,CYP2C19,rs4244285,decreased_function,"eas,sas higher than nfe,afr",CPIC CYP2C19 Clopidogrel Guideline,A
+GT-02,positive,Clopidogrel,CYP2C19,rs4986893,loss_of_function,"eas higher than nfe,afr",CPIC CYP2C19 Clopidogrel Guideline,A
+GT-03,positive,Clopidogrel,CYP2C19,rs12248560,increased_function,"afr,nfe higher than eas",CPIC CYP2C19 Clopidogrel Guideline,A
+GT-04,positive,Warfarin,VKORC1,rs9923231,decreased_expression,"eas,sas higher than nfe,afr",CPIC Warfarin Guideline,A
+GT-05,positive,Warfarin,CYP2C9,rs1799853,decreased_function,"nfe higher than eas,afr",CPIC Warfarin Guideline,A
+GT-06,positive,Warfarin,CYP2C9,rs1057910,decreased_function,"sas,nfe higher than eas,afr",CPIC Warfarin Guideline,A
+GT-07,positive,Azathioprine,TPMT,rs1800460,loss_of_function,"nfe higher than eas,afr",CPIC Thiopurine Guideline,A
+GT-08,positive,Azathioprine,TPMT,rs1142345,decreased_function,"eas,afr higher than nfe",CPIC Thiopurine Guideline,A
+GT-09,positive,Azathioprine,NUDT15,rs116855232,loss_of_function,"eas,amr higher than nfe,afr",CPIC Thiopurine Guideline,A
+GT-10,positive,Simvastatin,SLCO1B1,rs4149056,decreased_function,"nfe,amr higher than afr,eas",CPIC Statin Guideline,A
+GT-11,positive,Fluorouracil,DPYD,rs3918290,loss_of_function,"nfe higher than eas,afr",CPIC Fluoropyrimidines Guideline,A
+GT-12,positive,Allopurinol,HLA-B,rs2255219,risk_allele,"eas,sas higher than nfe",CPIC Allopurinol Guideline,A
+GT-13,positive,Carbamazepine,HLA-B,rs3909184,risk_allele,"eas,sas higher than nfe",CPIC Carbamazepine Guideline,A
+GT-14,positive,Abacavir,HLA-B,rs2395029,risk_allele,"nfe,sas higher than afr,eas",CPIC Abacavir Guideline,A
+GT-15,positive,Tacrolimus,CYP3A5,rs776746,increased_function,"afr higher than nfe,eas",CPIC Tacrolimus Guideline,A
+GT-16,negative,Ibuprofen,CYP2C9,rs1057910,none,"frequencies similar or low clinical impact in short-term use",PharmGKB Clinical Annotation,C
+GT-17,negative,Aspirin,PTGS1,rs10306114,none,"frequencies homogeneous across continental cohorts",PharmGKB Clinical Annotation,C
+GT-18,negative,Metformin,SLC22A1,rs622342,none,"similar response across examined ancestry groups",PharmGKB Clinical Annotation,C
+GT-19,limit,Codeine,CYP2D6,rs3892097,copy_number_variation,"copy number variations cannot be reliably assessed from gnomAD SNVs alone",CPIC Codeine Guideline,A
+GT-20,limit,Rasburicase,G6PD,rs1050828,x_linked,"X-linked inheritance violates autosomal Hardy-Weinberg carrier assumption",CPIC Rasburicase Guideline,A

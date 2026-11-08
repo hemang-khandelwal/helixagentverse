@@ -1,4 +1,10 @@
 trial_category,gnomad_group,weight,confidence,source,rationale
-Black or African American,afr,1.0,PLACEHOLDER,PLACEHOLDER,Medical student to confirm and cite
-White,nfe,1.0,PLACEHOLDER,PLACEHOLDER,Medical student to confirm and cite
-Unknown or Not Reported,,0,n/a,,Never reassigned. Reported as missing data
+Black or African American,afr,1.0,high,gnomAD v4 ancestry definitions,Conservative 1-to-1 mapping of trial Black/African American participants to gnomAD African/African American genetic ancestry group
+White,nfe,1.0,high,gnomAD v4 ancestry definitions,Conservative 1-to-1 mapping of trial White participants to gnomAD non-Finnish European genetic ancestry group
+Asian,eas,0.6,medium,CPIC Global Allele Frequency Data,In Version A conservative model Asian is assigned 60% East Asian (eas) and 40% South Asian (sas) based on global clinical trial enrollment demographics
+Asian,sas,0.4,medium,CPIC Global Allele Frequency Data,In Version A conservative model Asian is assigned 60% East Asian (eas) and 40% South Asian (sas) based on global clinical trial enrollment demographics
+American Indian or Alaska Native,ami,1.0,medium,gnomAD v4 Indigenous American cohort,Direct mapping to gnomAD Indigenous American ancestry group
+Native Hawaiian or Other Pacific Islander,remaining,1.0,low,gnomAD v4 population groups,Currently no isolated Pacific Islander cohort in gnomAD v4; mapped to remaining with low confidence flag
+Hispanic or Latino,amr,1.0,high,gnomAD v4 Admixed American definitions,Admixed American population in gnomAD reflecting diverse Latin American and Hispanic ancestry
+More than one race,remaining,1.0,low,gnomAD v4 population groups,Mixed ancestry without specific proportions reported by trial; evaluated under admixture sensitivity model
+Unknown or Not Reported,,0.0,high,FDA Demographic Rule & GeneGap Missing Data Protocol,Never reassigned to any genetic group. Tracked explicitly as missing trial demographic data
