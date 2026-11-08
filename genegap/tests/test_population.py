@@ -79,3 +79,47 @@ def test_partly_assumed_population_reports_the_assumed_share(tmp_path):
 def test_asking_for_a_population_that_is_not_there_lists_the_options():
     with pytest.raises(PopulationError, match="Available:"):
         load_target_population("mars_colony")
+
+
+# ---- the medical student's definition table (the other half of D5) ----
+def test_the_real_definition_table_loads_with_sources():
+    from genegap.population import load_target_definitions
+
+    defs = load_target_definitions()
+    assert defs
+    for d in defs:
+        assert d.drug and d.source_url, f"{d.drug}/{d.indication} has no source"
+
+
+def test_clopidogrel_definitions_record_an_unestablished_distribution():
+    """The clinician has stated the group mix is not sourced yet; the code must not ignore that."""
+    from genegap.population import definitions_for_drug
+
+    defs = definitions_for_drug("clopidogrel")
+    assert defs, "clopidogrel must have a target-population definition"
+    assert all(not d.distribution_established for d in defs)
+    assert all(d.required_denominator_data for d in defs), "each row must say what data it needs"
+
+
+def test_definition_lookup_is_case_insensitive():
+    from genegap.population import definitions_for_drug
+
+    assert definitions_for_drug("CLOPIDOGREL") == definitions_for_drug("clopidogrel")
+
+
+def test_a_definition_row_without_a_source_is_rejected(tmp_path):
+    from genegap.population import DEFINITION_COLUMNS, load_target_definitions
+
+    p = tmp_path / "target_population.csv"
+    p.write_text(",".join(DEFINITION_COLUMNS) + "\n" + "clopidogrel,CYP2C19,ACS,def,UK,adults,q,,Guideline,NOT ESTABLISHED,reg,notes\n")
+    with pytest.raises(PopulationError, match="No source, no row"):
+        load_target_definitions(p)
+
+
+def test_an_established_distribution_is_recognised(tmp_path):
+    from genegap.population import DEFINITION_COLUMNS, load_target_definitions
+
+    p = tmp_path / "target_population.csv"
+    p.write_text(",".join(DEFINITION_COLUMNS) + "\n"
+                 "warfarin,VKORC1,AF,def,UK,adults,q,http://x,Registry,ESTABLISHED (MINAP 2023),reg,notes\n")
+    assert load_target_definitions(p)[0].distribution_established is True

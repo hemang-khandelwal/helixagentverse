@@ -23,7 +23,7 @@ from genegap import fixtures
 from genegap.clients import ClinVarClient, CTGovClient, GnomadClient
 from genegap.gap import compute_gap, format_gap_table, robust_across_mappings
 from genegap.mapping import load_all_mappings, map_counts
-from genegap.population import load_target_population
+from genegap.population import definitions_for_drug, load_target_population
 from genegap.store import Store
 from genegap.trials import collect_trials, pooled_race_counts
 from genegap.variants import format_table, variants_for_gene
@@ -95,6 +95,22 @@ def main() -> int:
         print(f"      {row.gnomad_group:<12} {row.share:>7.1%}   [{mark}]  {row.source}")
     for n in target.notes:
         print(f"  ! {n}")
+
+    # The clinician's own definition table says whether this denominator is established.
+    definitions = definitions_for_drug(args.drug)
+    if definitions:
+        print(f"\n  Definition table ({len(definitions)} indication rows for {args.drug}):")
+        for d in definitions:
+            state = "established" if d.distribution_established else "NOT ESTABLISHED"
+            print(f"      {d.indication:<52} group mix: {state}")
+        unestablished = [d for d in definitions if not d.distribution_established]
+        if unestablished:
+            print(f"\n  ! The clinician has recorded the group mix as NOT ESTABLISHED for "
+                  f"{len(unestablished)} of {len(definitions)} indications.")
+            print("  ! Every representation ratio below is therefore illustrative, not a measured gap.")
+            print(f"  ! Needed: {unestablished[0].required_denominator_data}")
+    else:
+        print(f"\n  ! No target-population definition row for {args.drug} in data/target_population.csv.")
 
     # ---- 2.4 + 2.6 mapping and the gap table, under every mapping version ---------------
     mappings = load_all_mappings()

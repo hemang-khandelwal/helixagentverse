@@ -146,3 +146,18 @@ def test_an_unassessable_gene_refuses_rather_than_guessing(tmp_path):
         assert proc.returncode == 1
         assert "not assessable" in proc.stdout
         assert "correct answer" in proc.stdout
+
+
+def test_the_sanity_check_script_runs_and_nothing_fails(tmp_path):
+    """Task 2.8 / D6: the automated half of the sanity check must stay green."""
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "sanity_check_m1.py"),
+         "--strict", "--out", str(tmp_path / "log.csv")],
+        capture_output=True, text=True, cwd=str(ROOT), timeout=300,
+    )
+    assert proc.returncode == 0, proc.stdout[-4000:] + proc.stderr[-3000:]
+    assert "0 failed" in proc.stdout
+    # The items that need a human or the network must stay visible, not quietly disappear.
+    assert "CPIC allele-frequency tables" in proc.stdout
+    assert "NOT ESTABLISHED" in proc.stdout
+    assert (tmp_path / "log.csv").exists()
