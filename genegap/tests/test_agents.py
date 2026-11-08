@@ -71,7 +71,7 @@ def test_every_step_is_logged(tmp_path):
 
 
 def test_oversized_tool_result_is_refused():
-    big = Tool("big", "x", [], lambda: {"x": "a" * 20000})
+    big = Tool("big", "x", [], lambda: {"x": "a" * 30000})
     a, _ = agent_with([LLMTurn(tool_calls=[ToolCall("big", {})]), LLMTurn(text="ok")], [big])
     assert "too large" in a.run("go").tool_calls[0]["result"]["error"]
 
@@ -120,7 +120,7 @@ def test_whole_pipeline_through_the_tools(ws):
     gap = t["compute_gap_table"].run({})
     assert gap["variants"] and gap["variants"][0]["groups_under_mapping_A"]
     g0 = gap["variants"][0]["groups_under_mapping_A"][0]
-    assert "carrier_ratio" in g0 and "robust_underrepresented_across_all_mappings" in g0
+    assert "carrier_ratio" in g0 and "robust_underrepresented_all_mappings" in g0
 
 
 def test_agent_drives_the_real_tools_with_a_scripted_model(ws):
@@ -132,3 +132,17 @@ def test_agent_drives_the_real_tools_with_a_scripted_model(ws):
     r = a.run("check clopidogrel")
     assert r.finished and [c["name"] for c in r.tool_calls] == ["lookup_variants", "fetch_trial_demographics", "compute_gap_table"]
     assert all("error" not in c["result"] for c in r.tool_calls)
+
+
+def test_gap_tool_output_is_compact_and_has_a_detail_mode(ws):
+    import json
+    t = by_name(ws)
+    t["lookup_variants"].run({"gene": "CYP2C19"})
+    t["fetch_trial_demographics"].run({"drug": "clopidogrel"})
+    compact = t["compute_gap_table"].run({})
+    assert len(json.dumps(compact)) < 20000
+    rsid = compact["variants"][0]["rsid"]
+    full = t["compute_gap_table"].run({"rsid": rsid})
+    assert len(full["variants"]) == 1 and "ci_low" in full["variants"][0]["groups_under_mapping_A"][0]
+    with pytest.raises(ToolError, match="No variant with rsid"):
+        t["compute_gap_table"].run({"rsid": "rs0"})

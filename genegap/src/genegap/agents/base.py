@@ -21,7 +21,7 @@ from typing import Any, Callable, Optional, Protocol
 from .. import config
 from .tools import Tool, ToolError
 
-MAX_TOOL_RESULT_CHARS = 12000   # a tool answer longer than this is replaced by an error, to protect the model's context
+MAX_TOOL_RESULT_CHARS = 24000   # a tool answer longer than this is replaced by an error, to protect the model's context
 
 BASE_RULES = """You are one agent in GeneGap, a research-planning tool that checks whether clinical trials
 enrolled enough people from each ancestry group to cover the genetic variation that matters for a drug.
@@ -72,7 +72,8 @@ class AgentResult:
 
 class Agent:
     def __init__(self, name: str, role_prompt: str, tools: list[Tool], chat_factory: ChatFactory,
-                 store=None, max_steps: int = 8, run_id: Optional[str] = None):
+                 store=None, max_steps: int = 8, run_id: Optional[str] = None,
+                 on_event: Optional[Callable[[str, str, Any], None]] = None):
         self.name = name
         self.system = BASE_RULES + "\n\nYour job:\n" + role_prompt.strip()
         self.tools = {t.name: t for t in tools}
@@ -81,11 +82,14 @@ class Agent:
         self.store = store
         self.max_steps = max_steps
         self.run_id = run_id or uuid.uuid4().hex[:12]
+        self.on_event = on_event      # called as on_event(agent_name, kind, payload): used to show progress live
 
     # ---- logging ----
     def _log(self, kind: str, payload: Any) -> None:
         if self.store is not None:
             self.store.log_step(self.run_id, self.name, kind, payload)
+        if self.on_event is not None:
+            self.on_event(self.name, kind, payload)
 
     # ---- running one tool, safely ----
     def _execute(self, call: ToolCall) -> dict:

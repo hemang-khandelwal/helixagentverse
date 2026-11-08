@@ -150,7 +150,10 @@ def build_tools(ws: Workspace) -> list[Tool]:
         }
 
     # ---------------- 4. the gap ----------------
-    def compute_gap_table(population_id: str = "us_acs_antiplatelet", target_carriers: float = 30.0) -> dict:
+    COMPACT_KEYS = ["group", "n_trial", "carrier_freq", "carrier_ratio", "enrolment_ratio", "required_n", "insufficient_data"]
+
+    def compute_gap_table(population_id: str = "us_acs_antiplatelet", target_carriers: float = 30.0,
+                          rsid: str = "") -> dict:
         if ws.table is None:
             raise ToolError("Call lookup_variants first.")
         if not ws.table.assessable or not ws.table.variants:
@@ -161,9 +164,15 @@ def build_tools(ws: Workspace) -> list[Tool]:
             target = load_target_population(population_id)
         except Exception as e:
             raise ToolError(f"Could not load target population {population_id!r}: {e}")
+        variants = [v for v in ws.table.variants if not rsid or v.rsid == rsid]
+        if not variants:
+            raise ToolError(f"No variant with rsid {rsid!r}. Known: {[v.rsid for v in ws.table.variants]}")
+        detail = bool(rsid)   # one variant asked for -> give every column; otherwise a compact table per variant
         mappings = load_all_mappings()
-        result = {"population_id": population_id, "mapping_versions": sorted(mappings), "variants": []}
-        for variant in ws.table.variants:
+        result = {"population_id": population_id, "mapping_versions": sorted(mappings),
+                  "detail": "full" if detail else "compact (ask again with rsid for the full table of one variant)",
+                  "variants": []}
+        for variant in variants:
             runs = {}
             for version, mapping in mappings.items():
                 mapped = map_counts(ws.counts, mapping)
@@ -171,18 +180,27 @@ def build_tools(ws: Workspace) -> list[Tool]:
                                             target_carriers=target_carriers)
             ws.gap_runs[variant.variant_id] = runs
             base = runs.get("A") or next(iter(runs.values()))
-            groups = []
+            groups, no_data = [], []
             for g in sorted(base.result.groups, key=lambda x: (x.carrier_ratio is None, x.carrier_ratio or 0.0)):
-                d = {k: _r(v) for k, v in g.model_dump().items()}
-                d["robust_underrepresented_across_all_mappings"] = robust_across_mappings(runs, g.group)
+                full = g.model_dump()
+                if g.insufficient_data and not detail:
+                    no_data.append(g.group)
+                    continue
+                d = {k: _r(v, 4) for k, v in full.items() if detail or k in COMPACT_KEYS}
+                if not detail:
+                    d = {k: v for k, v in d.items() if v is not None}
+                d["robust_underrepresented_all_mappings"] = robust_across_mappings(runs, g.group)
                 groups.append(d)
-            result["variants"].append({
+            entry = {
                 "variant_id": variant.variant_id, "rsid": variant.rsid, "star_allele": variant.star_allele,
                 "function": variant.function,
                 "groups_under_mapping_A": groups,
-                "assumptions": base.notes[-8:],
-                "fact_ids": base.result.fact_ids,
-            })
+                "groups_with_insufficient_data": no_data,
+                "fact_ids": base.result.fact_ids[:6],
+            }
+            if detail:
+                entry["assumptions"] = base.notes[-8:]
+            result["variants"].append(entry)
         return result
 
     return [
@@ -208,6 +226,7 @@ def build_tools(ws: Workspace) -> list[Tool]:
              "under every ancestry mapping and reports whether a finding is robust. Needs lookup_variants and "
              "fetch_trial_demographics to have been called first.",
              [Param("population_id", "string", "Population table id. Default us_acs_antiplatelet.", required=False),
-              Param("target_carriers", "number", "Carriers wanted per group. Default 30.", required=False)],
+              Param("target_carriers", "number", "Carriers wanted per group. Default 30.", required=False),
+              Param("rsid", "string", "Optional: one variant's rsID (e.g. rs4244285) to get its full table.", required=False)],
              compute_gap_table),
     ]

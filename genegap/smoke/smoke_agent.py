@@ -35,7 +35,8 @@ if __name__ == "__main__":
         gnomad, clinvar, ctgov = GnomadClient(store=store), ClinVarClient(store=store), CTGovClient(store=store)
 
     agent = Agent("orchestrator", ROLE, build_tools(Workspace(gnomad, clinvar, ctgov, store=store)),
-                  gemini_chat_factory(), store=store)
+                  gemini_chat_factory(), store=store,
+                  on_event=lambda ag, k, p: print(f"  [{k}] {p.get('name', '')}") if k in ("tool_call", "final") else None)
     result = agent.run(f"Does the trial evidence for {a.drug} cover the variation in {a.gene}?")
 
     print("\nTOOLS GEMINI CALLED:")
