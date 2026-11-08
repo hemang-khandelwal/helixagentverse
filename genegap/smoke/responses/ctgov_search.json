@@ -1,0 +1,118 @@
+{
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01609842",
+          "briefTitle": "Hybrid Effectiveness-Implementation Study to Improve Clopidogrel Adherence"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED"
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Cardiovascular Disease",
+            "Acute Coronary Syndrome"
+          ]
+        },
+        "designModule": {
+          "phases": [
+            "NA"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Multifaceted Intervention with pharmacist and IVR"
+            }
+          ]
+        }
+      },
+      "hasResults": true
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01511939",
+          "briefTitle": "Trial to See if Topical Pennsaid for Knee Pain Affects Coagulation Values in Patients Who Are Also Taking Anticoagulants"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED"
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Osteoarthritis of the Knee",
+            "Coagulopathy"
+          ]
+        },
+        "designModule": {
+          "phases": [
+            "PHASE3"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Pennsaid"
+            }
+          ]
+        }
+      },
+      "hasResults": true
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00687076",
+          "briefTitle": "Effectiveness of Intensive Lipid Modification Medication in Preventing the Progression of Peripheral Arterial Disease (The ELIMIT Study)"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED"
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Peripheral Arterial Disease"
+          ]
+        },
+        "designModule": {
+          "phases": [
+            "PHASE4"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Ezetimibe"
+            },
+            {
+              "name": "Niaspan"
+            },
+            {
+              "name": "Statin therapy"
+            },
+            {
+              "name": "Standard care"
+            },
+            {
+              "name": "Aspirin"
+            },
+            {
+              "name": "Clopidogrel"
+            },
+            {
+              "name": "Placebo Niaspan"
+            },
+            {
+              "name": "Placebo Ezetimibe"
+            },
+            {
+              "name": "Percutaneous transluminal angioplasty (PTA)"
+            }
+          ]
+        }
+      },
+      "hasResults": true
+    }
+  ],
+  "nextPageToken": "ZVNj7o2Elu8o3lpyCMqxo7LumpOQJJxuY_Om2_IW"
+}

@@ -167,8 +167,16 @@ def variants_for_gene(gene: str, gnomad, clinvar, rules: dict[str, GeneRule] | N
             f"No rsIDs for {rule.gene}. Add rows to a config/variant_details*.csv file or the rsids column."])
 
     for rsid in rsids:
+        # Prefer the tolerant call where the client offers it: one unavailable allele of a
+        # multiallelic rsID should not throw away the alleles that did resolve.
+        detailed = getattr(gnomad, "variants_for_rsid_detailed", None)
         try:
-            found = gnomad.variants_for_rsid(rsid, gene=rule.gene)
+            if detailed is not None:
+                found, problems = detailed(rsid, gene=rule.gene)
+                for p in problems:
+                    table.notes.append(f"{rsid}: {p}")
+            else:
+                found = gnomad.variants_for_rsid(rsid, gene=rule.gene)
         except ApiError as e:
             table.notes.append(f"{rsid}: gnomAD lookup failed ({e})")
             continue

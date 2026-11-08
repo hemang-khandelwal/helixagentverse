@@ -155,7 +155,11 @@ class GroupGap(BaseModel):
     """
 
     group: str                      # Ancestry group code (e.g. "afr", "eas", "nfe")
-    n_trial: int                    # Number of participants from this group in the trial
+    n_trial: float                  # Participants mapped to this group (fractional under weighted mappings)
+    ac: Optional[int] = None                   # gnomAD allele count backing the frequency
+    an: Optional[int] = None                   # gnomAD allele number; small AN means a shaky estimate
+    allele_freq: Optional[float] = None        # p = AC / AN
+    trial_share: Optional[float] = None        # This group's share of the mapped trial participants
     target_share: Optional[float] = None       # Share of this group in the real-world disease population
     carrier_freq: Optional[float] = None       # Estimated carrier frequency in this group
     ci_low: Optional[float] = None             # Lower bound of carrier frequency credible interval
@@ -163,6 +167,8 @@ class GroupGap(BaseModel):
     expected_carriers: Optional[float] = None  # Expected number of variant carriers in the trial
     enrolment_ratio: Optional[float] = None    # Trial group share / target population group share
     carrier_ratio: Optional[float] = None      # Trial carrier share / target carrier share
+    prob_fewer_than_k: Optional[float] = None  # P(trial holds fewer than k carriers of this variant)
+    k_threshold: Optional[int] = None          # The k used for prob_fewer_than_k
     required_n: Optional[int] = None           # Recommended trial sample size to meet carrier threshold
     insufficient_data: bool = False            # True if gnomAD allele number was too low to calculate reliably
 

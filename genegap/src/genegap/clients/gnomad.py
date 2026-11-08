@@ -18,13 +18,18 @@ Q_VARIANT = """query($id: String!, $ds: DatasetId!) {
     genome { ac an populations { id ac an } } } }"""
 
 
+ANCESTRY_GROUPS = frozenset({"afr", "ami", "amr", "asj", "eas", "fin", "mid", "nfe", "remaining", "sas"})
+
+
 def merge_populations(variant_json: dict) -> dict[str, list[int]]:
     """
     Sum exome and genome counts per genetic ancestry group (e.g. 'afr', 'eas', 'nfe').
-    
-    gnomAD splits data by exome (coding regions) and genome (whole genome).
-    We sum AC and AN across both. Populations with an underscore (such as 'afr_XX' or 'nfe_XY')
-    represent sex-stratified subsets of the same individuals; we skip them to avoid double-counting.
+
+    gnomAD splits data by exome (coding regions) and genome (whole genome); we sum AC and AN
+    across both. Only the 10 top-level gnomAD v4 ancestry groups are kept: the API also returns
+    sex-stratified subsets such as 'afr_XX' or 'nfe_XY', which describe the same individuals and
+    would double-count them. Note that 'ami' appears in the genome cohort but not the exome one,
+    which is expected.
     """
     totals: dict[str, list[int]] = {}
     for cohort in ("exome", "genome"):
@@ -32,8 +37,8 @@ def merge_populations(variant_json: dict) -> dict[str, list[int]]:
         if not block:
             continue
         for p in block.get("populations") or []:
-            # Skip sex-split cohorts to avoid double-counting individuals
-            if "_" in p["id"]:
+            # Keep only the top-level ancestry groups; skip sex-split and other sub-cohorts
+            if p["id"] not in ANCESTRY_GROUPS:
                 continue
             t = totals.setdefault(p["id"], [0, 0])
             t[0] += p["ac"]  # Total allele count (number of observed mutant copies)
@@ -101,5 +106,28 @@ class GnomadClient(ApiClient):
         Retrieve all variant alleles for an rsID.
         Note: an rsID can occasionally have multiple alleles (e.g. multiallelic SNVs);
         downstream filtering selects the pharmacogenomically relevant change.
+
+        Raises if any allele cannot be fetched. Callers that would rather keep the alleles
+        that did work should use variants_for_rsid_detailed().
         """
         return [self.variant(v, gene=gene, rsid=rsid) for v in self.variant_ids_for_rsid(rsid)]
+
+    def variants_for_rsid_detailed(
+        self, rsid: str, gene: Optional[str] = None
+    ) -> tuple[list[Variant], list[str]]:
+        """
+        Same as variants_for_rsid, but one allele failing does not lose the others.
+
+        Returns (variants, problems). A multiallelic rsID where only some alleles resolve is
+        still worth analysing, provided the report says which ones were skipped, so every
+        skipped allele comes back as a sentence in `problems`. Raises only if the rsID itself
+        cannot be resolved.
+        """
+        variants: list[Variant] = []
+        problems: list[str] = []
+        for variant_id in self.variant_ids_for_rsid(rsid):
+            try:
+                variants.append(self.variant(variant_id, gene=gene, rsid=rsid))
+            except ApiError as e:
+                problems.append(f"allele {variant_id} could not be fetched ({e})")
+        return variants, problems

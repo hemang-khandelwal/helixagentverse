@@ -80,10 +80,15 @@ User Input (Drug / Condition / Gene)
 genegap/
 ├── config/
 │   ├── demo_scope.csv          # Curated demo drugs, target genes, and rationale (CPIC level A/B)
-│   └── ancestry_mapping_A.csv  # Trial race/ethnicity to gnomAD ancestry mapping rules
+│   ├── variant_rules.csv       # Per-gene filter rules: inheritance, min AF, min AN (medical student, D4)
+│   ├── variant_details_*.csv   # Per-variant star alleles, function direction, caveats (medical student)
+│   └── ancestry_mapping_?.csv  # Trial race/ethnicity to gnomAD ancestry, versions A/B/C (D2)
 ├── data/
 │   ├── ground_truth.csv        # Evaluation dataset: positive pairs, negative controls, limit tests
+│   ├── target_population.csv   # Who will actually take the drug: the gap denominator (D5)
 │   └── genegap.sqlite          # SQLite store (HTTP cache, Fact table, agent step logs)
+├── scripts/
+│   └── m1_clopidogrel.py       # Milestone M1: the full deterministic chain, no LLM
 ├── smoke/
 │   ├── smoke_apis.py           # Verification script for all 7 external biological APIs
 │   └── smoke_gemini.py         # Verification script for Gemini API models (Argon and Flash)
@@ -91,6 +96,13 @@ genegap/
 │   ├── schemas.py              # Pydantic data models (Fact, Variant, Trial, GapResult, Flag)
 │   ├── store.py                # SQLite cache and provenance persistence
 │   ├── config.py               # Settings, model selection, environment loader
+│   ├── variants.py             # Task 2.1: gene -> filtered variant table
+│   ├── trials.py               # Tasks 2.2/2.3: trial search and baseline demographics parser
+│   ├── mapping.py              # Task 2.4: self-identified race -> gnomAD ancestry groups
+│   ├── population.py           # Task 2.5: target-population table loader
+│   ├── gap.py                  # Assembles GapResult from variants, trials and stats
+│   ├── fixtures.py             # Offline mode: replays the recorded Phase 0 API responses
+│   ├── stats/                  # Task 2.6: pure statistical functions (no I/O, no LLM)
 │   ├── clients/
 │   │   ├── base.py             # ApiClient base class (throttling, retries, caching, Fact creation)
 │   │   ├── gnomad.py           # gnomAD GraphQL API client (population frequencies)
@@ -148,3 +160,55 @@ This tests both plain text and structured Pydantic JSON output modes on Gemini 4
 pytest
 ```
 The test suite validates data schemas, deterministic fact hashing, biological constraints ($AC \le AN$), HTTP caching, retry backoff, and offline mode.
+
+---
+
+## Milestone M1: the deterministic core (Phase 2)
+
+The whole scientific pipeline runs with **no language model involved at any point**. This is
+the proof that the project works: the agent layer in Phase 3 is a set of thin wrappers around
+these proven functions.
+
+```sh
+python scripts/m1_clopidogrel.py --offline      # replays the recorded Phase 0 responses
+python scripts/m1_clopidogrel.py                # live APIs, cached into SQLite after the first run
+python scripts/m1_clopidogrel.py --gene VKORC1 --drug warfarin
+```
+
+The script walks the chain and prints what each stage decided:
+
+| Step | Task | What it does |
+|---|---|---|
+| 1 | 2.1 | `CYP2C19` → gnomAD allele counts per ancestry group + ClinVar classification, filtered by `config/variant_rules.csv` |
+| 2 | 2.2, 2.3 | Completed clopidogrel trials with posted results → participant counts by self-identified race |
+| 3 | 2.5 | The target population: who will actually take the drug (the denominator) |
+| 4 | 2.4, 2.6 | Race counts → gnomAD ancestry groups under **all three mappings**, then the gap table |
+| 5 | — | Robustness verdict: a gap counts only if it holds under every mapping |
+
+On the recorded data the headline finding reproduces the known clopidogrel result: the East
+Asian and South Asian ancestry groups carry CYP2C19\*2 at roughly 51% and 54% but are thinly
+enrolled, and that gap survives all three ancestry mappings. This is pinned by a test
+(`tests/test_m1_end_to_end.py`).
+
+### What the core refuses to do
+
+These refusals are deliberate and each one is covered by a test:
+
+- **X-linked and HLA genes.** `G6PD` is X-linked and the autosomal carrier formula does not
+  apply; HLA alleles are not reliably covered by gnomAD. The pipeline says it cannot assess
+  them instead of producing a number.
+- **Thin gnomAD data.** A group below the configured allele-number floor is reported as
+  *insufficient data*, never as a frequency. On CYP2C19\*2 this catches `ami` (910 alleles).
+- **"Unknown or Not Reported" participants.** Never reassigned to an ancestry group. They are
+  carried through as a missing-data percentage.
+- **Uncited mapping weights.** Versions B and C ship with weights marked `PLACEHOLDER`, and
+  every run says so until the medical student replaces them with cited values.
+- **An assumption-based denominator.** `data/target_population.csv` currently holds placeholder
+  shares and the output labels the whole table an ASSUMPTION.
+
+### Known gaps to close before Phase 3
+
+- `data/target_population.csv` needs real disease-burden sources (deliverable D5).
+- Ancestry mappings B and C need cited weights (deliverable D2).
+- Offline mode only covers the clopidogrel / CYP2C19\*2 path, because that is all that was
+  recorded during the Phase 0 smoke tests. Everything else needs a live run first.

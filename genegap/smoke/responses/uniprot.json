@@ -1,0 +1,772 @@
+{
+  "results": [
+    {
+      "entryType": "UniProtKB unreviewed (TrEMBL)",
+      "primaryAccession": "A0ACP2IBC2",
+      "uniProtkbId": "A0ACP2IBC2_HUMAN",
+      "entryAudit": {
+        "firstPublicDate": "2026-11-04",
+        "lastAnnotationUpdateDate": "2026-11-04",
+        "lastSequenceUpdateDate": "2026-11-04",
+        "entryVersion": 1,
+        "sequenceVersion": 1
+      },
+      "annotationScore": 1.0,
+      "organism": {
+        "scientificName": "Homo sapiens",
+        "commonName": "Human",
+        "taxonId": 9606,
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000313",
+            "source": "Ensembl",
+            "id": "ENSP00000786603.1"
+          },
+          {
+            "evidenceCode": "ECO:0000313",
+            "source": "Proteomes",
+            "id": "UP000005640"
+          }
+        ],
+        "lineage": [
+          "Eukaryota",
+          "Metazoa",
+          "Chordata",
+          "Craniata",
+          "Vertebrata",
+          "Euteleostomi",
+          "Mammalia",
+          "Eutheria",
+          "Euarchontoglires",
+          "Primates",
+          "Haplorrhini",
+          "Catarrhini",
+          "Hominidae",
+          "Homo"
+        ]
+      },
+      "proteinExistence": "4: Predicted",
+      "proteinDescription": {
+        "submissionNames": [
+          {
+            "fullName": {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000313",
+                  "source": "Ensembl",
+                  "id": "ENSP00000786603.1"
+                }
+              ],
+              "value": "Cytochrome P450 family 2 subfamily C member 19"
+            }
+          }
+        ]
+      },
+      "genes": [
+        {
+          "geneName": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000313",
+                "source": "Ensembl",
+                "id": "ENSP00000786603.1"
+              }
+            ],
+            "value": "CYP2C19"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000313",
+              "source": "Proteomes",
+              "id": "UP000005640"
+            }
+          ],
+          "id": "KW-1185",
+          "category": "Technical term",
+          "name": "Reference proteome"
+        }
+      ],
+      "references": [
+        {
+          "referenceNumber": 1,
+          "citation": {
+            "id": "11237011",
+            "citationType": "journal article",
+            "authoringGroup": [
+              "International Human Genome Sequencing Consortium"
+            ],
+            "authors": [
+              "Lander E.S.",
+              "Linton L.M.",
+              "Birren B.",
+              "Nusbaum C.",
+              "Zody M.C.",
+              "Baldwin J.",
+              "Devon K.",
+              "Dewar K.",
+              "Doyle M.",
+              "FitzHugh W.",
+              "Funke R.",
+              "Gage D.",
+              "Harris K.",
+              "Heaford A.",
+              "Howland J.",
+              "Kann L.",
+              "Lehoczky J.",
+              "LeVine R.",
+              "McEwan P.",
+              "McKernan K.",
+              "Meldrim J.",
+              "Mesirov J.P.",
+              "Miranda C.",
+              "Morris W.",
+              "Naylor J.",
+              "Raymond C.",
+              "Rosetti M.",
+              "Santos R.",
+              "Sheridan A.",
+              "Sougnez C.",
+              "Stange-Thomann N.",
+              "Stojanovic N.",
+              "Subramanian A.",
+              "Wyman D.",
+              "Rogers J.",
+              "Sulston J.",
+              "Ainscough R.",
+              "Beck S.",
+              "Bentley D.",
+              "Burton J.",
+              "Clee C.",
+              "Carter N.",
+              "Coulson A.",
+              "Deadman R.",
+              "Deloukas P.",
+              "Dunham A.",
+              "Dunham I.",
+              "Durbin R.",
+              "French L.",
+              "Grafham D.",
+              "Gregory S.",
+              "Hubbard T.",
+              "Humphray S.",
+              "Hunt A.",
+              "Jones M.",
+              "Lloyd C.",
+              "McMurray A.",
+              "Matthews L.",
+              "Mercer S.",
+              "Milne S.",
+              "Mullikin J.C.",
+              "Mungall A.",
+              "Plumb R.",
+              "Ross M.",
+              "Shownkeen R.",
+              "Sims S.",
+              "Waterston R.H.",
+              "Wilson R.K.",
+              "Hillier L.W.",
+              "McPherson J.D.",
+              "Marra M.A.",
+              "Mardis E.R.",
+              "Fulton L.A.",
+              "Chinwalla A.T.",
+              "Pepin K.H.",
+              "Gish W.R.",
+              "Chissoe S.L.",
+              "Wendl M.C.",
+              "Delehaunty K.D.",
+              "Miner T.L.",
+              "Delehaunty A.",
+              "Kramer J.B.",
+              "Cook L.L.",
+              "Fulton R.S.",
+              "Johnson D.L.",
+              "Minx P.J.",
+              "Clifton S.W.",
+              "Hawkins T.",
+              "Branscomb E.",
+              "Predki P.",
+              "Richardson P.",
+              "Wenning S.",
+              "Slezak T.",
+              "Doggett N.",
+              "Cheng J.F.",
+              "Olsen A.",
+              "Lucas S.",
+              "Elkin C.",
+              "Uberbacher E.",
+              "Frazier M.",
+              "Gibbs R.A.",
+              "Muzny D.M.",
+              "Scherer S.E.",
+              "Bouck J.B.",
+              "Sodergren E.J.",
+              "Worley K.C.",
+              "Rives C.M.",
+              "Gorrell J.H.",
+              "Metzker M.L.",
+              "Naylor S.L.",
+              "Kucherlapati R.S.",
+              "Nelson D.L.",
+              "Weinstock G.M.",
+              "Sakaki Y.",
+              "Fujiyama A.",
+              "Hattori M.",
+              "Yada T.",
+              "Toyoda A.",
+              "Itoh T.",
+              "Kawagoe C.",
+              "Watanabe H.",
+              "Totoki Y.",
+              "Taylor T.",
+              "Weissenbach J.",
+              "Heilig R.",
+              "Saurin W.",
+              "Artiguenave F.",
+              "Brottier P.",
+              "Bruls T.",
+              "Pelletier E.",
+              "Robert C.",
+              "Wincker P.",
+              "Smith D.R.",
+              "Doucette-Stamm L.",
+              "Rubenfield M.",
+              "Weinstock K.",
+              "Lee H.M.",
+              "Dubois J.",
+              "Rosenthal A.",
+              "Platzer M.",
+              "Nyakatura G.",
+              "Taudien S.",
+              "Rump A.",
+              "Yang H.",
+              "Yu J.",
+              "Wang J.",
+              "Huang G.",
+              "Gu J.",
+              "Hood L.",
+              "Rowen L.",
+              "Madan A.",
+              "Qin S.",
+              "Davis R.W.",
+              "Federspiel N.A.",
+              "Abola A.P.",
+              "Proctor M.J.",
+              "Myers R.M.",
+              "Schmutz J.",
+              "Dickson M.",
+              "Grimwood J.",
+              "Cox D.R.",
+              "Olson M.V.",
+              "Kaul R.",
+              "Raymond C.",
+              "Shimizu N.",
+              "Kawasaki K.",
+              "Minoshima S.",
+              "Evans G.A.",
+              "Athanasiou M.",
+              "Schultz R.",
+              "Roe B.A.",
+              "Chen F.",
+              "Pan H.",
+              "Ramser J.",
+              "Lehrach H.",
+              "Reinhardt R.",
+              "McCombie W.R.",
+              "de la Bastide M.",
+              "Dedhia N.",
+              "Blocker H.",
+              "Hornischer K.",
+              "Nordsiek G.",
+              "Agarwala R.",
+              "Aravind L.",
+              "Bailey J.A.",
+              "Bateman A.",
+              "Batzoglou S.",
+              "Birney E.",
+              "Bork P.",
+              "Brown D.G.",
+              "Burge C.B.",
+              "Cerutti L.",
+              "Chen H.C.",
+              "Church D.",
+              "Clamp M.",
+              "Copley R.R.",
+              "Doerks T.",
+              "Eddy S.R.",
+              "Eichler E.E.",
+              "Furey T.S.",
+              "Galagan J.",
+              "Gilbert J.G.",
+              "Harmon C.",
+              "Hayashizaki Y.",
+              "Haussler D.",
+              "Hermjakob H.",
+              "Hokamp K.",
+              "Jang W.",
+              "Johnson L.S.",
+              "Jones T.A.",
+              "Kasif S.",
+              "Kaspryzk A.",
+              "Kennedy S.",
+              "Kent W.J.",
+              "Kitts P.",
+              "Koonin E.V.",
+              "Korf I.",
+              "Kulp D.",
+              "Lancet D.",
+              "Lowe T.M.",
+              "McLysaght A.",
+              "Mikkelsen T.",
+              "Moran J.V.",
+              "Mulder N.",
+              "Pollara V.J.",
+              "Ponting C.P.",
+              "Schuler G.",
+              "Schultz J.",
+              "Slater G.",
+              "Smit A.F.",
+              "Stupka E.",
+              "Szustakowski J.",
+              "Thierry-Mieg D.",
+              "Thierry-Mieg J.",
+              "Wagner L.",
+              "Wallis J.",
+              "Wheeler R.",
+              "Williams A.",
+              "Wolf Y.I.",
+              "Wolfe K.H.",
+              "Yang S.P.",
+              "Yeh R.F.",
+              "Collins F.",
+              "Guyer M.S.",
+              "Peterson J.",
+              "Felsenfeld A.",
+              "Wetterstrand K.A.",
+              "Patrinos A.",
+              "Morgan M.J.",
+              "de Jong P.",
+              "Catanese J.J.",
+              "Osoegawa K.",
+              "Shizuya H.",
+              "Choi S.",
+              "Chen Y.J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11237011"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/35057062"
+              }
+            ],
+            "title": "Initial sequencing and analysis of the human genome.",
+            "publicationDate": "2001",
+            "journal": "Nature",
+            "firstPage": "860",
+            "lastPage": "921",
+            "volume": "409"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000313",
+              "source": "Ensembl",
+              "id": "ENSP00000786603.1"
+            },
+            {
+              "evidenceCode": "ECO:0000313",
+              "source": "Proteomes",
+              "id": "UP000005640"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 2,
+          "citation": {
+            "id": "15164054",
+            "citationType": "journal article",
+            "authors": [
+              "Deloukas P.",
+              "Earthrowl M.E.",
+              "Grafham D.V.",
+              "Rubenfield M.",
+              "French L.",
+              "Steward C.A.",
+              "Sims S.K.",
+              "Jones M.C.",
+              "Searle S.",
+              "Scott C.",
+              "Howe K.",
+              "Hunt S.E.",
+              "Andrews T.D.",
+              "Gilbert J.G.",
+              "Swarbreck D.",
+              "Ashurst J.L.",
+              "Taylor A.",
+              "Battles J.",
+              "Bird C.P.",
+              "Ainscough R.",
+              "Almeida J.P.",
+              "Ashwell R.I.",
+              "Ambrose K.D.",
+              "Babbage A.K.",
+              "Bagguley C.L.",
+              "Bailey J.",
+              "Banerjee R.",
+              "Bates K.",
+              "Beasley H.",
+              "Bray-Allen S.",
+              "Brown A.J.",
+              "Brown J.Y.",
+              "Burford D.C.",
+              "Burrill W.",
+              "Burton J.",
+              "Cahill P.",
+              "Camire D.",
+              "Carter N.P.",
+              "Chapman J.C.",
+              "Clark S.Y.",
+              "Clarke G.",
+              "Clee C.M.",
+              "Clegg S.",
+              "Corby N.",
+              "Coulson A.",
+              "Dhami P.",
+              "Dutta I.",
+              "Dunn M.",
+              "Faulkner L.",
+              "Frankish A.",
+              "Frankland J.A.",
+              "Garner P.",
+              "Garnett J.",
+              "Gribble S.",
+              "Griffiths C.",
+              "Grocock R.",
+              "Gustafson E.",
+              "Hammond S.",
+              "Harley J.L.",
+              "Hart E.",
+              "Heath P.D.",
+              "Ho T.P.",
+              "Hopkins B.",
+              "Horne J.",
+              "Howden P.J.",
+              "Huckle E.",
+              "Hynds C.",
+              "Johnson C.",
+              "Johnson D.",
+              "Kana A.",
+              "Kay M.",
+              "Kimberley A.M.",
+              "Kershaw J.K.",
+              "Kokkinaki M.",
+              "Laird G.K.",
+              "Lawlor S.",
+              "Lee H.M.",
+              "Leongamornlert D.A.",
+              "Laird G.",
+              "Lloyd C.",
+              "Lloyd D.M.",
+              "Loveland J.",
+              "Lovell J.",
+              "McLaren S.",
+              "McLay K.E.",
+              "McMurray A.",
+              "Mashreghi-Mohammadi M.",
+              "Matthews L.",
+              "Milne S.",
+              "Nickerson T.",
+              "Nguyen M.",
+              "Overton-Larty E.",
+              "Palmer S.A.",
+              "Pearce A.V.",
+              "Peck A.I.",
+              "Pelan S.",
+              "Phillimore B.",
+              "Porter K.",
+              "Rice C.M.",
+              "Rogosin A.",
+              "Ross M.T.",
+              "Sarafidou T.",
+              "Sehra H.K.",
+              "Shownkeen R.",
+              "Skuce C.D.",
+              "Smith M.",
+              "Standring L.",
+              "Sycamore N.",
+              "Tester J.",
+              "Thorpe A.",
+              "Torcasso W.",
+              "Tracey A.",
+              "Tromans A.",
+              "Tsolas J.",
+              "Wall M.",
+              "Walsh J.",
+              "Wang H.",
+              "Weinstock K.",
+              "West A.P.",
+              "Willey D.L.",
+              "Whitehead S.L.",
+              "Wilming L.",
+              "Wray P.W.",
+              "Young L.",
+              "Chen Y.",
+              "Lovering R.C.",
+              "Moschonas N.K.",
+              "Siebert R.",
+              "Fechtel K.",
+              "Bentley D.",
+              "Durbin R.",
+              "Hubbard T.",
+              "Doucette-Stamm L.",
+              "Beck S.",
+              "Smith D.R.",
+              "Rogers J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15164054"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/nature02462"
+              }
+            ],
+            "title": "The DNA sequence and comparative analysis of human chromosome 10.",
+            "publicationDate": "2004",
+            "journal": "Nature",
+            "firstPage": "375",
+            "lastPage": "381",
+            "volume": "429"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000313",
+              "source": "Ensembl",
+              "id": "ENSP00000786603.1"
+            },
+            {
+              "evidenceCode": "ECO:0000313",
+              "source": "Proteomes",
+              "id": "UP000005640"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 3,
+          "citation": {
+            "id": "15496913",
+            "citationType": "journal article",
+            "authoringGroup": [
+              "International Human Genome Sequencing Consortium"
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15496913"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/nature03001"
+              }
+            ],
+            "title": "Finishing the euchromatic sequence of the human genome.",
+            "publicationDate": "2004",
+            "journal": "Nature",
+            "firstPage": "931",
+            "lastPage": "945",
+            "volume": "431"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000313",
+              "source": "Ensembl",
+              "id": "ENSP00000786603.1"
+            },
+            {
+              "evidenceCode": "ECO:0000313",
+              "source": "Proteomes",
+              "id": "UP000005640"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 4,
+          "citation": {
+            "id": "CI-20IM2DDAQPFF7",
+            "citationType": "submission",
+            "authoringGroup": [
+              "Ensembl"
+            ],
+            "publicationDate": "JUL-2026",
+            "submissionDatabase": "UniProtKB"
+          },
+          "referencePositions": [
+            "IDENTIFICATION"
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000313",
+              "source": "Ensembl",
+              "id": "ENSP00000786603.1"
+            }
+          ]
+        }
+      ],
+      "uniProtKBCrossReferences": [
+        {
+          "database": "EMBL",
+          "id": "AL133513",
+          "properties": [
+            {
+              "key": "ProteinId",
+              "value": "-"
+            },
+            {
+              "key": "Status",
+              "value": "NOT_ANNOTATED_CDS"
+            },
+            {
+              "key": "MoleculeType",
+              "value": "Genomic_DNA"
+            }
+          ]
+        },
+        {
+          "database": "EMBL",
+          "id": "AL583836",
+          "properties": [
+            {
+              "key": "ProteinId",
+              "value": "-"
+            },
+            {
+              "key": "Status",
+              "value": "NOT_ANNOTATED_CDS"
+            },
+            {
+              "key": "MoleculeType",
+              "value": "Genomic_DNA"
+            }
+          ]
+        },
+        {
+          "database": "EMBL",
+          "id": "KF459664",
+          "properties": [
+            {
+              "key": "ProteinId",
+              "value": "-"
+            },
+            {
+              "key": "Status",
+              "value": "NOT_ANNOTATED_CDS"
+            },
+            {
+              "key": "MoleculeType",
+              "value": "Genomic_DNA"
+            }
+          ]
+        },
+        {
+          "database": "EMBL",
+          "id": "KF459665",
+          "properties": [
+            {
+              "key": "ProteinId",
+              "value": "-"
+            },
+            {
+              "key": "Status",
+              "value": "NOT_ANNOTATED_CDS"
+            },
+            {
+              "key": "MoleculeType",
+              "value": "Genomic_DNA"
+            }
+          ]
+        },
+        {
+          "database": "Ensembl",
+          "id": "ENST00001116798.1",
+          "properties": [
+            {
+              "key": "ProteinId",
+              "value": "ENSP00000786603.1"
+            },
+            {
+              "key": "GeneId",
+              "value": "ENSG00000165841.13"
+            }
+          ]
+        },
+        {
+          "database": "HGNC",
+          "id": "HGNC:2621",
+          "properties": [
+            {
+              "key": "GeneName",
+              "value": "CYP2C19"
+            }
+          ]
+        },
+        {
+          "database": "OpenTargets",
+          "id": "ENSG00000165841",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "GeneTree",
+          "id": "ENSGT00940000163209",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "Proteomes",
+          "id": "UP000005640",
+          "properties": [
+            {
+              "key": "Component",
+              "value": "Chromosome 10"
+            }
+          ]
+        }
+      ],
+      "sequence": {
+        "value": "MDPFVVLVLCLSCLLLLSIWRQSSGRGKLPPGPTPLPVIGNILQIDIKDVSKSLTNLSKIYGPVFTLYFGLERMVVLHGYEVVKEALIDLGEEFSGRGHFPLAERANRGFGIVFSNGKRWKEIRRFSLMTLRNFGMGKRSIEDRVQEEARCLVEELRKTKASPCDPTFILGCAPCNVICSIIFQKRFDYKDQQFLNLMEKLNENIRIVSTPWIQICNNFPTIIDYFPGTHNKLLKNLAFMESDILEKVKEHQESMDINNPRDFIDCFLIKMEKEKQNQQSEFTIENLVITAADLLGAGTETTSTTLRYALLLLLKHPEVTEISKLLSTVTELVCIPTSSVKAFSFVCNLTSISCFWTF",
+        "length": 358,
+        "molWeight": 40722,
+        "crc64": "1AB9E0B71BD005DA",
+        "md5": "DC8A66E008B685F5635D0B7A2DBD0EAA"
+      },
+      "extraAttributes": {
+        "uniParcId": "UPI004931E64B"
+      }
+    }
+  ]
+}

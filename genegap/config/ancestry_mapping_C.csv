@@ -1,0 +1,22 @@
+trial_category,gnomad_group,weight,confidence,source,rationale
+Black or African American,afr,0.60,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test: widest plausible spread. These weights are not an estimate of reality; they exist to test whether a finding survives an extreme mapping.
+Black or African American,nfe,0.25,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+Black or African American,amr,0.15,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+White,nfe,0.70,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test: widest plausible spread.
+White,fin,0.10,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+White,asj,0.10,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+White,mid,0.10,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+Asian,eas,0.25,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test: the opposite extreme to version A's 60/40 East Asian split.
+Asian,sas,0.75,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test: South Asian dominant split.
+American Indian or Alaska Native,amr,0.80,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test: treats the category as predominantly Admixed American.
+American Indian or Alaska Native,ami,0.20,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+Native Hawaiian or Other Pacific Islander,eas,0.50,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test: no Pacific Islander cohort exists in gnomAD v4.
+Native Hawaiian or Other Pacific Islander,remaining,0.50,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+Hispanic or Latino,amr,0.50,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test: widest plausible spread for a highly variable category.
+Hispanic or Latino,nfe,0.30,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+Hispanic or Latino,afr,0.20,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+More than one race,remaining,0.40,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test: components are never reported by trials.
+More than one race,afr,0.20,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+More than one race,eas,0.20,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+More than one race,nfe,0.20,low,PLACEHOLDER - deliberate stress test ([MED] D2),Stress test component.
+Unknown or Not Reported,,0.0,high,GeneGap missing-data protocol (D2),Never reassigned to any genetic ancestry group. Reported as a missing-data percentage.

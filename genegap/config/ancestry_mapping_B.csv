@@ -1,0 +1,20 @@
+trial_category,gnomad_group,weight,confidence,source,rationale
+Black or African American,afr,0.85,medium,PLACEHOLDER - needs a cited admixture study ([MED] D2),Admixture-aware version: most US participants identifying as Black or African American carry substantial non-African ancestry. Weight is a structural placeholder until a cited study replaces it.
+Black or African American,nfe,0.15,medium,PLACEHOLDER - needs a cited admixture study ([MED] D2),Residual European ancestry component. Placeholder weight.
+White,nfe,0.90,medium,PLACEHOLDER - needs a cited admixture study ([MED] D2),Admixture-aware version: participants identifying as White are not exclusively non-Finnish European. Placeholder weight.
+White,fin,0.03,low,PLACEHOLDER - needs a cited admixture study ([MED] D2),Finnish ancestry is reported separately by gnomAD. Placeholder weight.
+White,asj,0.04,low,PLACEHOLDER - needs a cited admixture study ([MED] D2),Ashkenazi Jewish ancestry is reported separately by gnomAD. Placeholder weight.
+White,mid,0.03,low,PLACEHOLDER - needs a cited admixture study ([MED] D2),Middle Eastern ancestry is frequently recorded as White on US trial forms. Placeholder weight.
+Asian,eas,0.50,medium,PLACEHOLDER - needs trial-country breakdown ([MED] D2),"Asian means different things by country: this version splits it evenly pending a country-aware rule. Placeholder weight."
+Asian,sas,0.50,medium,PLACEHOLDER - needs trial-country breakdown ([MED] D2),"Asian means different things by country: this version splits it evenly pending a country-aware rule. Placeholder weight."
+American Indian or Alaska Native,ami,0.70,low,PLACEHOLDER - needs a cited admixture study ([MED] D2),Admixture-aware version: gnomAD ami is an Amish cohort and is a poor proxy. Placeholder weight.
+American Indian or Alaska Native,amr,0.30,low,PLACEHOLDER - needs a cited admixture study ([MED] D2),Part of this category is better represented by the Admixed American group. Placeholder weight.
+Native Hawaiian or Other Pacific Islander,remaining,0.70,low,PLACEHOLDER - no Pacific Islander cohort in gnomAD v4,gnomAD v4 has no Pacific Islander group. Placeholder weight.
+Native Hawaiian or Other Pacific Islander,eas,0.30,low,PLACEHOLDER - no Pacific Islander cohort in gnomAD v4,Partial East Asian ancestry component. Placeholder weight.
+Hispanic or Latino,amr,0.80,medium,PLACEHOLDER - needs a cited admixture study ([MED] D2),"Hispanic or Latino ancestry is highly variable; this version keeps most weight on amr with European and African components. Placeholder weight."
+Hispanic or Latino,nfe,0.12,low,PLACEHOLDER - needs a cited admixture study ([MED] D2),European ancestry component. Placeholder weight.
+Hispanic or Latino,afr,0.08,low,PLACEHOLDER - needs a cited admixture study ([MED] D2),African ancestry component. Placeholder weight.
+More than one race,remaining,0.60,low,PLACEHOLDER - trials do not report the component races,Mixed ancestry with unreported components. Placeholder weight.
+More than one race,amr,0.20,low,PLACEHOLDER - trials do not report the component races,Admixed American component. Placeholder weight.
+More than one race,nfe,0.20,low,PLACEHOLDER - trials do not report the component races,European component. Placeholder weight.
+Unknown or Not Reported,,0.0,high,GeneGap missing-data protocol (D2),Never reassigned to any genetic ancestry group. Reported as a missing-data percentage.
