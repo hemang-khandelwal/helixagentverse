@@ -93,6 +93,12 @@ def _find_words(text: str, names) -> list:
     return [n for n in names if re.search(rf"(?<![A-Za-z0-9]){re.escape(n)}(?![A-Za-z0-9])", text, re.I)]
 
 
+# Common brand names, resolved without a model so the offline demo handles them too.
+# A brand only counts if its drug is in the curated scope.
+BRANDS = {"plavix": "clopidogrel", "coumadin": "warfarin", "jantoven": "warfarin",
+          "imuran": "azathioprine", "azasan": "azathioprine", "zocor": "simvastatin"}
+
+
 def decide(message: str, scope: Scope, fast_factory: Optional[ChatFactory] = None) -> Decision:
     text = _clean(message)
     menu = scope.drug_line()
@@ -105,6 +111,8 @@ def decide(message: str, scope: Scope, fast_factory: Optional[ChatFactory] = Non
     if not hits:   # a gene name also works
         for gene in _find_words(text, scope.genes):
             hits += [d.lower() for d in scope.genes[gene.upper()]]
+    if not hits:   # a brand name such as Plavix
+        hits = [BRANDS[b] for b in _find_words(text, BRANDS) if BRANDS[b] in scope.drugs]
     hits = sorted(set(h.lower() for h in hits))
     if len(hits) == 1:
         return Decision("run", drug=hits[0], reason="in_scope")

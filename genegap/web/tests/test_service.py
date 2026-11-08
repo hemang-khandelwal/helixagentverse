@@ -146,3 +146,22 @@ def test_saved_runs_survive_application_restart(app_run):
         assert reopened.detail(run_id)["counts"]["findings"] == 4
     finally:
         reopened.close()
+
+
+def test_front_door_refuses_advice_and_resolves_brand_names(tmp_path):
+    service = AppService(tmp_path)
+    try:
+        seen = {}
+        for query in ("Plavix", "what dose of clopidogrel should I take?"):
+            job_id = service.start(query)["job_id"]
+            for _ in range(200):
+                job = service.job(job_id)
+                if job["status"] != "running":
+                    break
+                time.sleep(0.02)
+            seen[query] = service.detail(job["run_id"])
+        assert seen["Plavix"]["flags"]
+        assert not seen["what dose of clopidogrel should I take?"]["flags"]
+        assert "medical advice" in " ".join(seen["what dose of clopidogrel should I take?"]["limitations"]).lower() or seen["what dose of clopidogrel should I take?"]["limitations"]
+    finally:
+        service.close()

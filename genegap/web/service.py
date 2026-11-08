@@ -20,6 +20,7 @@ from charts.plots import plot_representation, plot_required_enrolment
 from charts.render import ChartInput
 from exports.bundle import export_bundle
 from genegap import config
+from genegap.agents import frontdoor
 from genegap.agents.critic import audit_flag
 from genegap.agents.orchestrator import run_offline_query, run_query
 from genegap.agents.planning import load_catalog
@@ -146,6 +147,19 @@ class AppService:
             raise ValueError("Choose recorded demo or live analysis.")
         if mode == "live" and not config.GEMINI_API_KEY:
             raise ValueError("Live analysis needs GEMINI_API_KEY in .env. The recorded demo works immediately.")
+        # Front door: refuse advice and out-of-scope input before any model runs, and pass
+        # only the matched drug name on, so typed text can never steer the agents.
+        fast_factory = None
+        if mode == "live":
+            try:
+                from genegap.agents.base import gemini_chat_factory
+                fast_factory = gemini_chat_factory(config.GEMINI_FAST_MODEL)
+            except Exception:
+                fast_factory = None
+        decision = frontdoor.decide(query, frontdoor.load_scope(), fast_factory)
+        refusal = decision.message if decision.action != "run" else None
+        if not refusal:
+            query = decision.drug
         if self.closed or not self.slots.acquire(blocking=False):
             raise ValueError("Two analyses are already running. Please wait for one to finish.")
         job_id = uuid.uuid4().hex
@@ -160,6 +174,9 @@ class AppService:
         def producer(query, *, store, run_id, on_event):
             with self.lock:
                 self.jobs[job_id]["run_id"] = run_id
+            if refusal:   # nothing reaches a model or an agent: show the refusal as the result
+                on_event("refused", {"agent": "front_door", "reason": decision.reason})
+                return {"run_id": run_id, "title": "Request not analysed", "flags": [], "limitations": [refusal]}
             callback = run_offline_query if mode == "offline" else run_query
             return callback(query, store=store, run_id=run_id, on_event=on_event)
 
