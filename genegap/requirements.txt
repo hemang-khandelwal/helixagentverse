@@ -1,0 +1,7 @@
+google-genai
+requests
+pydantic>=2
+numpy
+scipy
+pytest
+matplotlib>=3.9,<4

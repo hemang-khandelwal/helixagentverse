@@ -1,0 +1,10 @@
+{
+  "run_id": "report-template",
+  "title": "GeneGap report template",
+  "flags": [],
+  "limitations": [
+    "This is an empty draft template. No analysis or human review has been completed.",
+    "Agent output and critic results must be connected before findings can be approved.",
+    "Ancestry mapping weights and target-population shares currently include placeholders that need medical review."
+  ]
+}

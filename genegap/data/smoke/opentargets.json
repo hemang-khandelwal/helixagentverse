@@ -1,0 +1,18 @@
+{
+  "data": {
+    "search": {
+      "hits": [
+        {
+          "id": "CHEMBL1771",
+          "name": "CLOPIDOGREL",
+          "entity": "drug"
+        },
+        {
+          "id": "CHEMBL833",
+          "name": "TICLOPIDINE",
+          "entity": "drug"
+        }
+      ]
+    }
+  }
+}

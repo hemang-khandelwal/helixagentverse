@@ -1,0 +1,80 @@
+{
+  "version": "6.9",
+  "hitCount": 5821,
+  "nextCursorMark": "AoIIQL9ZVig1NjM5MDg1Nw==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CYP2C19+clopidogrel&cursorMark=AoIIQL9ZVig1NjM5MDg1Nw%3D%3D&resultType=lite&pageSize=2&format=json",
+  "request": {
+    "queryString": "CYP2C19 clopidogrel",
+    "resultType": "lite",
+    "cursorMark": "*",
+    "pageSize": 2,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "42973244",
+        "source": "MED",
+        "pmid": "42973244",
+        "doi": "10.1080/14622416.2026.2752193",
+        "title": "Global distribution of &lt;i&gt;CYP2C19&lt;/i&gt; variants in clopidogrel-indicated populations: implications for pharmacogenomic-guided antiplatelet therapy.",
+        "authorString": "Antonopoulos TC, Hughes JJ, Soueid R, Michael TJF, Mostafa S, Hesson LB, Trent R, Hughes S, Patanwala A, Stocker SL.",
+        "journalTitle": "Pharmacogenomics",
+        "pubYear": "2026",
+        "journalIssn": "1462-2416; 1744-8042; ",
+        "pageInfo": "1-9",
+        "pubType": "review; journal article",
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 0,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "N",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasTMAccessionNumbers": "N",
+        "firstPublicationDate": "2026-11-03",
+        "firstIndexDate": "2026-11-04"
+      },
+      {
+        "id": "42723528",
+        "source": "MED",
+        "pmid": "42723528",
+        "pmcid": "PMC13563196",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13563196"
+          ]
+        },
+        "doi": "10.1002/phar.70201",
+        "title": "Association Between CYP2C19 Genotype and P2Y12 Reaction Units in Patients Receiving Clopidogrel After Acute Ischemic Stroke: A Prospective, Observational Study.",
+        "authorString": "Stone RM, Smith A, Gunter S, Weko AT, Gottschalk C, Lee C, Ramsey A, Weatherspoon MP, Worrall BB.",
+        "journalTitle": "Pharmacotherapy",
+        "issue": "10",
+        "journalVolume": "46",
+        "pubYear": "2026",
+        "journalIssn": "0277-0008; 1875-9114; ",
+        "pageInfo": "e70201",
+        "pubType": "research-article; journal article; observational study",
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 1,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "N",
+        "hasTMAccessionNumbers": "N",
+        "firstPublicationDate": "2026-10-01",
+        "firstIndexDate": "2026-09-11"
+      }
+    ]
+  }
+}

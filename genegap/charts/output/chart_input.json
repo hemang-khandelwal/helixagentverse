@@ -1,0 +1,604 @@
+{
+  "result": {
+    "variant_id": "10-94781859-G-A",
+    "gene": "CYP2C19",
+    "inheritance": "dominant",
+    "mapping_version": "A",
+    "groups": [
+      {
+        "group": "afr",
+        "n_trial": 2329.0,
+        "ac": 11987,
+        "an": 67188,
+        "allele_freq": 0.17840983508959934,
+        "trial_share": 0.15981609826391271,
+        "target_share": 0.13,
+        "carrier_freq": 0.3249896009225005,
+        "ci_low": 0.32024915190171493,
+        "ci_high": 0.3298391878458244,
+        "expected_carriers": 756.9007805485037,
+        "enrolment_ratio": 1.2293546020300978,
+        "carrier_ratio": 1.26750658501581,
+        "prob_fewer_than_k": 0.0,
+        "k_threshold": 10,
+        "required_n": 93,
+        "insufficient_data": false
+      },
+      {
+        "group": "ami",
+        "n_trial": 146.0,
+        "ac": 166,
+        "an": 910,
+        "allele_freq": 0.1824175824175824,
+        "trial_share": 0.010018527413710286,
+        "target_share": null,
+        "carrier_freq": null,
+        "ci_low": null,
+        "ci_high": null,
+        "expected_carriers": null,
+        "enrolment_ratio": null,
+        "carrier_ratio": null,
+        "prob_fewer_than_k": null,
+        "k_threshold": 10,
+        "required_n": null,
+        "insufficient_data": true
+      },
+      {
+        "group": "amr",
+        "n_trial": 0.0,
+        "ac": 4023,
+        "an": 34880,
+        "allele_freq": 0.11533830275229358,
+        "trial_share": 0.0,
+        "target_share": 0.18,
+        "carrier_freq": 0.21737368142280755,
+        "ci_low": 0.21151523730093033,
+        "ci_high": 0.2234646139422573,
+        "expected_carriers": 0.0,
+        "enrolment_ratio": 0.0,
+        "carrier_ratio": 0.0,
+        "prob_fewer_than_k": null,
+        "k_threshold": 10,
+        "required_n": 139,
+        "insufficient_data": false
+      },
+      {
+        "group": "asj",
+        "n_trial": 0.0,
+        "ac": 3323,
+        "an": 25098,
+        "allele_freq": 0.13240098812654394,
+        "trial_share": 0.0,
+        "target_share": null,
+        "carrier_freq": 0.24727195459620277,
+        "ci_low": 0.24015810444800267,
+        "ci_high": 0.2547376989500139,
+        "expected_carriers": 0.0,
+        "enrolment_ratio": null,
+        "carrier_ratio": null,
+        "prob_fewer_than_k": null,
+        "k_threshold": 10,
+        "required_n": 122,
+        "insufficient_data": false
+      },
+      {
+        "group": "eas",
+        "n_trial": 24.0,
+        "ac": 11167,
+        "an": 36782,
+        "allele_freq": 0.30359958675439075,
+        "trial_share": 0.0016468812186921018,
+        "target_share": 0.05,
+        "carrier_freq": 0.5150264644313447,
+        "ci_low": 0.5084637857764683,
+        "ci_high": 0.5217223180334726,
+        "expected_carriers": 12.360635146352273,
+        "enrolment_ratio": 0.03293762437384203,
+        "carrier_ratio": 0.033959815759977044,
+        "prob_fewer_than_k": 0.12121717438131821,
+        "k_threshold": 10,
+        "required_n": 59,
+        "insufficient_data": false
+      },
+      {
+        "group": "fin",
+        "n_trial": 0.0,
+        "ac": 10733,
+        "an": 61354,
+        "allele_freq": 0.17493561951950973,
+        "trial_share": 0.0,
+        "target_share": null,
+        "carrier_freq": 0.31926876806234483,
+        "ci_low": 0.3143281409994171,
+        "ci_high": 0.3243319902790486,
+        "expected_carriers": 0.0,
+        "enrolment_ratio": null,
+        "carrier_ratio": null,
+        "prob_fewer_than_k": null,
+        "k_threshold": 10,
+        "required_n": 94,
+        "insufficient_data": false
+      },
+      {
+        "group": "mid",
+        "n_trial": 0.0,
+        "ac": 611,
+        "an": 5608,
+        "allele_freq": 0.10895149786019971,
+        "trial_share": 0.0,
+        "target_share": null,
+        "carrier_freq": 0.2060325668344184,
+        "ci_low": 0.19194421778683268,
+        "ci_high": 0.22124737179912743,
+        "expected_carriers": 0.0,
+        "enrolment_ratio": null,
+        "carrier_ratio": null,
+        "prob_fewer_than_k": null,
+        "k_threshold": 10,
+        "required_n": 146,
+        "insufficient_data": false
+      },
+      {
+        "group": "nfe",
+        "n_trial": 11935.0,
+        "ac": 162522,
+        "an": 1111304,
+        "allele_freq": 0.146244411970082,
+        "trial_share": 0.8189803060454265,
+        "target_share": 0.6,
+        "carrier_freq": 0.2711013959076889,
+        "ci_low": 0.2699846455479682,
+        "ci_high": 0.2722401633553747,
+        "expected_carriers": 3235.595160158267,
+        "enrolment_ratio": 1.3649671767423774,
+        "carrier_ratio": 1.4073277815809935,
+        "prob_fewer_than_k": 0.0,
+        "k_threshold": 10,
+        "required_n": 111,
+        "insufficient_data": false
+      },
+      {
+        "group": "remaining",
+        "n_trial": 123.0,
+        "ac": 9207,
+        "an": 56126,
+        "allele_freq": 0.1640416206392759,
+        "trial_share": 0.008440266245797022,
+        "target_share": 0.02,
+        "carrier_freq": 0.30117358797659166,
+        "ci_low": 0.2960840559822098,
+        "ci_high": 0.306397126270718,
+        "expected_carriers": 37.04435132112077,
+        "enrolment_ratio": 0.42201331228985106,
+        "carrier_ratio": 0.435110139424706,
+        "prob_fewer_than_k": 5.906693209093745e-10,
+        "k_threshold": 10,
+        "required_n": 100,
+        "insufficient_data": false
+      },
+      {
+        "group": "sas",
+        "n_trial": 16.0,
+        "ac": 20947,
+        "an": 65396,
+        "allele_freq": 0.32031011071013515,
+        "trial_share": 0.0010979208124614012,
+        "target_share": 0.02,
+        "carrier_freq": 0.5380216543971312,
+        "ci_low": 0.5331187518069309,
+        "ci_high": 0.5429732475219536,
+        "expected_carriers": 8.6083464703541,
+        "enrolment_ratio": 0.054896040623070054,
+        "carrier_ratio": 0.05659969293329508,
+        "prob_fewer_than_k": 0.6699441424150812,
+        "k_threshold": 10,
+        "required_n": 56,
+        "insufficient_data": false
+      }
+    ],
+    "fact_ids": [
+      "F-17fdaf953b67",
+      "F-195ad34b1e99",
+      "F-2386f33e2c84",
+      "F-25ce0d369075",
+      "F-62e788dbfd9a",
+      "F-9b20fe7bdc51",
+      "F-9c590cde7fac",
+      "F-a8b8cb8c25ab",
+      "F-bbf212e3af8a",
+      "F-e77c3dc56ed5",
+      "F-ed42d2d17eeb",
+      "F-f7a5bdb65dd2",
+      "F-fd96593d59de"
+    ]
+  },
+  "notes": [
+    "Offline recorded data; only a subset of variants and trial records is available.",
+    "Trial demographic counts remain provisional pending medical review.",
+    "gnomAD has fewer than 5000 alleles for: ami. These groups are reported as insufficient data rather than given a frequency.",
+    "The trial data maps nobody to: amr, although the target population includes these groups.",
+    "The target population table has no share for: ami, so no representation ratio can be formed for them even though the mapping places participants there. Either add them to the table or say why they are excluded.",
+    "100% of this target population is an ASSUMPTION taken from the general population mix, not from disease-burden data. Treat the representation ratios as indicative."
+  ],
+  "target_label": "US adults receiving antiplatelet therapy after acute coronary syndrome",
+  "target_carriers": 30.0,
+  "source": "Offline recorded clopidogrel / CYP2C19 demonstration; expert review pending.",
+  "collection_notes": [
+    "gnomAD variant_search for rs4244285",
+    "gnomAD frequencies for 10-94781859-G-A",
+    "ClinVar records for rs4244285 (3 UIDs)",
+    "ClinicalTrials.gov search for clopidogrel",
+    "ClinicalTrials.gov full record for NCT01609842",
+    "Using 10 variants from the medical student's file for CYP2C19.",
+    "rs4244285: allele 10-94781859-G-T could not be fetched (gnomAD: offline mode and no cached response for https://gnomad.broadinstitute.org/api)",
+    "rs4244285: allele 10-94781859-G-C could not be fetched (gnomAD: offline mode and no cached response for https://gnomad.broadinstitute.org/api)",
+    "rs4244285 / 10-94781859-G-A: kept: 32.03% in 'sas'",
+    "rs4986893: gnomAD lookup failed (gnomAD: offline mode and no cached response for https://gnomad.broadinstitute.org/api)",
+    "rs12248560: gnomAD lookup failed (gnomAD: offline mode and no cached response for https://gnomad.broadinstitute.org/api)",
+    "rs28399504: gnomAD lookup failed (gnomAD: offline mode and no cached response for https://gnomad.broadinstitute.org/api)",
+    "rs56337013: gnomAD lookup failed (gnomAD: offline mode and no cached response for https://gnomad.broadinstitute.org/api)",
+    "rs72552267: gnomAD lookup failed (gnomAD: offline mode and no cached response for https://gnomad.broadinstitute.org/api)",
+    "rs72558186: gnomAD lookup failed (gnomAD: offline mode and no cached response for https://gnomad.broadinstitute.org/api)",
+    "rs41291556: gnomAD lookup failed (gnomAD: offline mode and no cached response for https://gnomad.broadinstitute.org/api)",
+    "rs17884712: gnomAD lookup failed (gnomAD: offline mode and no cached response for https://gnomad.broadinstitute.org/api)",
+    "rs6413438: gnomAD lookup failed (gnomAD: offline mode and no cached response for https://gnomad.broadinstitute.org/api)",
+    "Found 3 completed trials with results; reading the first 3.",
+    "NCT01511939: could not fetch the full record (ClinicalTrials.gov: offline mode and no cached response for https://clinicaltrials.gov/api/v2/studies/NCT01511939).",
+    "NCT00687076: could not fetch the full record (ClinicalTrials.gov: offline mode and no cached response for https://clinicaltrials.gov/api/v2/studies/NCT00687076).",
+    "1 of 1 trials report a race breakdown."
+  ],
+  "facts": [
+    {
+      "field": "baseline:race:American Indian or Alaska Native",
+      "value": {
+        "count": 146,
+        "basis": "total_row"
+      },
+      "source": "ClinicalTrials.gov",
+      "record_id": "NCT01609842",
+      "url": "https://clinicaltrials.gov/study/NCT01609842?tab=results",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.016132Z",
+      "quote": null,
+      "note": "Read from the posted baseline table using the 'total_row' column rule.",
+      "id": "F-0ded459e81e8"
+    },
+    {
+      "field": "ac_an:fin",
+      "value": {
+        "ac": 10733,
+        "an": 61354,
+        "dataset": "gnomad_r4"
+      },
+      "source": "gnomAD",
+      "record_id": "10-94781859-G-A",
+      "url": "https://gnomad.broadinstitute.org/variant/10-94781859-G-A?dataset=gnomad_r4",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014314Z",
+      "quote": null,
+      "note": null,
+      "id": "F-17fdaf953b67"
+    },
+    {
+      "field": "classification",
+      "value": {
+        "title": "NM_000769.4(CYP2C19):c.681G>T (p.Pro227=)",
+        "classification": "drug response"
+      },
+      "source": "ClinVar",
+      "record_id": "VCV/uid:1703261",
+      "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/1703261/",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014801Z",
+      "quote": null,
+      "note": null,
+      "id": "F-195ad34b1e99"
+    },
+    {
+      "field": "ac_an:nfe",
+      "value": {
+        "ac": 162522,
+        "an": 1111304,
+        "dataset": "gnomad_r4"
+      },
+      "source": "gnomAD",
+      "record_id": "10-94781859-G-A",
+      "url": "https://gnomad.broadinstitute.org/variant/10-94781859-G-A?dataset=gnomad_r4",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014395Z",
+      "quote": null,
+      "note": null,
+      "id": "F-2386f33e2c84"
+    },
+    {
+      "field": "classification",
+      "value": {
+        "title": "CYP2C19*2/*23",
+        "classification": "drug response"
+      },
+      "source": "ClinVar",
+      "record_id": "VCV/uid:634407",
+      "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/634407/",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014882Z",
+      "quote": null,
+      "note": null,
+      "id": "F-25ce0d369075"
+    },
+    {
+      "field": "baseline:race:Asian",
+      "value": {
+        "count": 40,
+        "basis": "total_row"
+      },
+      "source": "ClinicalTrials.gov",
+      "record_id": "NCT01609842",
+      "url": "https://clinicaltrials.gov/study/NCT01609842?tab=results",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.016171Z",
+      "quote": null,
+      "note": "Read from the posted baseline table using the 'total_row' column rule.",
+      "id": "F-351ee3cb9cd5"
+    },
+    {
+      "field": "baseline:race:Black or African American",
+      "value": {
+        "count": 2329,
+        "basis": "total_row"
+      },
+      "source": "ClinicalTrials.gov",
+      "record_id": "NCT01609842",
+      "url": "https://clinicaltrials.gov/study/NCT01609842?tab=results",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.016241Z",
+      "quote": null,
+      "note": "Read from the posted baseline table using the 'total_row' column rule.",
+      "id": "F-440224b7c4ce"
+    },
+    {
+      "field": "baseline:race:Native Hawaiian or Other Pacific Islander",
+      "value": {
+        "count": 123,
+        "basis": "total_row"
+      },
+      "source": "ClinicalTrials.gov",
+      "record_id": "NCT01609842",
+      "url": "https://clinicaltrials.gov/study/NCT01609842?tab=results",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.016206Z",
+      "quote": null,
+      "note": "Read from the posted baseline table using the 'total_row' column rule.",
+      "id": "F-49d7e83055ff"
+    },
+    {
+      "field": "overall_status",
+      "value": "COMPLETED",
+      "source": "ClinicalTrials.gov",
+      "record_id": "NCT01609842",
+      "url": "https://clinicaltrials.gov/study/NCT01609842",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.015150Z",
+      "quote": null,
+      "note": null,
+      "id": "F-4e63fd24c36c"
+    },
+    {
+      "field": "baseline:race:Unknown or Not Reported",
+      "value": {
+        "count": 0,
+        "basis": "total_row"
+      },
+      "source": "ClinicalTrials.gov",
+      "record_id": "NCT01609842",
+      "url": "https://clinicaltrials.gov/study/NCT01609842?tab=results",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.016346Z",
+      "quote": null,
+      "note": "Read from the posted baseline table using the 'total_row' column rule.",
+      "id": "F-4eb5e4253bfb"
+    },
+    {
+      "field": "ac_an:asj",
+      "value": {
+        "ac": 3323,
+        "an": 25098,
+        "dataset": "gnomad_r4"
+      },
+      "source": "gnomAD",
+      "record_id": "10-94781859-G-A",
+      "url": "https://gnomad.broadinstitute.org/variant/10-94781859-G-A?dataset=gnomad_r4",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014228Z",
+      "quote": null,
+      "note": null,
+      "id": "F-62e788dbfd9a"
+    },
+    {
+      "field": "baseline:race:White",
+      "value": {
+        "count": 11935,
+        "basis": "total_row"
+      },
+      "source": "ClinicalTrials.gov",
+      "record_id": "NCT01609842",
+      "url": "https://clinicaltrials.gov/study/NCT01609842?tab=results",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.016278Z",
+      "quote": null,
+      "note": "Read from the posted baseline table using the 'total_row' column rule.",
+      "id": "F-997b44cb3a84"
+    },
+    {
+      "field": "ac_an:remaining",
+      "value": {
+        "ac": 9207,
+        "an": 56126,
+        "dataset": "gnomad_r4"
+      },
+      "source": "gnomAD",
+      "record_id": "10-94781859-G-A",
+      "url": "https://gnomad.broadinstitute.org/variant/10-94781859-G-A?dataset=gnomad_r4",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014437Z",
+      "quote": null,
+      "note": null,
+      "id": "F-9b20fe7bdc51"
+    },
+    {
+      "field": "ac_an:amr",
+      "value": {
+        "ac": 4023,
+        "an": 34880,
+        "dataset": "gnomad_r4"
+      },
+      "source": "gnomAD",
+      "record_id": "10-94781859-G-A",
+      "url": "https://gnomad.broadinstitute.org/variant/10-94781859-G-A?dataset=gnomad_r4",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014181Z",
+      "quote": null,
+      "note": null,
+      "id": "F-9c590cde7fac"
+    },
+    {
+      "field": "ac_an:eas",
+      "value": {
+        "ac": 11167,
+        "an": 36782,
+        "dataset": "gnomad_r4"
+      },
+      "source": "gnomAD",
+      "record_id": "10-94781859-G-A",
+      "url": "https://gnomad.broadinstitute.org/variant/10-94781859-G-A?dataset=gnomad_r4",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014272Z",
+      "quote": null,
+      "note": null,
+      "id": "F-a8b8cb8c25ab"
+    },
+    {
+      "field": "ac_an:mid",
+      "value": {
+        "ac": 611,
+        "an": 5608,
+        "dataset": "gnomad_r4"
+      },
+      "source": "gnomAD",
+      "record_id": "10-94781859-G-A",
+      "url": "https://gnomad.broadinstitute.org/variant/10-94781859-G-A?dataset=gnomad_r4",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014355Z",
+      "quote": null,
+      "note": null,
+      "id": "F-bbf212e3af8a"
+    },
+    {
+      "field": "baseline:sex:Female",
+      "value": {
+        "count": 287,
+        "basis": "total_row"
+      },
+      "source": "ClinicalTrials.gov",
+      "record_id": "NCT01609842",
+      "url": "https://clinicaltrials.gov/study/NCT01609842?tab=results",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.016034Z",
+      "quote": null,
+      "note": "Read from the posted baseline table using the 'total_row' column rule.",
+      "id": "F-d661bf8179ea"
+    },
+    {
+      "field": "ac_an:afr",
+      "value": {
+        "ac": 11987,
+        "an": 67188,
+        "dataset": "gnomad_r4"
+      },
+      "source": "gnomAD",
+      "record_id": "10-94781859-G-A",
+      "url": "https://gnomad.broadinstitute.org/variant/10-94781859-G-A?dataset=gnomad_r4",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.012916Z",
+      "quote": null,
+      "note": null,
+      "id": "F-e77c3dc56ed5"
+    },
+    {
+      "field": "baseline:race:More than one race",
+      "value": {
+        "count": 0,
+        "basis": "total_row"
+      },
+      "source": "ClinicalTrials.gov",
+      "record_id": "NCT01609842",
+      "url": "https://clinicaltrials.gov/study/NCT01609842?tab=results",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.016312Z",
+      "quote": null,
+      "note": "Read from the posted baseline table using the 'total_row' column rule.",
+      "id": "F-ed3f57076aa8"
+    },
+    {
+      "field": "ac_an:sas",
+      "value": {
+        "ac": 20947,
+        "an": 65396,
+        "dataset": "gnomad_r4"
+      },
+      "source": "gnomAD",
+      "record_id": "10-94781859-G-A",
+      "url": "https://gnomad.broadinstitute.org/variant/10-94781859-G-A?dataset=gnomad_r4",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014478Z",
+      "quote": null,
+      "note": null,
+      "id": "F-ed42d2d17eeb"
+    },
+    {
+      "field": "baseline:sex:Male",
+      "value": {
+        "count": 14286,
+        "basis": "total_row"
+      },
+      "source": "ClinicalTrials.gov",
+      "record_id": "NCT01609842",
+      "url": "https://clinicaltrials.gov/study/NCT01609842?tab=results",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.016084Z",
+      "quote": null,
+      "note": "Read from the posted baseline table using the 'total_row' column rule.",
+      "id": "F-f4fb328ee136"
+    },
+    {
+      "field": "classification",
+      "value": {
+        "title": "CYP2C19*2/*2",
+        "classification": "drug response"
+      },
+      "source": "ClinVar",
+      "record_id": "VCV/uid:638797",
+      "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/638797/",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014838Z",
+      "quote": null,
+      "note": null,
+      "id": "F-f7a5bdb65dd2"
+    },
+    {
+      "field": "ac_an:ami",
+      "value": {
+        "ac": 166,
+        "an": 910,
+        "dataset": "gnomad_r4"
+      },
+      "source": "gnomAD",
+      "record_id": "10-94781859-G-A",
+      "url": "https://gnomad.broadinstitute.org/variant/10-94781859-G-A?dataset=gnomad_r4",
+      "method": "api",
+      "retrieved_at": "2026-11-08T12:24:51.014124Z",
+      "quote": null,
+      "note": null,
+      "id": "F-fd96593d59de"
+    }
+  ]
+}

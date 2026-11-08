@@ -1,0 +1,16 @@
+{
+  "gemini-4-argon": {
+    "plain_text": "ready",
+    "structured_json": {
+      "gene": "CYP2C19",
+      "drug": "clopidogrel"
+    }
+  },
+  "gemini-3.8-flash": {
+    "plain_text": "ready",
+    "structured_json": {
+      "gene": "CYP2C19",
+      "drug": "clopidogrel"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "hits": [
+    {
+      "id": "CHEMBL1771",
+      "name": "CLOPIDOGREL",
+      "entity": "drug"
+    },
+    {
+      "id": "CHEMBL833",
+      "name": "TICLOPIDINE",
+      "entity": "drug"
+    },
+    {
+      "id": "CHEMBL1083385",
+      "name": "CLOPIDOGREL BISULFATE",
+      "entity": "drug"
+    }
+  ],
+  "targets": [
+    {
+      "field": "mechanism_target",
+      "value": {
+        "symbol": "P2RY12",
+        "ensembl": "ENSG00000169313",
+        "moa": "Purinergic receptor P2Y12 antagonist"
+      },
+      "source": "OpenTargets",
+      "record_id": "CHEMBL1771",
+      "url": "https://platform.opentargets.org/drug/CHEMBL1771",
+      "method": "api",
+      "retrieved_at": "2026-11-08T02:34:08.852069Z",
+      "quote": null,
+      "note": null,
+      "id": "F-6ed7c8fe8567"
+    }
+  ]
+}
