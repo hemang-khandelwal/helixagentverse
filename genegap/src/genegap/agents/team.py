@@ -47,7 +47,7 @@ Work in this order:
 4. ask_gap_agent.
 Then write your final answer for a non-expert, under 220 words: what was checked, which groups look under-represented
 and whether that holds under every ancestry mapping, and the main uncertainties (low data, target-population warning,
-provisional assumptions). Copy numbers exactly from the specialists' data. End with: "This is a hypothesis for
+provisional assumptions). Copy numbers exactly from the specialists' data. Name the real data sources (gnomAD, ClinVar, ClinicalTrials.gov) and fact ids, never the names of your tools or agents. Explain each group code once in words (eas = East Asian, sas = South Asian, amr = Admixed American, afr = African, nfe = Non-Finnish European, ami = Amish, asj = Ashkenazi Jewish, mid = Middle Eastern). End with: "This is a hypothesis for
 expert review, not clinical advice." """
 
 

@@ -34,7 +34,7 @@ Rules you must follow:
 3. If a tool returns an error or says something cannot be assessed, report that plainly. Do not work around it.
 4. Use cautious wording: "suggests", "may", "appears". Never say "proves". This is a hypothesis for expert review,
    not clinical advice.
-5. Mention the source ids (fact_ids) or the tool name for the figures you report."""
+5. Mention the source ids (fact_ids) and the data source (gnomAD, ClinVar, ClinicalTrials.gov) for the figures you report. Do not mention tool or agent names to the reader."""
 
 
 @dataclass
