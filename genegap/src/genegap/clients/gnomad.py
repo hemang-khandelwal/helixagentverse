@@ -14,15 +14,19 @@ Q_VARIANT = """query($id: String!, $ds: DatasetId!) {
     genome { ac an populations { id ac an } } } }"""
 
 
+ANCESTRY_GROUPS = frozenset({"afr", "ami", "amr", "asj", "eas", "fin", "mid", "nfe", "remaining", "sas"})
+
+
 def merge_populations(variant_json: dict) -> dict[str, list[int]]:
-    """Sum exome + genome counts per ancestry group. Sex-split ids like 'afr_XX' are skipped."""
+    """Sum exome + genome counts per ancestry group. Only the 10 top-level gnomAD v4 groups are kept."""
+    # Note: 'ami' appears in genome but not exome, which is expected.
     totals: dict[str, list[int]] = {}
     for cohort in ("exome", "genome"):
         block = variant_json.get(cohort)
         if not block:
             continue
         for p in block.get("populations") or []:
-            if "_" in p["id"]:
+            if p["id"] not in ANCESTRY_GROUPS:
                 continue
             t = totals.setdefault(p["id"], [0, 0])
             t[0] += p["ac"]
