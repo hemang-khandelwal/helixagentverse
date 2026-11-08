@@ -1,21 +1,12 @@
-"""Task 2.5: the target population - who will actually use this drug?
+"""Task 2.5: the target-population table.
 
-Deliverable D5 has two halves and this module keeps them in separate files, because the
-medical student can complete the first long before the second:
+This answers "who will actually use this drug?". It is the denominator of every
+representation ratio, so it is curated by hand with a source and a short quote per row
+(deliverable D5) rather than derived by the system.
 
-  data/target_population.csv         WHO the population is. Indication, geography, age
-                                     scope, and a sourced definition, one row per
-                                     drug-indication. Crucially it also records whether
-                                     the demographic distribution is ESTABLISHED.
-
-  data/target_population_shares.csv  WHAT the group mix is. One gnomAD ancestry group's
-                                     share per row. This is the denominator of every
-                                     representation ratio.
-
-Shares without an established definition are not meaningful, so a run that uses shares
-whose definition row says NOT ESTABLISHED has to say so. Where no disease-burden source
-exists for a group, the row is marked as an ASSUMPTION and the whole table reports itself
-as assumption-based.
+Each row is one gnomAD ancestry group's share of the target population. Where no
+disease-burden source exists for a group, the row is marked as an ASSUMPTION and the
+whole table reports itself as assumption-based, so the report can say so plainly.
 """
 from __future__ import annotations
 
@@ -28,17 +19,7 @@ from .config import ROOT
 from .mapping import GNOMAD_GROUPS
 
 DATA_DIR = ROOT / "data"
-TARGET_POPULATION_PATH = DATA_DIR / "target_population_shares.csv"
-TARGET_DEFINITION_PATH = DATA_DIR / "target_population.csv"
-
-# Columns of the medical student's definition table.
-DEFINITION_COLUMNS = [
-    "drug", "genes", "indication", "target_population_definition", "applicable_geography",
-    "age_scope", "source_excerpt", "source_url", "definition_evidence",
-    "demographic_distribution_status", "required_denominator_data", "medical_notes",
-]
-# The value the definition table uses when the group mix has not been sourced yet.
-NOT_ESTABLISHED = "NOT ESTABLISHED"
+TARGET_POPULATION_PATH = DATA_DIR / "target_population.csv"
 REQUIRED_COLUMNS = [
     "population_id", "label", "gnomad_group", "share",
     "source", "quote", "year", "geography", "basis", "caveat",
@@ -95,68 +76,6 @@ class TargetPopulation:
     @property
     def is_assumption_based(self) -> bool:
         return self.assumption_share > 0.0
-
-
-@dataclass
-class TargetDefinition:
-    """One row of the medical student's target-population definition table."""
-
-    drug: str
-    genes: str
-    indication: str
-    definition: str
-    geography: str
-    age_scope: str
-    source_excerpt: str
-    source_url: str
-    definition_evidence: str
-    demographic_distribution_status: str
-    required_denominator_data: str
-    medical_notes: str
-
-    @property
-    def distribution_established(self) -> bool:
-        """True only when the group mix for this indication has actually been sourced."""
-        return NOT_ESTABLISHED not in self.demographic_distribution_status.upper()
-
-
-def load_target_definitions(path: Path = TARGET_DEFINITION_PATH) -> list[TargetDefinition]:
-    """
-    Read the definition table: who the target population is, per drug and indication.
-
-    This says nothing about the group mix. It is what tells us whether a representation
-    ratio is meaningful at all, via demographic_distribution_status.
-    """
-    if not path.exists():
-        raise PopulationError(f"{path} does not exist. It is medical-student deliverable D5.")
-
-    rows: list[TargetDefinition] = []
-    with open(path, newline="") as fh:
-        reader = csv.DictReader(fh)
-        missing_cols = [c for c in DEFINITION_COLUMNS if c not in (reader.fieldnames or [])]
-        if missing_cols:
-            raise PopulationError(f"{path.name} is missing columns: {missing_cols}")
-        for n, raw in enumerate(reader, start=2):
-            row = {k: (v or "").strip() for k, v in raw.items() if k}
-            if not row["drug"]:
-                raise PopulationError(f"{path.name} line {n}: drug is blank")
-            if not row["source_url"]:
-                raise PopulationError(f"{path.name} line {n} ({row['drug']}): source_url is blank. No source, no row.")
-            rows.append(TargetDefinition(
-                drug=row["drug"], genes=row["genes"], indication=row["indication"],
-                definition=row["target_population_definition"], geography=row["applicable_geography"],
-                age_scope=row["age_scope"], source_excerpt=row["source_excerpt"],
-                source_url=row["source_url"], definition_evidence=row["definition_evidence"],
-                demographic_distribution_status=row["demographic_distribution_status"],
-                required_denominator_data=row["required_denominator_data"],
-                medical_notes=row["medical_notes"],
-            ))
-    return rows
-
-
-def definitions_for_drug(drug: str, path: Path = TARGET_DEFINITION_PATH) -> list[TargetDefinition]:
-    """Every indication row recorded for one drug, case-insensitively."""
-    return [d for d in load_target_definitions(path) if d.drug.strip().lower() == drug.strip().lower()]
 
 
 def _check_quote(quote: str, where: str) -> None:

@@ -14,3 +14,7 @@ if __name__ == "__main__":
     gene = sys.argv[1] if len(sys.argv) > 1 else "CYP2C19"
     store = Store()
     print(format_table(variants_for_gene(gene, GnomadClient(store=store), ClinVarClient(store=store))))
+
+
+
+#testing: python scripts/m1_clopidogrel.py --gene CYP2C19 --drug clopidogrel

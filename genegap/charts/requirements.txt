@@ -1,0 +1,2 @@
+# Task 6.2 chart dependency; kept separate to avoid shared-file merge conflicts.
+matplotlib>=3.9,<4

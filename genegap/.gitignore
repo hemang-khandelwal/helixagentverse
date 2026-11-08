@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 data/*.sqlite
 .DS_Store
+data/app_runs/
+data/cache/
+data/rehearsal/
+web/.cache/

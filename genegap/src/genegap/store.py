@@ -80,7 +80,7 @@ class Store:
 
     # ---- Facts (provenance) methods ----
 
-    def put_fact(self, fact: Fact) -> str:
+    def put_fact(self, fact: Fact, *, commit: bool = True) -> str:
         """
         Store a verified Fact record. Uses the fact's deterministic hash ID as primary key,
         so saving the same fact multiple times is idempotent and never creates duplicates.
@@ -89,7 +89,8 @@ class Store:
             "INSERT OR REPLACE INTO facts VALUES (?,?,?,?)",
             (fact.id, fact.source, fact.record_id, fact.model_dump_json()),
         )
-        self.db.commit()
+        if commit:
+            self.db.commit()
         return fact.id
 
     def get_fact(self, fact_id: str) -> Optional[Fact]:
@@ -109,7 +110,7 @@ class Store:
 
     # ---- Agent step log methods ----
 
-    def log_step(self, run_id: str, agent: str, kind: str, payload: Any) -> None:
+    def log_step(self, run_id: str, agent: str, kind: str, payload: Any, *, commit: bool = True) -> None:
         """
         Record one step of an agent run (e.g. 'plan', 'tool_call', 'tool_return', 'critique').
         This preserves full auditability of agent reasoning and decisions.
@@ -118,7 +119,8 @@ class Store:
             "INSERT INTO steps (ts, run_id, agent, kind, payload) VALUES (?,?,?,?,?)",
             (time.time(), run_id, agent, kind, json.dumps(payload, default=str)),
         )
-        self.db.commit()
+        if commit:
+            self.db.commit()
 
     def steps(self, run_id: str) -> list[dict]:
         """Retrieve all recorded steps for an execution session in chronological order."""
