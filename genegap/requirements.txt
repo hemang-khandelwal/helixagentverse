@@ -1,0 +1,6 @@
+google-genai
+requests
+pydantic>=2
+numpy
+scipy
+pytest

@@ -1,0 +1,4 @@
+trial_category,gnomad_group,weight,confidence,source,rationale
+Black or African American,afr,1.0,PLACEHOLDER,PLACEHOLDER,Medical student to confirm and cite
+White,nfe,1.0,PLACEHOLDER,PLACEHOLDER,Medical student to confirm and cite
+Unknown or Not Reported,,0,n/a,,Never reassigned. Reported as missing data
